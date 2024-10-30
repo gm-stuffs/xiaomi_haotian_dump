@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<contents>
+    <!-- 1. 监控线程信息：线程数量、监控上下文数量、监控目标数量 -->
+    <designated-package name="NR_KDAMONDS" value="2" />
+    <designated-package name="NR_CONTEXTS" value="1" />
+    <designated-package name="NR_TARGETS" value="1" />
+    <!-- 2. 采样信息：采样间隔、聚合间隔、采样边界更新间隔、监控区域、采样方案应用间隔 -->
+    <designated-package name="SAMPLE_US" value="100000" />
+    <designated-package name="AGGR_US" value="2000000" />
+    <designated-package name="UPDATE_US" value="60000000" />
+    <designated-package name="NR_REGIONS_MIN" value="2000" />
+    <designated-package name="NR_REGIONS_MAX" value="5000" />
+    <designated-package name="APPLY_INTERVAL_US" value="100000" />
+    <!-- 3. 内存回收信息：region百分比、单次最大内存回收数量、距离上次回收时间差、回收时间阈值、region个数 -->
+    <designated-package name="FREQ_RATIO" value="50" />
+    <designated-package name="RECLAIM_TARGET_MB" value="40" />
+    <designated-package name="RECLAIM_INTERVAL_MILLIS" value="200" />
+    <designated-package name="RECLAIM_TIME_LIMIT_MS" value="50" />
+    <designated-package name="RECLAIM_REGION" value="5" />
+
+    <!-- 4. 回收水线阈值 LOW_WATERMARK * xx_MEM_THRESHOLD / 100 -->
+    <designated-package name="LOW_MEM_THRESHOLD" value="100" />
+    <designated-package name="MID_MEM_THRESHOLD" value="400" />
+    <designated-package name="HIGH_MEM_THRESHOLD" value="800" />
+    <!-- 5. 回收CPU阈值 -->
+    <designated-package name="CPU_LOADAVG_THRESHOLD" value="26" />
+
+    <!-- 6. hotscore计算公式：(FREQ_WEIGHT*freq+AGE_WEIGHT*age+RSS_WEIGHT*rss)/(FREQ_WEIGHT+AGE_WEIGHT+RSS_WEIGHT)-->
+    <designated-package name="FREQ_WEIGHT" value="1" />
+    <designated-package name="AGE_WEIGHT" value="1" />
+    <designated-package name="RSS_WEIGHT" value="1" />
+
+    <!-- 7. 进程优先级计算公式：(adj*ADJ_WEIGHT+pss*PSS_WEIGHT+time*BG_TIME_WEIGHT+rate*RATE_WEIGHT)/(ADJ_WEIGHT+PSS_WEIGHT+BG_TIME_WEIGHT+RATE_WEIGHT)-->
+    <designated-package name="ADJ_WEIGHT" value="10" />
+    <designated-package name="PSS_WEIGHT" value="40" />
+    <designated-package name="BG_TIME_WEIGHT" value="10" />
+    <designated-package name="RATE_WEIGHT" value="40" />
+
+    <!-- 8. 回收访问频次低于阈值且age大于阈值的region -->
+    <designated-package name="RECLAIM_FREQ" value="0" />
+    <designated-package name="COLD_REGION_TIME_THRESHOLD" value="60" />
+
+    <!-- 9. 应用启动到用户点击时间阈值，超时不采样 -->
+    <designated-package name="USER_ACTIVITY_SCHEDULE_TIME_MS" value="30000" />
+</contents>

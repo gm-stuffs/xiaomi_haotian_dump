@@ -1,0 +1,53 @@
+{
+    "title": "PreSet壁纸",
+    "titleResId": "wallpaper_group_crystallization_title",
+    "subtitleResId": "wallpaper_group_crystallization_subtitle",
+    "slideCount": 4,
+    "randomOrder": false,
+    "wallpapers": [
+        {
+            "thumbPath": "/system/media/wallpaper/ai_wallpaper/136bc762-88b0-46c8-a85f-9d28cfd3329d.jpg",
+            "originPath": "",
+            "type": "videowallpaper",
+            "previewPath": "https://thm.w.xk.miui.com/0b7fcbfea35b0b6af70e4acd7b2cc710",
+            "downloadPath": "https://f7.market.xiaomi.com/download/ThemeMarket/06b58c4ddb09f4aa7abe7f0addedef37cacaa51b6",
+            "fileSizeInKB": "3009883",
+            "productUuid": "136bc762-88b0-46c8-a85f-9d28cfd3329d",
+            "onlineId": "6669fb82-30a6-438e-85a8-ed3f5a7c3a04",
+            "localPath":"/system/media/wallpaper/ai_wallpaper/136bc762-88b0-46c8-a85f-9d28cfd3329d.mp4"
+        },
+        {
+            "thumbPath": "/system/media/wallpaper/ai_wallpaper/5f37d2df-6e9c-4583-8d46-906b83566028.jpg",
+            "originPath": "",
+            "type": "videowallpaper",
+            "previewPath": "https://thm.w.xk.miui.com/9fd3788d8c5d2e7f82055044d807286e",
+            "downloadPath": "https://f8.market.xiaomi.com/download/ThemeMarket/0505868ef395e4a68adbc84c6959e889bca5e17b7",
+            "fileSizeInKB": "1088067",
+            "productUuid": "5f37d2df-6e9c-4583-8d46-906b83566028",
+            "onlineId": "5efe47b6-90c5-4178-950e-11d0a128fc23",
+            "localPath":"/system/media/wallpaper/ai_wallpaper/5f37d2df-6e9c-4583-8d46-906b83566028.mp4"
+        },
+        {
+            "thumbPath": "/system/media/wallpaper/ai_wallpaper/3f04f2c2-a6d7-4385-a47e-9c50f5d91ddf.jpg",
+            "originPath": "",
+            "type": "videowallpaper",
+            "previewPath": "https://thm.w.xk.miui.com/2046e29bb9ef47e6b43471350e3687cf",
+            "downloadPath": "https://f7.market.xiaomi.com/download/ThemeMarket/0c7897bd7a252400eb0c9fd160e00b73daef06e4e",
+            "fileSizeInKB": "7829439",
+            "productUuid": "3f04f2c2-a6d7-4385-a47e-9c50f5d91ddf",
+            "onlineId": "28ae111e-4a06-4732-b020-75ebefd40930",
+            "localPath":"/system/media/wallpaper/ai_wallpaper/3f04f2c2-a6d7-4385-a47e-9c50f5d91ddf.mp4"
+        },
+        {
+            "thumbPath": "/system/media/wallpaper/ai_wallpaper/23253ffc-4bc1-40e1-a350-fa9da629e698.jpg",
+            "originPath": "",
+            "type": "videowallpaper",
+            "previewPath": "https://thm.w.xk.miui.com/786b277fddefd634f8bc9c441ac5afb0",
+            "downloadPath": "https://f8.market.xiaomi.com/download/ThemeMarket/0e44226ed739e4444a43ef83584c53d4ad8532705",
+            "fileSizeInKB": "1267399",
+            "productUuid": "23253ffc-4bc1-40e1-a350-fa9da629e698",
+            "onlineId": "be29dc4e-cffc-4cea-a83b-7b5fb15d2580",
+            "localPath":"/system/media/wallpaper/ai_wallpaper/23253ffc-4bc1-40e1-a350-fa9da629e698.mp4"
+        }
+    ]
+}

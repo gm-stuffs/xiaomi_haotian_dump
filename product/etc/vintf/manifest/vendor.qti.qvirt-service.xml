@@ -1,0 +1,10 @@
+<!--
+    Input:
+        vendor/qcom/proprietary/crosvm-noship/qvirtservice/vendor.qti.qvirt-service.xml
+-->
+<manifest version="8.0" type="framework">
+    <hal format="aidl">
+        <name>vendor.qti.qvirt</name>
+        <fqname>IVirtualizationService/default</fqname>
+    </hal>
+</manifest>
