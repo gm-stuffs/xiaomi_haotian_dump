@@ -1,0 +1,15 @@
+odm/etc/camera/unet.serialized.bin
+bootRE/boot.elf
+modem.img
+recovery.img
+product/priv-app/GmsCore/GmsCore.apk
+product/priv-app/MIUIBrowser/MIUIBrowser.apk
+product/priv-app/NewCall/NewCall.apk
+product/priv-app/MIUIAICR/MIUIAICR.apk
+product/priv-app/MiuiCamera/MiuiCamera.apk
+product/firmware/vm-system/system.img
+product/data-app/MiMediaEditor/MiMediaEditor.apk
+product/data-app/SmartHome/SmartHome.apk
+product/app/TrichromeLibrary64/TrichromeLibrary64.apk
+product/app/VoiceAssistAndroidT/VoiceAssistAndroidT.apk
+system_ext/priv-app/Settings/Settings.apk

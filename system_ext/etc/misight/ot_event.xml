@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<EventRoot version="">
+<Event AppId="31000401732" EventName="unlock" Package="com.xiaomi.security.onetrack" Channel="ot">
+    <Param id="0" name="device" type="string" len="50" />
+</Event>
+<Event AppId="31000401732" EventName="secureboot" Package="com.xiaomi.security.onetrack" Channel="ot">
+    <Param id="0" name="device" type="string" len="50" />
+</Event>
+<Event AppId="31000401732" EventName="debugpolicy" Package="com.xiaomi.security.onetrack" Channel="ot">
+    <Param id="0" name="device" type="string" len="50" />
+</Event>
+<Event AppId="31000401732" EventName="RootKeyOp" Package="security" Channel="ot">
+    <Param id="0" name="Operation" type="string" len="50" />
+    <Param id="1" name="Success" type="bool" />
+</Event>
+<Event AppId="31000401732" EventName="SecAppReg" Package="security" Channel="ot">
+    <Param id="0" name="appName" type="string" len="50" />
+    <Param id="1" name="Success" type="bool" />
+</Event>
+<Event AppId="31000401732" EventName="SecAppAuth" Package="security" Channel="ot">
+    <Param id="0" name="appName" type="string" len="50" />
+    <Param id="1" name="Success" type="bool" />
+</Event>
+<Event AppId="31000401732" EventName="SecAppLogout" Package="security" Channel="ot">
+    <Param id="0" name="appName" type="string" len="50" />
+    <Param id="1" name="Success" type="bool" />
+</Event>
+<Event AppId="31000401869" EventName="LockCredential_enable" Package="security" Channel="ot">
+    <Param id="0" name="LockCredential_set" type="bool"/>
+</Event>
+<Event AppId="31000401869" EventName="weaver_invalid" Package="security" Channel="ot">
+    <Param id="0" name="weaver_invalid" type="bool"/>
+</Event>
+<Event AppId="31000401973" EventName="OpenSecCam" Package="com.xiaomi.trustservice" Channel="ot">
+    <Param id="0" name="CallerPackageName" type="string"/>
+    <Param id="1" name="CallTimes" type="int"/>
+</Event>
+</EventRoot>

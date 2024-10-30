@@ -1,0 +1,14 @@
+# missi-user 15 AQ3A.240812.002 OS2.0.12.0.VOBCNXM release-keys
+- manufacturer: xiaomi
+- platform: sun
+- codename: haotian
+- flavor: missi-user
+- release: 15
+- id: AQ3A.240812.002
+- incremental: OS2.0.12.0.VOBCNXM
+- tags: release-keys
+- fingerprint: Xiaomi/haotian/haotian:15/AQ3A.240812.002/OS2.0.12.0.VOBCNXM:user/release-keys
+- is_ab: true
+- brand: Xiaomi
+- branch: missi-user-15-AQ3A.240812.002-OS2.0.12.0.VOBCNXM-release-keys
+- repo: xiaomi_haotian_dump

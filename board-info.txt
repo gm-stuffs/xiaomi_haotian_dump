@@ -1,0 +1,2 @@
+require version-trustzone=TZ.XF.5.29-00052-PAKALA-1.80988.6
+require version-vendor=1729875620

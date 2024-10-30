@@ -1,0 +1,28 @@
+#!
+# @file gpp_app_list
+#
+# @cr
+# Copyright (c) 2023 Qualcomm Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary  Qualcomm Technologies, Inc.
+# @services
+#
+# game package name, there must be no extra spaces at the end of each line
+com.tencent.tmgp.pubgmhd
+com.tencent.tmgp.pubgm
+com.happyelements.AndroidAnimal
+com.tencent.tmgp.sgame
+com.miHoYo.Yuanshen
+com.YourCompany.RealisticRendering
+com.miHoYo.enterprise.NGHSoD
+com.tencent.tmgp.cod
+com.tencent.tmgp.speedmobile
+com.miHoYo.ys.mi
+com.miHoYo.hkrpg
+com.tencent.jkchess
+com.tencent.KiHan
+com.tencent.lolm
+com.tencent.tmgp.cf
+com.tencent.mf.uam
+com.netease.party.mi
+com.miHoYo.Nap

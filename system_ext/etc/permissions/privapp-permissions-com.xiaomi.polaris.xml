@@ -1,0 +1,6 @@
+<permissions>
+    <privapp-permissions package="com.xiaomi.gnss.polaris">
+        <permission name="android.permission.CHANGE_DEVICE_IDLE_TEMP_WHITELIST" />
+        <permission name="android.permission.LOCATION_HARDWARE"/>
+    </privapp-permissions>
+</permissions>

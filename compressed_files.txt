@@ -1,0 +1,5 @@
+bootRE/boot.elf.xz
+modem.img.xz
+recovery.img.xz
+product/priv-app/MiuiCamera/MiuiCamera.apk.xz
+product/firmware/vm-system/system.img.xz
