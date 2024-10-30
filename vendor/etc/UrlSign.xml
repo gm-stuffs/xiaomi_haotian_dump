@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CitUrlCheckConfig>
+    <!-- Notice the secret key: provision_sign_rsa, KeyFactory - RSA, Signature - MD5withRSA -->
+    <UrlConfig device_name="device_name">
+        <prop sign_name="device_sign">sign</prop>
+        <internal>https://hr.mioffice.cn/</internal>
+        <internalsign>Kt0a9x3wPUFKHI/K4V+LcY+SSfIQDfdDWjDDVQwU898Ma47NpsCtWmKRNkKMqZpfxanZFxKRl0/YX6HgT+ELKf4sJX1eSPO2aWbYqXp88Pmsbtn9lreSFn26XGsjOzOAkOzAS4l3TWaYhTDpWqVMmQjDsQozK1w2U+a0L7gJLgI=</internalsign>
+        <cpuid>https://port.sec.miui.com/mqsas/biz/getSecCode?cpuId</cpuid>
+        <cpuidsign>hPEKXnfW7wCdzBoja41uMPV9wVOFcNHdcpSPqqBTWV6rs7hDxaz3B2mTuDyaR9338va1FKrqR9TgmTqCbdOeDKTrdN4iqlWaA2//qKkvo/WupG9MoguTsOyQZ674xrmsuewYfvSTkxsC3Q+tLr3YRJHwUZv3lmvgz3NCD2fW+s4=</cpuidsign>
+        <cpuid_new>https://kumiho.pt.xiaomi.com/mtb?check</cpuid_new>
+        <cpuid_newsign>dWjxaWfdbSMzOot6DxA3qZXAEOAsgzmsBZRcQ5bWBuzplK9kZqoUvIzRDr3vPnM2Ohfvuj4K+oe5z0c59menIyyoA7Qn4vXfr53XlLOiqW5RUOBTOFhb9d19G8WQWVXq4aZEzSKlLCxbzLri0sJQ1W4bPWmukSraWZ6k9E5nh5+xA8M4DmkoUFkVScs5GPcWLDFhUo4b+oMSNl3obu3RUARpfszD3WEAXbNBxhACd6/OarcH5JjdTgCtsSK6S5/+eFKZCbOCXiYoobuMJdo9EN2HYqi0BGCgu9MvUgD+rWgrEN3dTCAxEYKPY2Vg+3iLGafKEfVq9868EnutKGYCXg==</cpuid_newsign>
+        <msg>https://kumiho.pt.xiaomi.com/mtb?msg</msg>
+        <msgsign>KpKhCOaasFoGRJjgGaVtne20fGuWP0UxqEV8oKyXfizDIZ7kGptBe8bfP7wKQydLW3ha57Mchh2+kQteWEGeMaluB5J2FLuhAyVAxU/nTnR0p10mpiRsgqM54nXDImBQGoKfzfD6p7p2IgtpGtKKoIkVvU3axa/fr8d587oqXM6iZ2LRa5ndWz/kw/foO7dlw7BKv2GUPPZXSqJP2qs0oJ+DZ/9a1b+r0LczDpvPnqUg48cTQmYD/ikOCklq/5nHOgwpU5Jg5ViQ1XWHMMG9XheV6UaVc3FGRMrscbXqwyEg9bm6fzw9MSTFJtQ7qRXFXN/jKKmAy0PKVdVlxvYj1w==</msgsign>
+    </UrlConfig>
+</CitUrlCheckConfig>

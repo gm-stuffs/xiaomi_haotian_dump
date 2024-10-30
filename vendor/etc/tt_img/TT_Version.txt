@@ -1,0 +1,15 @@
+##################################################################################################
+Date              Source file name                                             Target file name
+
+2024/07/01        PKG_DualM_E1_V1.1_AMT_20240627100758.pkg                     No_Signal.pkg
+2024/07/01        PKG_HLS_4in1_Dual-S_20240613180848.pkg                       Signal.pkg
+
+2024/07/16        PKG_V1.6_AMT_20240711142649.pkg                              No_Signal.pkg
+2024/07/16        PKG_HLS_DUAL_XM_O2T_CLPC_20240709150831.pkg                  Signal.pkg
+
+2024/07/26        PKG_V1.9_AMT_20240726155322.pkg                              No_Signal.pkg
+2024/07/26        PKG_HLS_DUAL_XM_O2T_20240708143046.pkg                       Signal.pkg
+
+2024/08/07        PKG_V1.10_AMT_20240802171243.pkg                             No_Signal.pkg
+
+2024/08/21        PKG_V1.11_AMT_20240815163746.pkg                             No_Signal.pkg

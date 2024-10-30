@@ -1,0 +1,150 @@
+{
+    "CLUSTER_NUMS" : ["3"],
+    "THERMAL_LEVELS" : ["4"],
+    "CLUSTER_OPCODE_INFO" : [
+        "0, 0x40804100, 0x40800100",
+        "1, 0x40804000, 0x40800000",
+        "2, 0x40804200, 0x40800200"
+    ],
+    "GPU_OPCODE_INFO" : ["0x42808000"],
+    "thermal_level": {
+        "cluster0": [
+            [2265, 2265],
+            [1689, 2265],
+            [1132, 1920],
+            [1017, 1689]
+        ],
+        "cluster1": [
+            [3148, 3148],
+            [2841, 3148],
+            [2035, 2956],
+            [2035, 2841]
+        ],
+        "cluster2": [
+            [3052, 3052],
+            [2688, 3052],
+            [2035, 2937],
+            [2035, 2688]
+        ],
+        "gpu": [
+            [2],
+            [3],
+            [4],
+            [5]
+        ]
+    },
+    "perf_params": {
+        "mivi_snapshot_capture": [
+            "0x40400000, 1,          //MPCTLV3_ALL_CPUS_PWR_CLPS_DIS, 1",
+            "0x40C00000, 1,          //MPCTLV3_SCHED_BOOST, 0x1",
+            "0x40804100, 2265,       //MPCTLV3_MAX_FREQ_CLUSTER_LITTLE_CORE_0, 2265",
+            "0x40800100, 1689,       //MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0, 1689",
+            "0x40804000, 3148,       //MPCTLV3_MAX_FREQ_CLUSTER_BIG_CORE_0, 3148",
+            "0x40800000, 2841,       //MPCTLV3_MIN_FREQ_CLUSTER_BIG_CORE_0, 2841",
+            "0x40804200, 3187,       //MPCTLV3_MAX_FREQ_CLUSTER_PLUS_CORE_0, 3187",
+            "0x40800200, 2688,       //MPCTLV3_MIN_FREQ_CLUSTER_PLUS_CORE_0, 2688",
+            "0x40804300, 3148,       //MPCTLV3_MAX_FREQ_CLUSTER_TITANIUM_CORE_0, 3148",
+            "0x40800300, 2841,       //MPCTLV3_MIN_FREQ_CLUSTER_TITANIUM_CORE_0, 2841",
+            "0x42808000, 2,          //MPCTLV3_GPU_MAX_POWER_LEVEL, 0x2",
+            "0x43C1C100, 2265600,    //MPCTLV3_SCHED_FMAX_CAP_LITTLE, 2265600",
+            "0x43C1C000, 3148800,    //MPCTLV3_SCHED_FMAX_CAP_BIG, 3148800",
+            "0x43C1C300, 2956800,    //MPCTLV3_SCHED_FMAX_CAP_TITANIUM, 2956800",
+            "0x43C28000, 4096,       //MPCTLV3_CPUCTL_TOPAPP_CPUSHARE, 4096",
+            "0x43C24000, 4096,       //MPCTLV3_CPUCTL_CAMERA_CPUSHARE, 4096",
+            "0x5FC00000, 127,        //MPCTLV3_XIAOMI_KSWAPD_AFFINITY, 0x7F",
+            "0x5FC04000, 127,        //MPCTLV3_XIAOMI_KCOMPACTD_AFFINITY, 0x7F",
+            "0x43498000, 4224000,    //MPCTLV3_BUS_DCVS_LLCC_DDR_BOOST_FREQ, 4224000",
+            "0x4349C000, 2035200,    //MPCTLV3_BUS_DCVS_LLCC_L3_BOOST_FREQ, 2035200",
+            "0x434A0000, 1066000,    //MPCTLV3_BUS_DCVS_LLCC_LLCC_BOOST_FREQ, 1066000",
+            "0x43C2C000, 512,        //MPCTLV3_CPUCTL_BACKGROUND_CPUSHARE, 512"
+        ],
+        "mivi_infinity_HQquickshot": [
+            "0x40400000, 1,          //MPCTLV3_ALL_CPUS_PWR_CLPS_DIS, 1",
+            "0x40C00000, 1,          //MPCTLV3_SCHED_BOOST, 0x1",
+            "0x40804100, 2035,       //MPCTLV3_MAX_FREQ_CLUSTER_LITTLE_CORE_0, 2035",
+            "0x40800100, 1574,       //MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0, 1574",
+            "0x40804000, 2899,       //MPCTLV3_MAX_FREQ_CLUSTER_BIG_CORE_0, 2899",
+            "0x40800000, 2515,       //MPCTLV3_MIN_FREQ_CLUSTER_BIG_CORE_0, 2515",
+            "0x40804200, 2995,       //MPCTLV3_MAX_FREQ_CLUSTER_PLUS_CORE_0, 2995",
+            "0x40800200, 2688,       //MPCTLV3_MIN_FREQ_CLUSTER_PLUS_CORE_0, 2688",
+            "0x40804300, 2956,       //MPCTLV3_MAX_FREQ_CLUSTER_TITANIUM_CORE_0, 2956",
+            "0x40800300, 2841,       //MPCTLV3_MIN_FREQ_CLUSTER_TITANIUM_CORE_0, 2841",
+            "0x42808000, 3,          //MPCTLV3_GPU_MAX_POWER_LEVEL, 0x3",
+            "0x43C1C100, 2265600,    //MPCTLV3_SCHED_FMAX_CAP_LITTLE, 2265600",
+            "0x43C1C000, 3148800,    //MPCTLV3_SCHED_FMAX_CAP_BIG, 3148800",
+            "0x43C1C300, 2956800,    //MPCTLV3_SCHED_FMAX_CAP_TITANIUM, 2956800",
+            "0x43C28000, 4096,       //MPCTLV3_CPUCTL_TOPAPP_CPUSHARE, 4096",
+            "0x43C24000, 4096,       //MPCTLV3_CPUCTL_CAMERA_CPUSHARE, 4096",
+            "0x5FC00000, 127,        //MPCTLV3_XIAOMI_KSWAPD_AFFINITY, 0x7F",
+            "0x5FC04000, 127,        //MPCTLV3_XIAOMI_KCOMPACTD_AFFINITY, 0x7F",
+            "0x43498000, 4224000,    //MPCTLV3_BUS_DCVS_LLCC_DDR_BOOST_FREQ, 4224000",
+            "0x4349C000, 2035200,    //MPCTLV3_BUS_DCVS_LLCC_L3_BOOST_FREQ, 2035200",
+            "0x434A0000, 1066000,    //MPCTLV3_BUS_DCVS_LLCC_LLCC_BOOST_FREQ, 1066000",
+            "0x43C2C000, 512,        //MPCTLV3_CPUCTL_BACKGROUND_CPUSHARE, 512"
+        ],
+        "mivi_snapshot_capture_thermal": [
+            "0x40400000, 1,          //MPCTLV3_ALL_CPUS_PWR_CLPS_DIS, 1",
+            "0x40C00000, 1,          //MPCTLV3_SCHED_BOOST, 0x1",
+            "0x40804100, 2265,       //MPCTLV3_MAX_FREQ_CLUSTER_LITTLE_CORE_0, 2265",
+            "0x40800100, 1689,       //MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0, 1689",
+            "0x40804000, 3148,       //MPCTLV3_MAX_FREQ_CLUSTER_BIG_CORE_0, 3148",
+            "0x40800000, 2841,       //MPCTLV3_MIN_FREQ_CLUSTER_BIG_CORE_0, 2841",
+            "0x40804200, 3187,       //MPCTLV3_MAX_FREQ_CLUSTER_PLUS_CORE_0, 3187",
+            "0x40800200, 2688,       //MPCTLV3_MIN_FREQ_CLUSTER_PLUS_CORE_0, 2688",
+            "0x40804300, 3148,       //MPCTLV3_MAX_FREQ_CLUSTER_TITANIUM_CORE_0, 3148",
+            "0x40800300, 2841,       //MPCTLV3_MIN_FREQ_CLUSTER_TITANIUM_CORE_0, 2841",
+            "0x42808000, 3,          //MPCTLV3_GPU_MAX_POWER_LEVEL, 0x3",
+            "0x43C1C100, 2265600,    //MPCTLV3_SCHED_FMAX_CAP_LITTLE, 2265600",
+            "0x43C1C000, 3148800,    //MPCTLV3_SCHED_FMAX_CAP_BIG, 3148800",
+            "0x43C1C300, 2956800,    //MPCTLV3_SCHED_FMAX_CAP_TITANIUM, 2956800",
+            "0x43C28000, 4096,       //MPCTLV3_CPUCTL_TOPAPP_CPUSHARE, 4096",
+            "0x43C24000, 4096,       //MPCTLV3_CPUCTL_CAMERA_CPUSHARE, 4096",
+            "0x5FC00000, 127,        //MPCTLV3_XIAOMI_KSWAPD_AFFINITY, 0x7F",
+            "0x5FC04000, 127,        //MPCTLV3_XIAOMI_KCOMPACTD_AFFINITY, 0x7F",
+            "0x43498000, 4224000,    //MPCTLV3_BUS_DCVS_LLCC_DDR_BOOST_FREQ, 4224000",
+            "0x4349C000, 2035200,    //MPCTLV3_BUS_DCVS_LLCC_L3_BOOST_FREQ, 2035200",
+            "0x434A0000, 1066000,    //MPCTLV3_BUS_DCVS_LLCC_LLCC_BOOST_FREQ, 1066000",
+            "0x43C2C000, 512,        //MPCTLV3_CPUCTL_BACKGROUND_CPUSHARE, 512"
+        ],
+        "mivi_snapshot_capture_bokeh": [
+            "0x40400000, 1,          //MPCTLV3_ALL_CPUS_PWR_CLPS_DIS, 1",
+            "0x40800100, 1132,       //MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0, 0x46c",
+            "0x40800000, 1363,       //MPCTLV3_MIN_FREQ_CLUSTER_BIG_CORE_0, 0x553",
+            "0x40800300, 1363,       //MPCTLV3_MIN_FREQ_CLUSTER_TITANIUM_CORE_0, 0x553",
+            "0x43C1C100, 2265600,    //MPCTLV3_SCHED_FMAX_CAP_LITTLE, 2265600",
+            "0x43C1C000, 3148800,    //MPCTLV3_SCHED_FMAX_CAP_BIG, 3148800",
+            "0x43C1C300, 2956800,    //MPCTLV3_SCHED_FMAX_CAP_TITANIUM, 2956800",
+            "0x40CE0000, 1310750,    //MPCTLV3_SCHED_UP_DOWN_MIGRATE_LITTLE, 0x0014001E",
+            "0x41450000, 100,        //MPCTLV3_TARGET_LOAD_THRESH_CLUSTER_BIG, 100",
+            "0x41450100, 100,        //MPCTLV3_TARGET_LOAD_THRESH_CLUSTER_LITTLE, 100",
+            "0x41450200, 100,        //MPCTLV3_TARGET_LOAD_THRESH_CLUSTER_PRIME, 100",
+            "0x41450300, 100,        //MPCTLV3_TARGET_LOAD_THRESH_CLUSTER_TITAN, 100",
+            "0x5FC00000, 127,        //MPCTLV3_XIAOMI_KSWAPD_AFFINITY, 0x7F",
+            "0x5FC04000, 127,        //MPCTLV3_XIAOMI_KCOMPACTD_AFFINITY, 0x7F"
+        ],
+        "mivi_snapshot_capture_hdr": [
+            "0x5FC00000, 127,        //MPCTLV3_XIAOMI_KSWAPD_AFFINITY, 0x7F",
+            "0x5FC04000, 127,        //MPCTLV3_XIAOMI_KCOMPACTD_AFFINITY, 0x7F"
+        ],
+        "mivi_reset_platforms": [
+            "0X42808000, 11,         //MPCTLV3_GPU_MAX_POWER_LEVEL, 0xB",
+            "0X42804000, 11,         //MPCTLV3_GPU_MIN_POWER_LEVEL, 0xB"
+        ],
+        "camera_open_sched": [
+            "0x40C40000, 0x7F,       //MPCTLV3_SCHED_CPUSET_FOREGROUND,        0-6",
+            "0x5FC8C000, 60,         //MPCTLV3_MEMCG_SWAPPINESS_CAMERA_PROVIDER 60"
+        ],
+        "camera_topapp_boost": [
+            "0x43C3C000, 4096,       //MPCTLV3_CPUCTL_TOPAPP_CPUSHARE,          4096"
+        ],
+        "camera_background_limit": [
+            "0x43C40000, 512,        //MPCTLV3_CPUCTL_BACKGROUND_CPUSHARE,      512"
+        ],
+        "camera_provider_high_level_boost": [
+            "0x43C38000, 4096,       //MPCTLV3_CPUCTL_CAMERA_CPUSHARE,          4096"
+        ],
+        "camera_provider_middle_level_boost": [
+            "0x43C38000, 2048,       //MPCTLV3_CPUCTL_CAMERA_CPUSHARE,          2048"
+        ]
+    }
+}

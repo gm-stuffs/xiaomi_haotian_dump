@@ -1,0 +1,121 @@
+{
+    "xrcomm": {
+        "services_available": "networking, discovery, wirelesslinkconfig",
+        "services": {
+            "timer": {
+                "needNotifications": true,
+                "launchAtStart": false,
+                "enabled": false
+            },
+            "dpqa": {
+                "needNotifications": true,
+                "launchAtStart": true,
+                "enabled": false,
+                "statsforeveryframe": true,
+                "totalFramesForStats": 5,
+                "statsSkipTimeMs": 3000,
+                "totalFramesForIQR": 240,
+                "outlierDetectionEnabled": true,
+                "syncStatsWithRemote": false,
+                "remoteStatsEnabled": false
+            },
+            "networking": {
+                "needNotifications": true,
+                "launchAtStart": false,
+                "enabled": true,
+                "usesplice": true,
+                "enableKPI": false,
+                "send": {
+                    "singlethread": false
+                },
+                "recv": {
+                    "usethread": false,
+                    "singlethread": true
+                },
+                "trafficshaping" : {
+                    "enabled" : true,
+                    "portGroups": "group1, group2",
+                    "group1" : {
+                        "ports"             : "6000, 7000, 7002, 7004, 7005",
+                        "clusterType"       : "SP_START",
+                        "enableOverlooking" : true,
+                        "enableClustering"  : true,
+                        "waitTimeout"       : 25000
+                    },
+                    "defaultGroup" : {
+                        "clusterType"       : "TX_START",
+                        "enableOverlooking" : true,
+                        "enableClustering"  : false,
+                        "waitTimeout"       : 22222
+                    }
+                }
+            },
+            "trafficshaper": {
+                "needNotifications": true,
+                "launchAtStart": true,
+                "enabled": false,
+                "schedulerType": "rsync",
+                "latencyToleranceMs": 2,
+                "RtxFrequencyHz": 45,
+                "useWifiTWT": true,
+                "twtServicePeriod": 5000,
+                "SyncToSPOffset": 1000,
+                "SignalValidityTime":5000,
+                "ClusteringTimeout": 0,
+                "RSyncOffset": 0,
+                "startDelayCycles": 135,
+                "scheduleUpdateInterval": 16
+            },
+            "discovery": {
+                "needNotifications": true,
+                "launchAtStart": false,
+                "enabled": true,
+                "deviceName" : "Pakala",
+                "deviceMode": "host_smart",
+                "interfaceName": "wlan2",
+                "deviceDiscoveryPort": 15562,
+                "heartbeatPort": 15560,
+                "heartbeatInterval": 400,
+                "heartbeatProbes": 3,
+                "discoveryCountsMax" : 20
+            },
+            "discovery2": {
+                "needNotifications": true,
+                "launchAtStart": true,
+                "enabled": false
+            },
+            "wirelesslinkconfig": {
+                "needNotifications": false,
+                "launchAtStart": false,
+                "enabled": true,
+                "wlanXRLatencyMode": 2,
+                "wlanNormalLatencyMode": 1,
+                "wlanEnableTsf": true,
+                "wlanTsfSyncInterval": 3000,
+                "wlanSetRatemask": "0x003FC0FF",
+                "wlanOriginalRatemask": "0xFFFFFFFF",
+                "disableRRA": false,
+                "wpaifPath": "/data/vendor/wifi/hostapd/ctrl",
+                "wlanUnitTestTargetNode": "/sys/class/net"
+            }
+        },
+        "log": {
+            "level":67
+        },
+        "connection": {
+            "remoteIpcUseUDP": true,
+            "remoteIpcTcpPort": 15557,
+            "remoteIpcHmdUdpRxPort": 7009,
+            "remoteIpcHmdUdpTxPort": 7010
+        },
+        "wpacli": {
+            "ap": {
+                "ifctrlpath":"/data/vendor/wifi/hostapd/ctrl/wlan2"
+            },
+            "sta": {
+                "ifctrlpath":"/var/run/wpa_supplicant/wlan0"
+            }
+        }
+    }
+}
+
