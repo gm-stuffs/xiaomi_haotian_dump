@@ -1,0 +1,26 @@
+<permissions>
+    <signature-permissions package="com.miui.miwallpaper.moon">
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+        <permission name="android.permission.BROADCAST_OPTION_INTERACTIVE"/>
+    </signature-permissions>
+    <signature-permissions package="com.miui.miwallpaper.snowmountain">
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+        <permission name="android.permission.BROADCAST_OPTION_INTERACTIVE"/>
+    </signature-permissions>
+    <signature-permissions package="com.miui.miwallpaper.earth">
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+        <permission name="android.permission.BROADCAST_OPTION_INTERACTIVE"/>
+    </signature-permissions>
+    <signature-permissions package="com.miui.miwallpaper.mars">
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+        <permission name="android.permission.BROADCAST_OPTION_INTERACTIVE"/>
+    </signature-permissions>
+    <signature-permissions package="com.miui.miwallpaper.geometry">
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+        <permission name="android.permission.BROADCAST_OPTION_INTERACTIVE"/>
+    </signature-permissions>
+    <signature-permissions package="com.miui.miwallpaper.saturn">
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+        <permission name="android.permission.BROADCAST_OPTION_INTERACTIVE"/>
+    </signature-permissions>
+</permissions>
