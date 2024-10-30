@@ -1,0 +1,63 @@
+{
+	"Type": "Config",
+	"TrueSight": [
+		{
+			"Mode": "Capture",
+			"UseFor": "Initialize",
+			"Face": {
+				"EnableNPU": false,
+				"EnableStandaloneThread": false,
+				"EnableInnerFD": false,
+				"MaxFaceCount": 3,
+				"FaceboxAdjustType": 2,
+				"EnableMouthMask": true,
+				"EnableMouthRobost": true,
+				"EnableEyeRobost": true,
+				"EnableForehead": true,
+				"EnableFaceParsing": false,
+				"EnableFace3D": false,
+				"NumThread": 1,
+				"ModeThread": 0,
+				"EnableGender": false,
+				"EnableAgeDivide": false,
+				"EnableAge": false
+			},
+			"XReality": {
+				"E2E": {
+					"E2EWarp":2,
+					"EnableE2Eacne": true,
+					"EnableE2EskinUnify": true,
+					"EnableE2Ewrinkle": true,
+					"EnableE2Eeyebrow": true,
+					"EnableE2Egrease": false,
+					"EnableE2Eneckline": true,
+					"EnableE2Eskintuner": true,
+					"EnableE2E2EacneLight": false,
+					"EnableE2Edimple": true,
+					"EnableE2Efaceparsing": true,
+					"EnableFaceRetouch": true,
+					"E2EacneHardwareAccelerationType": 1,
+					"E2EskinUnifyHardwareAccelerationType": 1,
+					"E2EwrinkleHardwareAccelerationType": 1,
+					"E2EeyebrowHardwareAccelerationType": 1,
+					"E2EgreaseHardwareAccelerationType": 1,
+					"E2EnecklineHardwareAccelerationType": 1,
+					"E2EskintunerHardwareAccelerationType": 1,
+					"E2EacneLightHardwareAccelerationType": 1
+				},
+				"FaceRetouch": {
+					"EnableFaceRetouch": true
+				}
+			}
+		},
+		{
+			"Mode": "Capture",
+			"UseFor": "Runtime",
+			"Face": {
+				"EnableGender": false,
+				"EnableAge": false,
+				"EnableFaceParsing": false
+			}
+		}
+	]
+}

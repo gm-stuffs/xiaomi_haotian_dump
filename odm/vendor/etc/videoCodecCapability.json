@@ -1,0 +1,18 @@
+{
+    "VideoFeatures": {
+        "Dolby_Vision_Playback" : true,
+        "Dolby_Vision_Capture" : true,
+        "HDR10_Decoder" : true,
+        "HDR10_Encoder" : true,
+        "HDR10Plus_Decoder" : true,
+        "HDR10Plus_Encoder" : true,
+        "HDRVivid_Decoder" : true,
+        "HDRVivid_Encoder" : true,
+        "SDR_P3_Decoder" : true,
+        "SDR_P3_Encoder" : true,
+        "CineLook_Transfer" : true,
+        "Dolby_Transfer" : true,
+        "Heif_Decoder" : true,
+        "Heif_Encoder" : true
+    }
+}

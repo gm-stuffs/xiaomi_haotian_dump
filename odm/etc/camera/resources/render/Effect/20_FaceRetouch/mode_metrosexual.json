@@ -1,0 +1,70 @@
+{
+	"##":"型男模式",
+	"Type":"Effect",
+	"ExtraOption":
+	{
+		"RetouchFactorType": 0
+	},
+	"TrueSight":
+	[
+		{
+			"ConfigurePath":"Effects/0_Spotless/effect_default.json",
+			"Index":0,
+			"Mode":"Preview"
+		},
+		{
+			"ConfigurePath":"Effects/6_ModeMetrosexual/effect_preview.json",
+			"Index":1,
+			"Mode":"Preview"
+		},
+		{
+			"Index":2,
+			"Mode":"Capture",
+			"FaceRetouchEngine":
+			{
+				"Enable":true,
+				"PortraitureSwitch": true,
+				"DefaultDegree":0.0,
+				"ParamFlag":1,
+				"DegreeParam": {
+					"FemaleFactor": 1.0,
+					"MaleFactor": 1.0,
+					"ChildFactor": 1.0,
+					"YouthFactor": 1.0,
+					"ElderlyFactor": 1.0,
+					"OlderFactor": 1.0,
+					"RuleType": 0,
+					"DegreeFactor": 1.0,
+					"NonlinearUIData": [
+						0.0,
+						1.0
+					],
+					"NonlinearValueData": [
+						0.0,
+						1.0
+					]
+				},
+		        "NonFaceFactor": 0.5,
+		        "FaceRatioThreshold": 0.04,
+		        "SmallFaceFactor": 0.6,
+				"Portraiture_Fine": 0,
+				"Portraiture_Medium": 0,
+				"Portraiture_Large": 0,
+				"Portraiture_Threshold": 32,
+				"Portraiture_Size": 0,
+				"BodySkinTunerSwitch":true
+			}
+		},
+		{
+			"Index":3,
+			"Mode":"Capture",
+			"ManualSpotless":
+			{
+				"BlackHead":
+				{
+					"Enable":false
+				}
+			}
+		}
+	]
+}

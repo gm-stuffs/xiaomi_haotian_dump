@@ -1,0 +1,4 @@
+service vendor.micrtkd /odm/bin/micrtkd
+    class hal
+    user system
+    group system shell

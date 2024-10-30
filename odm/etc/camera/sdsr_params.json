@@ -1,0 +1,367 @@
+{
+    "sdsr": {
+		"phone_version":"O2",
+		"model_version":"1.6.6.10",
+		"hdr":"true",
+		"resize":"false",
+		"qgan_size":[1536, 2048, 3],
+		"sgan_size":[1024, 1368, 3],
+		"sngan_size":[1024, 1368, 3],
+		"fd_size": [320, 320, 3],
+		"colorfix_size": [1024, 1365, 3],
+		"unet_input_scale":[0.0004095532640349,
+							0.0000305166104226,
+							0.0003831683134194,
+							0.0006504658376798],
+		"unet_input_offset":[-38977,
+							 -32768,
+							 -39053,
+							 -26525],
+		"fd_output_scale":[0.0000152587890625,
+							0.0071742893196642,
+							0.0000380998062610],
+		"fd_output_offset":[0,
+							0,
+							-33359],
+		"ld_output_scale":[0.0000152587890625,
+						   0.0000152587890625,
+						   0.0000152587890625,
+						   0.0000152587890625,
+						   0.0000122136461869,
+						   0.0000449126055173],
+		"ld_output_offset":[0,
+							0,
+							0,
+							0,
+							-32023,
+							0],
+		"snpe":{
+			"runtime": "dsp",
+			"encrypt":"true",
+			"dlcs": [
+				{
+					"dlc_name":"encoder.serialized.bin",
+					"path_type":0,
+					"input": {
+						"name": "encoder:input_1",
+						"shape": [1,784,1040,16],
+						"offset": 0,
+						"delta": 0.0039215688593686,
+						"encoding": "tf16"
+					},
+					"output": {
+						"name": "encoder:output_1",
+						"shape": [1,784,1040,4],
+						"offset": -36900,
+						"delta": 0.0002559956046753,
+						"encoding": "tf16"
+					},
+					"model_index": 0
+				},
+				{
+					"dlc_name":"unet.serialized.bin",
+					"path_type":1,
+					"input": {
+						"name": "Placeholder:0",
+						"shape": [1, 96, 128, 4],
+						"offset": -32864,
+						"delta": 0.0002640606544446,
+						"encoding": "tf16"
+					},
+					"output": {
+						"name": "unet:output_1",
+						"shape": [1, 96, 128, 4],
+						"offset": 0,
+						"delta": 0.0000171429655893007293343544006347656250,
+						"encoding": "tf16"
+					},
+					"model_index": 1
+				},
+				{
+					"dlc_name":"decoder.serialized.bin",
+					"path_type":1,
+					"input": {
+						"name": "decoder:input_1",
+						"shape": [1,784,1040,16],
+						"offset": -39582,
+						"delta": 0.0004083359090146,
+						"encoding": "tf16"
+					},
+					"output": {
+						"name": "decoder:output_1",
+						"shape": [1,784,1040,4],
+						"offset": 0,
+						"delta": 0.0039215688593686,
+						"encoding": "tf16"
+					},
+					"model_index": 2
+				},
+				{
+					"dlc_name":"bganmwrcan.serialized.bin",
+					"path_type":1,
+					"input": {
+						"name": "Placeholder:0",
+						"shape": [1,784,1040,16],
+						"offset": 0,
+						"delta": 0.0000152590218931436538696289062500000000,
+						"encoding": "tf16"
+					},
+					"output": {
+						"name": "g_conv10/Conv2D:0",
+						"shape": [1,784,1040,4],
+						"offset": 0,
+						"delta": 0.0000152590218931436538696289062500000000,
+						"encoding": "tf16"
+					},
+					"model_index": 3
+				},
+				{
+					"dlc_name":"bganmwrcannight.serialized.bin",
+					"path_type":1,
+					"input": {
+						"name": "Placeholder:0",
+						"shape": [1,784,1040,16],
+						"offset": 0,
+						"delta": 0.0000152590218931436538696289062500000000,
+						"encoding": "tf16"
+					},
+					"output": {
+						"name": "g_conv10/Conv2D:0",
+						"shape": [1,784,1040,4],
+						"offset": 0,
+						"delta": 0.0000152590218931436538696289062500000000,
+						"encoding": "tf16"
+					},
+					"model_index": 4
+				},
+				{
+					"dlc_name":"iqa.serialized.bin",
+					"path_type":0,
+					"input": {
+						"name": "Placeholder:0",
+						"shape": [1,784,1040,16],
+						"offset": 0,
+						"delta": 0.0000152590218931436538696289062500000000,
+						"encoding": "tf16"
+					},
+					"output": {
+						"name": "g_conv10/Conv2D:0",
+						"shape": [1,784,1040,4],
+						"offset": 0,
+						"delta": 0.0000152590218931436538696289062500000000,
+						"encoding": "tf16"
+					},
+					"model_index": 5
+				},
+				{
+					"dlc_name":"fd.serialized.bin",
+					"path_type":0,
+					"input": {
+						"name": "Placeholder:0",
+						"shape": [1,784,1040,16],
+						"offset": 0,
+						"delta": 0.0000152590218931436538696289062500000000,
+						"encoding": "tf16"
+					},
+					"output": {
+						"name": "g_conv10/Conv2D:0",
+						"shape": [1,784,1040,4],
+						"offset": 0,
+						"delta": 0.0000152590218931436538696289062500000000,
+						"encoding": "tf16"
+					},
+					"model_index": 6
+				},
+				{
+					"dlc_name":"colorfix.serialized.bin",
+					"path_type":0,
+					"input": {
+						"name": "Placeholder:0",
+						"shape": [1,784,1040,16],
+						"offset": -37,
+						"delta": 0.0056976955384016,
+						"encoding": "tf16"
+					},
+					"output": {
+						"name": "g_conv10/Conv2D:0",
+						"shape": [1,784,1040,4],
+						"offset": 0,
+						"delta": 0.0039063096046448,
+						"encoding": "tf16"
+					},
+					"model_index": 7
+				},
+				{
+					"dlc_name":"facesr.serialized.bin",
+					"path_type":0,
+					"input": {
+						"name": "Placeholder:0",
+						"shape": [1,784,1040,16],
+						"offset": 0,
+						"delta": 0.0000152590218931436538696289062500000000,
+						"encoding": "tf16"
+					},
+					"output": {
+						"name": "g_conv10/Conv2D:0",
+						"shape": [1,784,1040,4],
+						"offset": 0,
+						"delta": 0.0000152590218931436538696289062500000000,
+						"encoding": "tf16"
+					},
+					"model_index": 8
+				},
+				{
+					"dlc_name":"iqa_256.serialized.bin",
+					"path_type":0,
+					"input": {
+						"name": "Placeholder:0",
+						"shape": [1,784,1040,16],
+						"offset": 0,
+						"delta": 0.0000152590218931436538696289062500000000,
+						"encoding": "tf16"
+					},
+					"output": {
+						"name": "g_conv10/Conv2D:0",
+						"shape": [1,784,1040,4],
+						"offset": 0,
+						"delta": 0.0000152590218931436538696289062500000000,
+						"encoding": "tf16"
+					},
+					"model_index": 9
+				},
+				{
+					"dlc_name":"scenerec.serialized.bin",
+					"path_type":0,
+					"input": {
+						"name": "Placeholder:0",
+						"shape": [1,224,224,3],
+						"offset": -29172,
+						"delta": 0.0000726009602658,
+						"encoding": "tf16"
+					},
+					"output": {
+						"name": "g_conv10/Conv2D:0",
+						"shape": [1,1,1,5],
+						"offset": 0,
+						"delta": 0.0000152587890625,
+						"encoding": "tf16"
+					},
+					"model_index": 10
+				},
+				{
+					"dlc_name":"bganmwrcan20x.serialized.bin",
+					"path_type":1,
+					"input": {
+						"name": "Placeholder:0",
+						"shape": [1,784,1040,16],
+						"offset": 0,
+						"delta": 0.0000152590218931436538696289062500000000,
+						"encoding": "tf16"
+					},
+					"output": {
+						"name": "g_conv10/Conv2D:0",
+						"shape": [1,784,1040,4],
+						"offset": 0,
+						"delta": 0.0000152590218931436538696289062500000000,
+						"encoding": "tf16"
+					},
+					"model_index": 11
+				},
+				{
+					"dlc_name":"bganmwrcan60x.serialized.bin",
+					"path_type":1,
+					"input": {
+						"name": "Placeholder:0",
+						"shape": [1,784,1040,16],
+						"offset": 0,
+						"delta": 0.0000152590218931436538696289062500000000,
+						"encoding": "tf16"
+					},
+					"output": {
+						"name": "g_conv10/Conv2D:0",
+						"shape": [1,784,1040,4],
+						"offset": 0,
+						"delta": 0.0000152590218931436538696289062500000000,
+						"encoding": "tf16"
+					},
+					"model_index": 12
+				},
+				{
+					"dlc_name":"ld106.serialized.bin",
+					"path_type":0,
+					"input": {
+						"name": "Placeholder:0",
+						"shape": [1,112,112,1],
+						"offset": 0,
+						"delta": 0.0000152590218931436538696289062500000000,
+						"encoding": "tf16"
+					},
+					"output": {
+						"name": "g_conv10/Conv2D:0",
+						"shape": [1,7,7,106],
+						"offset": 0,
+						"delta": 0.0000152590218931436538696289062500000000,
+						"encoding": "tf16"
+					},
+					"model_index": 13
+				},
+				{
+					"dlc_name":"humanseg.serialized.bin",
+					"path_type":0,
+					"input": {
+						"name": "Placeholder:0",
+						"shape": [1,512,512,1],
+						"offset": 0,
+						"delta": 0.0000152590218931436538696289062500000000,
+						"encoding": "tf16"
+					},
+					"output": {
+						"name": "g_conv10/Conv2D:0",
+						"shape": [1,7,7,106],
+						"offset": 0,
+						"delta": 0.0000152590218931436538696289062500000000,
+						"encoding": "tf16"
+					},
+					"model_index": 14
+				}
+			]
+		},
+		"node_setting": {
+			"enable_final_color_fix": "false",
+			"enable_wavelet_color_fix": "true",
+			"enable_sgan_sr": "false",
+			"enable_facesr": "true",
+			"enable_input_crop": "false",
+			"enable_pre_blur": "false",
+			"enable_contrast_adjust": "false",
+			"use_contrast_adjust_clahe": "false",
+			"enable_sdsr_blend": "true"
+		},
+		"Threshold":{
+			"check_bypass_mae_threshold": 0.1888,
+			"check_bypass_iqa_model_threshold": 0.5,
+			"check_bypass_iqa_corner_threshold_max": 0.1,
+			"check_bypass_iqa_corner_threshold_min": 0.001,
+			"merge_sdsr_input_ratio": 1,
+			"merge_sdsr_init_latent_ratio": 0,
+			"merge_sgan_input_ratio": 0,
+			"merge_sgan_output_ratio": 0,
+			"fd_output_score_threshold": 0.6,
+			"fd_output_nms_iou": 0.4,
+			"fd_output_area_rate_threshold": 0.1,
+			"fd_mask_cross_rate_threshold": 0.3,
+			"llf_sigma": 0.3,
+			"llf_n": 10.0,
+			"llf_fact": 0.5,
+			"llf_chg_thresh": 0.5,
+			"llf_chg_level": 2.0,
+			"sdsr_alpha":1.0,
+            "zoom_ratio_threshold1":30,
+            "zoom_ratio_threshold2":50,
+            "lux_index_threshold1":300,
+            "lux_index_threshold2":300,
+            "lux_index_threshold3":290
+		}
+	}
+}
+

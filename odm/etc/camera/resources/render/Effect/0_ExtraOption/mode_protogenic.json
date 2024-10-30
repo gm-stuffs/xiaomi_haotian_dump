@@ -1,0 +1,556 @@
+{
+    "##": "原生模式-效果额外选项配置",
+    "Type": "EffectExtraOption",
+    "RetouchFactorType": 0,
+    "UVMapping": true,
+    "##NormalList##": "1. 直接转发外部数值, 2. 若预览和拍后固定值不一样则分开(Preview/Capture/All)",
+    "NormalList": {
+        "All": [
+            10103,
+            300,
+            301,
+            10301,
+            232,
+            203,
+            212,
+            227,
+            204,
+            228,
+            205,
+            213,
+            202
+        ],
+        "Capture": [
+            10200
+        ]
+    },
+    "##FixValueList##": "固定值列表: 1. flag和value一一对应, 2. 若预览和拍后固定值不一样则分开(Preview/Capture/All)",
+    "FixValueList": {
+        "All": [
+            {
+                "##": "全局调色",
+                "Flag": 304,
+                "value": 0.0
+            }
+        ],
+        "Preview": [
+            {
+                "##": "亮眼程度",
+                "Flag": 4,
+                "value": 0.30,
+                "DegreeParam": {
+                    "FemaleFactor": 1.0,
+                    "MaleFactor": 0.5,
+                    "ChildFactor": 1.0,
+                    "YouthFactor": 1.0,
+                    "ElderlyFactor": 1.0,
+                    "OlderFactor": 1.0
+                }
+            }
+        ],
+        "Capture": [
+            {
+                "##": "亮眼程度",
+                "Flag": 4,
+                "value": 0.35,
+                "DegreeParam": {
+                    "FemaleFactor": 1.0,
+                    "MaleFactor": 0.5,
+                    "ChildFactor": 1.0,
+                    "YouthFactor": 1.0,
+                    "ElderlyFactor": 1.0,
+                    "OlderFactor": 1.0
+                }
+            }
+        ]
+    },
+    "##MappingList##": "1对多列表: 1. SrcFlag和MapList对应, 2. 若预览和拍后固定值不一样则分开(Preview/Capture/All)",
+    "MappingList": [
+        {
+            "##": "美颜程度",
+            "SrcFlag": 1,
+            "Preview": [
+                {
+                    "##": "传统祛斑祛痘",
+                    "Flag": 0,
+                    "UIValue": [
+                        0.0,
+                        0.2,
+                        1.0
+                    ],
+                    "EffectValue": [
+                        0.0,
+                        0.7,
+                        1.0
+                    ],
+                    "DegreeParam": {
+                        "FemaleFactor": 1.0,
+                        "MaleFactor": 0.7,
+                        "ChildFactor": 0.5,
+                        "YouthFactor": 0.5,
+                        "ElderlyFactor": 0.5,
+                        "OlderFactor": 0.5
+                    }
+                },
+                {
+                    "##": "AI-祛斑祛痘",
+                    "Flag": 10256,
+                    "UIValue": [
+                        0.0,
+                        0.2,
+                        1.0
+                    ],
+                    "EffectValue": [
+                        0.0,
+                        0.8,
+                        1.0
+                    ],
+                    "DegreeParam": {
+                        "FemaleFactor": 1.0,
+                        "MaleFactor": 0.7,
+                        "ChildFactor": 0.5,
+                        "YouthFactor": 0.5,
+                        "ElderlyFactor": 0.5,
+                        "OlderFactor": 0.5
+                    }
+                },
+                {
+                    "##": "美颜程度",
+                    "Flag": 1,
+                    "UIValue": [
+                        0.0,
+                        0.2,
+                        1.0
+                    ],
+                    "EffectValue": [
+                        0.0,
+                        0.1,
+                        0.3
+                    ],
+                    "DegreeParam": {
+                        "FemaleFactor": 1.0,
+                        "MaleFactor": 1.0,
+                        "ChildFactor": 1.0,
+                        "YouthFactor": 1.0,
+                        "ElderlyFactor": 1.0,
+                        "OlderFactor": 1.0
+                    }
+                }
+            ],
+            "Capture": [
+                {
+                    "##": "AI-祛斑祛痘",
+                    "Flag": 10256,
+                    "UIValue": [
+                        0.0,
+                        0.2,
+                        1.0
+                    ],
+                    "EffectValue": [
+                        0.0,
+                        0.7,
+                        1.0
+                    ],
+                    "DegreeParam": {
+                        "FemaleFactor": 1.0,
+                        "MaleFactor": 0.5,
+                        "ChildFactor": 0.3,
+                        "YouthFactor": 0.3,
+                        "ElderlyFactor": 0.3,
+                        "OlderFactor": 0.3
+                    }
+                },
+                {
+                    "##": "AI-祛抬头纹",
+                    "Flag": 10258,
+                    "UIValue": [
+                        0.0,
+                        0.2,
+                        1.0
+                    ],
+                    "EffectValue": [
+                        0.0,
+                        0.4,
+                        0.8
+                    ],
+                    "DegreeParam": {
+                        "FemaleFactor": 1.0,
+                        "MaleFactor": 0.5,
+                        "ChildFactor": 0.3,
+                        "YouthFactor": 0.3,
+                        "ElderlyFactor": 0.3,
+                        "OlderFactor": 0.3
+                    }
+                },
+                {
+                    "##": "AI-祛眼周纹",
+                    "Flag": 10259,
+                    "UIValue": [
+                        0.0,
+                        0.2,
+                        1.0
+                    ],
+                    "EffectValue": [
+                        0.0,
+                        0.4,
+                        0.8
+                    ],
+                    "DegreeParam": {
+                        "FemaleFactor": 1.0,
+                        "MaleFactor": 0.5,
+                        "ChildFactor": 0.3,
+                        "YouthFactor": 0.3,
+                        "ElderlyFactor": 0.3,
+                        "OlderFactor": 0.3
+                    }
+                },
+                {
+                    "##": "AI-祛法令纹",
+                    "Flag": 10260,
+                    "UIValue": [
+                        0.0,
+                        0.2,
+                        1.0
+                    ],
+                    "EffectValue": [
+                        0.0,
+                        0.4,
+                        0.8
+                    ],
+                    "DegreeParam": {
+                        "FemaleFactor": 1.0,
+                        "MaleFactor": 0.5,
+                        "ChildFactor": 0.3,
+                        "YouthFactor": 0.3,
+                        "ElderlyFactor": 0.3,
+                        "OlderFactor": 0.3
+                    }
+                },
+                {
+                    "##": "AI-祛黑眼圈",
+                    "Flag": 10261,
+                    "UIValue": [
+                        0.0,
+                        0.2,
+                        1.0
+                    ],
+                    "EffectValue": [
+                        0.0,
+                        0.7,
+                        1.0
+                    ],
+                    "DegreeParam": {
+                        "FemaleFactor": 1.0,
+                        "MaleFactor": 0.5,
+                        "ChildFactor": 0.3,
+                        "YouthFactor": 0.3,
+                        "ElderlyFactor": 0.3,
+                        "OlderFactor": 0.3
+                    }
+                },
+                {
+                    "##": "AI-祛颈纹",
+                    "Flag": 10254,
+                    "UIValue": [
+                        0.0,
+                        0.2,
+                        1.0
+                    ],
+                    "EffectValue": [
+                        0.0,
+                        1.0,
+                        1.0
+                    ],
+                    "DegreeParam": {
+                        "FemaleFactor": 1.0,
+                        "MaleFactor": 0.5,
+                        "ChildFactor": 0.3,
+                        "YouthFactor": 0.3,
+                        "ElderlyFactor": 0.3,
+                        "OlderFactor": 0.3
+                    }
+                },
+                {
+                    "##": "AI-匀肤",
+                    "Flag": 10250,
+                    "UIValue": [
+	                    0.0,
+                        0.2,
+                        1.0
+                    ],
+                    "EffectValue": [
+	                    0.0,
+                        0.4,
+                        0.6
+                    ],
+                    "DegreeParam": {
+                        "FemaleFactor": 1.0,
+                        "MaleFactor": 0.5,
+                        "ChildFactor": 0.3,
+                        "YouthFactor": 0.3,
+                        "ElderlyFactor": 0.3,
+                        "OlderFactor": 0.3
+                    }
+                },
+                {
+                    "##": "AI-眉毛去杂乱",
+                    "Flag": 10257,
+                    "UIValue": [
+                        0.0,
+                        0.01,
+                        1.0
+                    ],
+                    "EffectValue": [
+                        0.0,
+                        1.0,
+                        1.0
+                    ],
+                    "DegreeParam": {
+                        "FemaleFactor": 1.0,
+                        "MaleFactor": 1.0,
+                        "ChildFactor": 1.0,
+                        "YouthFactor": 1.0,
+                        "ElderlyFactor": 1.0,
+                        "OlderFactor": 1.0
+                    }
+                },
+                {
+                    "##": "美颜程度",
+                    "Flag": 1,
+                    "UIValue": [
+                        0.0,
+                        0.2,
+                        1.0
+                    ],
+                    "EffectValue": [
+                        0.0,
+                        0.1,
+                        0.3
+                    ],
+                    "DegreeParam": {
+                        "FemaleFactor": 1.0,
+                        "MaleFactor": 0.7,
+                        "ChildFactor": 0.3,
+                        "YouthFactor": 0.3,
+                        "ElderlyFactor": 0.3,
+                        "OlderFactor": 0.3
+                    }
+                },
+                {
+                    "##": "缩毛孔",
+                    "Flag": 10201,
+                    "UIValue": [
+                        0.0,
+                        0.01,
+                        1.0
+                    ],
+                    "EffectValue": [
+                        0.0,
+                        0.5,
+                        0.5
+                    ],
+                    "DegreeParam": {
+                        "FemaleFactor": 1.0,
+                        "MaleFactor": 1.0,
+                        "ChildFactor": 1.0,
+                        "YouthFactor": 1.0,
+                        "ElderlyFactor": 1.0,
+                        "OlderFactor": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "##": "肤色调整",
+            "SrcFlag": 10,
+            "All": [
+                {
+                    "##": "肤色调整",
+                    "Flag": 10,
+                    "UIValue": [
+                        0.0,
+                        0.2,
+                        1.0
+                    ],
+                    "EffectValue": [
+                        0.0,
+                        0.4,
+                        1.0
+                    ]
+                }
+            ],
+            "Capture": [
+                {
+                    "##": "AI-面部肤色统一",
+                    "Flag": 10255,
+                    "UIValue": [
+                        0.0,
+                        0.4,
+                        1.0
+                    ],
+                    "EffectValue": [
+                        0.0,
+                        0.5,
+                        0.7
+                    ],
+                    "DegreeParam": {
+                        "FemaleFactor": 1.0,
+                        "MaleFactor": 1.0,
+                        "ChildFactor": 1.0,
+                        "YouthFactor": 1.0,
+                        "ElderlyFactor": 1.0,
+                        "OlderFactor": 1.0
+                    }
+                },
+                {
+                    "##": "传统身体肤色统一",
+                    "Flag": 10000,
+                    "UIValue": [
+                        0.0,
+                        0.01,
+                        1.0
+                    ],
+                    "EffectValue": [
+                        0.0,
+                        0.2,
+                        0.2
+                    ]
+                }
+            ]
+        },
+        {
+            "##": "牙齿美白",
+            "SrcFlag": 108,
+            "All": [
+                {
+                    "##": "牙齿美白",
+                    "Flag": 108,
+                    "UIValue": [
+                        0.0,
+                        1.0
+                    ],
+                    "EffectValue": [
+                        0.0,
+                        1.0
+                    ],
+                    "DegreeParam": {
+                        "FemaleFactor": 1.0,
+                        "MaleFactor": 1.0,
+                        "ChildFactor":1.0,
+                        "YouthFactor":1.0,
+                        "ElderlyFactor":1.0,
+                        "OlderFactor":1.0
+                    }
+                }
+            ]
+        },
+        {
+            "##": "立体",
+            "SrcFlag": 8,
+            "All": [
+                {
+                    "##": "立体",
+                    "Flag": 8,
+                    "UIValue": [
+                        0.0,
+                        1.0
+                    ],
+                    "EffectValue": [
+                        0.0,
+                        1.0
+                    ],
+                    "DegreeParam": {
+                        "FemaleFactor": 1.0,
+                        "MaleFactor": 1.0,
+                        "ChildFactor":0.3,
+                        "YouthFactor":0.3,
+                        "ElderlyFactor":0.3,
+                        "OlderFactor":0.3
+                    }
+                }
+            ]
+        },
+        {
+            "##": "大眼调整",
+            "SrcFlag": 201,
+            "All": [
+                {
+                    "##": "大眼调整",
+                    "Flag": 201,
+                    "UIValue": [
+                        0.0,
+                        1.0
+                    ],
+                    "EffectValue": [
+                        0.0,
+                        0.7
+                    ],
+                    "DegreeParam": {
+                        "FemaleFactor": 1.0,
+                        "MaleFactor": 0.5,
+                        "ChildFactor":0.5,
+                        "YouthFactor":0.5,
+                        "ElderlyFactor":0.5,
+                        "OlderFactor":0.5
+                    }
+                }
+            ]
+        },
+        {
+            "##": "瘦脸调整",
+            "SrcFlag": 200,
+            "All": [
+                {
+                    "##": "瘦脸调整",
+                    "Flag": 200,
+                    "UIValue": [
+	                    0.0,
+                        0.3,
+                        1.0
+                    ],
+                    "EffectValue": [
+	                    0.0,
+                        0.5,
+                        1.0
+                    ],
+                    "DegreeParam": {
+                        "FemaleFactor":1.0,
+                        "MaleFactor":0.5,
+                        "ChildFactor":0.5,
+                        "YouthFactor":0.5,
+                        "ElderlyFactor":0.5,
+                        "OlderFactor":0.5
+                    }
+                }
+            ]
+        },
+        {
+            "##": "小头",
+            "SrcFlag": 222,
+            "All": [
+                {
+                    "##": "小头",
+                    "Flag": 222,
+                    "UIValue": [
+                        0.0,
+                        1.0
+                    ],
+                    "EffectValue": [
+                        0.0,
+                        0.7
+                    ],
+                    "DegreeParam": {
+                        "FemaleFactor":1.0,
+                        "MaleFactor":0.5,
+                        "ChildFactor":0.5,
+                        "YouthFactor":0.5,
+                        "ElderlyFactor":0.5,
+                        "OlderFactor":0.5
+                    }
+                }
+            ]
+        }
+    ],
+    "##GradientList##": "支持渐变效果flag列表",
+    "GradientList": [200, 201]
+}

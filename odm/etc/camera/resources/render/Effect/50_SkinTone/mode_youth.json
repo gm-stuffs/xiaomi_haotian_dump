@@ -1,0 +1,17 @@
+{
+	"##":"少年模式",
+	"Type":"Effect",
+	"TrueSight":
+	[
+		{
+			"ConfigurePath":"Effects/6_ModeYouth/effect_preview.json",
+			"Index":0,
+			"Mode":"Preview"
+		},
+		{
+			"ConfigurePath":"Effects/6_ModeYouth/effect_capture.json",
+			"Index":1,
+			"Mode":"Capture"
+		}
+	]
+}

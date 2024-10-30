@@ -1,0 +1,12 @@
+{
+	"##":"后置人像(莱卡生动/经典)模式",
+	"Type":"Effect",
+	"TrueSight":
+	[
+		{
+			"ConfigurePath":"Effects/3_ModeRearPortraiture/effect_capture.json",
+			"Index":0,
+			"Mode":"Capture"
+		}
+	]
+}

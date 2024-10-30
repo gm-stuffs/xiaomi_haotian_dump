@@ -1,0 +1,14 @@
+[
+    {
+        "protection_scheme" : "SENSORI2C",
+        "hook_group_list": [
+            {"SensorCreateAndSubmitCommand":[]},
+            {"LoadSensorInitConfigCmd":[]},
+            {"SensorProbeProtection":[]},
+            {"LoadSensorConfigCmdsProtection":[]},
+            {"InitializeSensorDeviceProtection":[]},
+            {"ProbeEEPROMProtection":["wide", "ultra", "tele", "front"]},
+            {"GetStaticCaps":{}}
+        ]
+    }
+]

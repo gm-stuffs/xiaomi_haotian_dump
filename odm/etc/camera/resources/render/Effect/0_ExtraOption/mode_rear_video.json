@@ -1,0 +1,154 @@
+{
+    "##": "默认(质感)模式-效果额外选项配置(目前仅参数)",
+    "Type": "EffectExtraOption",
+    "RetouchFactorType": 0,
+    "UVMapping": false,
+    "##NormalList##": "1. 直接转发外部数值, 2. 若预览和拍后固定值不一样则分开(Preview/Capture/All)",
+    "NormalList": {
+        "All": [
+            300,
+            301,
+            10301,
+            222,
+            232,
+            203,
+            202
+        ]
+    },
+    "##FixValueList##": "固定值列表: 1. flag和value一一对应, 2. 若预览和拍后固定值不一样则分开(Preview/Capture/All)",
+    "FixValueList": {
+    },
+    "##MappingList##": "1对多列表: 1. SrcFlag和MapList对应, 2. 若预览和拍后固定值不一样则分开(Preview/Capture/All)",
+    "MappingList": [
+        {
+            "##": "美颜程度",
+            "SrcFlag": 1,
+            "Preview": [
+                {
+                    "##": "传统祛斑祛痘",
+                    "Flag": 0,
+                    "UIValue": [
+                        0.0,
+                        0.4,
+                        1.0
+                    ],
+                    "EffectValue": [
+                        0.0,
+                        1.0,
+                        1.0
+                    ],
+                    "DegreeParam": {
+                        "FemaleFactor": 1.0,
+                        "MaleFactor": 0.7,
+                        "ChildFactor": 0.5,
+                        "YouthFactor": 0.5,
+                        "ElderlyFactor": 0.5,
+                        "OlderFactor": 0.5
+                    }
+                },
+                {
+                    "##": "美颜程度",
+                    "Flag": 1,
+                    "UIValue": [
+                        0.0,
+                        0.4,
+                        1.0
+                    ],
+                    "EffectValue": [
+                        0.0,
+                        0.25,
+                        0.5
+                    ],
+                    "DegreeParam": {
+                        "FemaleFactor": 1.0,
+                        "MaleFactor": 0.5,
+                        "ChildFactor": 0.3,
+                        "YouthFactor": 0.3,
+                        "ElderlyFactor": 0.3,
+                        "OlderFactor": 0.3
+                    }
+                }
+            ]
+        },
+        {
+            "##": "立体",
+            "SrcFlag": 8,
+            "All": [
+                {
+                    "##": "立体",
+                    "Flag": 8,
+                    "UIValue": [
+                        0.0,
+                        1.0
+                    ],
+                    "EffectValue": [
+                        0.0,
+                        1.0
+                    ],
+                    "DegreeParam": {
+                        "FemaleFactor": 1.0,
+                        "MaleFactor": 1.0,
+                        "ChildFactor":0.3,
+                        "YouthFactor":0.3,
+                        "ElderlyFactor":0.3,
+                        "OlderFactor":0.3
+                    }
+                }
+            ]
+        },
+        {
+            "##": "大眼调整",
+            "SrcFlag": 201,
+            "All": [
+                {
+                    "##": "大眼调整",
+                    "Flag": 201,
+                    "UIValue": [
+                        0.0,
+                        1.0
+                    ],
+                    "EffectValue": [
+                        0.0,
+                        0.7
+                    ],
+                    "DegreeParam": {
+                        "FemaleFactor": 1.0,
+                        "MaleFactor": 0.5,
+                        "ChildFactor":0.5,
+                        "YouthFactor":0.5,
+                        "ElderlyFactor":0.5,
+                        "OlderFactor":0.5
+                    }
+                }
+            ]
+        },
+        {
+            "##": "瘦脸调整",
+            "SrcFlag": 200,
+            "All": [
+                {
+                    "##": "瘦脸调整",
+                    "Flag": 200,
+                    "UIValue": [
+                        0.0,
+                        1.0
+                    ],
+                    "EffectValue": [
+                        0.0,
+                        0.8
+                    ],
+                    "DegreeParam": {
+                        "FemaleFactor":1.0,
+                        "MaleFactor":0.5,
+                        "ChildFactor":0.5,
+                        "YouthFactor":0.5,
+                        "ElderlyFactor":0.5,
+                        "OlderFactor":0.5
+                    }
+                }
+            ]
+        }
+    ],
+    "##GradientList##": "支持渐变效果flag列表",
+    "GradientList": [200, 201]
+}

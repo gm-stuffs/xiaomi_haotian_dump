@@ -1,0 +1,9 @@
+# only customized property
+
+ro.product.odm.model=24101PNB7C
+ro.product.odm.cert=24101PNB7C
+ro.tiantong=true
+ro.product.model_for_attestation=24101PNB7C
+
+
+

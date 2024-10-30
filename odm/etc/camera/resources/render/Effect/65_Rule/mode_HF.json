@@ -1,0 +1,12 @@
+{
+	"##":"氛围滤镜-和风",
+	"Type":"Effect",
+	"TrueSight":
+	[
+		{
+			"ConfigurePath":"Effects/1_ModeHF/effect.json",
+			"Index":0,
+			"Mode":"All"
+		}
+	]
+}

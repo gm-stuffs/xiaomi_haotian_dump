@@ -1,0 +1,58 @@
+{
+    "strategy": {
+        "all_strategy": {
+            "1": [ "LowSoh-FvDown", "非典型峰值容量调控" ],
+            "2": [ "FreqChg-FvDown", "短时多充" ],
+            "3": [ "BasedOnCC-VolDown", "循环降压" ],
+            "101": [ "TriggerTypeStrategyExample", "触发式运行的一个示例类" ],
+            "102": [ "ClosedSourceStrategyExample", "闭源策略示例" ]
+        },
+        "supported_strategy_index": [
+        ]
+    },
+    "LowSoh-FvDown": {
+        "enable_by_default": true,
+        "use_smart_fv": true,
+        "sysfs_node": {
+            "cyclecount": {
+                "path": "/sys/class/xm_power/fg_master/cyclecount",
+                "range_min": 200,
+                "range_max": 800
+            },
+            "soh": {
+                "path": "/sys/class/xm_power/fg_master/soh",
+                "threshold": 85
+            },
+            "smart_batt": {
+                "path": "/sys/class/qcom-battery/smart_batt",
+                "value": 40
+            },
+            "smart_fv": {
+                "path": "/sys/class/xm_power/charger/smart_charge/smart_fv",
+                "value": 40
+            }
+        }
+    },
+
+    "BasedOnCC-VolDown": {
+        "vendor_id_map":{
+            "0": "BYD",
+            "1": "COSLIGHT",
+            "2": "SUNWODA",
+            "3": "NVT",
+            "4": "SCUD",
+            "5": "TWS",
+            "6": "LISHEN",
+            "7": "DESAY"
+        }
+    },
+
+    "FreqChg-FvDown": {
+        "enable_by_default": true,
+        "use_smart_fv": true
+    },
+
+    "TriggerTypeStrategyExample": {
+        "enable_by_default": true
+    }
+}

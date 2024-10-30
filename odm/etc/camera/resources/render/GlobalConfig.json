@@ -1,0 +1,72 @@
+{
+    "MaxStashFaceCount":3,
+    "MaxSkeletonCount": 1,
+    "ChildAgeThreshold": -1,
+    "YouthAgeThreshold":14,
+    "ElderlyAgeThreshold":49,
+    "OlderAgeThreshold":999,
+    "SmallFaceRatioRange":[5, 10],
+    "IsNeedFixEnvLightForMakeup":false,
+    "UVMapOptions":
+    {
+        "SizeFactor": 4,
+        "PreviewSampleType": 0,
+        "CaptureSampleType": 1
+    },
+    "FacialRefineOptions":
+    {
+        "EdgeSuppressionFactor": 2,
+        "OffsetExpandFactor": 8.0
+    },
+    "ShelterOptions":
+    {
+        "SpecialLipPart":
+        {
+            "Enable":true,
+            "PointThreshold":7,
+            "AvgVisThreshold":0.0,
+            "VisThreshold":0.8,
+            "FrameCount":1
+        },
+        "NormalLipPart":
+        {
+            "Enable":true,
+            "PointThreshold":15,
+            "AvgVisThreshold":0.0,
+            "VisThreshold":0.8,
+            "FrameCount":6
+        },
+        "EyePart":
+        {
+            "Enable":true,
+            "PointThreshold":8,
+            "AvgVisThreshold":0.3,
+            "VisThreshold":0.85,
+            "FrameCount":1
+        },
+        "SideEyePart":
+        {
+            "Enable":true,
+            "PointThreshold":9,
+            "AvgVisThreshold":0.3,
+            "VisThreshold":0.85,
+            "FrameCount":3
+        },
+        "EyePupilPart":
+        {
+            "Enable":true
+        },
+        "BigAnglePart":
+        {
+            "Enable":true
+        },
+        "NosePart":
+        {
+            "Enable":true,
+            "PointThreshold":2,
+            "AvgVisThreshold":0.0,
+            "VisThreshold":0.85,
+            "FrameCount":3
+        }
+    }
+}

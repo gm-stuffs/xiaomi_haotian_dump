@@ -1,0 +1,12 @@
+{
+	"##":"型男模式",
+	"Type":"Effect",
+	"TrueSight":
+	[
+		{
+			"ConfigurePath":"Effects/3_ModeMetrosexual/effect.json",
+			"Index":0,
+			"Mode":"All"
+		}
+	]
+}

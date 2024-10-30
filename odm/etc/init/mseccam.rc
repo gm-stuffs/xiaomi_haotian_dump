@@ -1,0 +1,8 @@
+on property:sys.boot_completed=1 && property:vendor.mitee_vm.boot_completed=1
+    start vendor.mseccam
+
+service vendor.mseccam /odm/bin/mseccam
+    class hal
+    user system
+    group system
+    disabled

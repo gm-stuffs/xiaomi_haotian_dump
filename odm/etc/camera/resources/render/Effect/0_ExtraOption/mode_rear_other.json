@@ -1,0 +1,93 @@
+{
+    "##": "默认(质感)模式-效果额外选项配置(目前仅参数)",
+    "Type": "EffectExtraOption",
+    "RetouchFactorType": 2,
+    "UVMapping": false,
+    "##NormalList##": "1. 直接转发外部数值, 2. 若预览和拍后固定值不一样则分开(Preview/Capture/All)",
+    "NormalList": {
+        "All": [
+            10301
+        ],
+        "Capture": [
+            10200
+        ]
+    },
+    "##FixValueList##": "固定值列表: 1. flag和value一一对应, 2. 若预览和拍后固定值不一样则分开(Preview/Capture/All)",
+    "FixValueList": {
+    },
+    "##MappingList##": "1对多列表: 1. SrcFlag和MapList对应, 2. 若预览和拍后固定值不一样则分开(Preview/Capture/All)",
+    "MappingList": [
+        {
+            "##": "美颜程度",
+            "SrcFlag": 20000,
+            "Preview": [
+                {
+                    "##": "美颜程度",
+                    "Flag": 1,
+                    "UIValue": [
+                        0.0,
+                        0.4,
+                        1.0
+                    ],
+                    "EffectValue": [
+                        0.0,
+                        0.23,
+                        0.65
+                    ],
+                    "DegreeParam": {
+                        "FemaleFactor": 1.0,
+                        "MaleFactor": 1.0,
+                        "ChildFactor": 1.0,
+                        "YouthFactor": 1.0,
+                        "ElderlyFactor": 1.0,
+                        "OlderFactor": 1.0
+                    }
+                }
+            ],
+            "Capture": [
+                {
+                    "##": "AI-祛斑祛痘",
+                    "Flag": 10256,
+                    "UIValue": [
+                        0.0,
+                        0.4,
+                        1.0
+                    ],
+                    "EffectValue": [
+                        0.0,
+                        1.0,
+                        1.0
+                    ],
+                    "DegreeParam": {
+                        "FemaleFactor": 1.0,
+                        "MaleFactor": 1.0,
+                        "ChildFactor": 0.3,
+                        "YouthFactor": 0.3,
+                        "ElderlyFactor": 0.3,
+                        "OlderFactor": 0.3
+                    }
+                },
+                {
+                    "##": "美颜程度",
+                    "Flag": 1,
+                    "UIValue": [
+                        0.0,
+                        1.0
+                    ],
+                    "EffectValue": [
+                        0.0,
+                        0.85
+                    ],
+                    "DegreeParam": {
+                        "FemaleFactor": 1.0,
+                        "MaleFactor": 1.0,
+                        "ChildFactor": 0.3,
+                        "YouthFactor": 0.3,
+                        "ElderlyFactor": 0.3,
+                        "OlderFactor": 0.3
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+	"Type":"Effect",
+	"ExtraOption":
+	{
+		"UVMapping": false
+	},
+	"TrueSight":
+	[
+		{
+			"ConfigurePath":"Effects/uw/effect_capture.json",
+			"Index":0,
+			"Mode":"Capture"
+		}
+	]
+}

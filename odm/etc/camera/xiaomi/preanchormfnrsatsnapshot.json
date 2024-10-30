@@ -1,0 +1,42 @@
+{
+    "PipelineName": "PreAnchorMfnrSatSnapshot",
+    "NodesList": {
+        "Node": [
+        {
+            "NodeName": "com.xiaomi.plugin.anchor",
+            "NodeInstance": "PreAnchorInstance0",
+            "NodeProperty":[
+            {
+                "NodePropertyName":"NodeMask",
+                "NodePropertyValue":49
+            }
+            ]
+        }
+      ]
+    },
+    "PortLinkages": {
+        "Link": [
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "SourceBuffer0"
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "PreAnchorInstance0",
+                "PortFormat": "RAW10"
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "PreAnchorInstance0"
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "SinkBuffer0"
+            }
+        }
+        ]
+    }
+}

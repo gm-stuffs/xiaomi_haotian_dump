@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ColorSensorIRRatioFactor>
+    <version>0.1</version>
+    <Factor>
+         0.392982,   -0.02844944,  0.04289965,  0.06861259,  0.09448668,
+        -0.07282191,  0.25939801,  0.05364059, -0.06279258,  0.08925893,
+        -0.02819153, -0.06651418,  0.23088907, -0.15778033,  0.01099568,
+         0.04509447,  0.03918844, -0.03660942,  0.35901384, -0.15961433,
+         0.0166753,   0.00086285,  0.01139218,  0.03105727,  0.56179551
+    </Factor>
+    <Channels>5</Channels>
+    <Numbers>5</Numbers>
+    <IRComponentCoefficient>2.73</IRComponentCoefficient>
+    <GainCoefficient>3.8</GainCoefficient>
+</ColorSensorIRRatioFactor>

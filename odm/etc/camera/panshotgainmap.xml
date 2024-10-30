@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<panshot_gain_map>
+    <enable>1</enable>
+    <sensitivity>
+        <exposure_range>
+            <exposure_range_start>0</exposure_range_start>
+            <exposure_range_end>5</exposure_range_end>
+            <mv_max>50.0</mv_max>
+            <gain_value1>3.0</gain_value1>
+            <gain_value2>2.0</gain_value2>
+        </exposure_range>
+        <exposure_range>
+            <exposure_range_start>5</exposure_range_start>
+            <exposure_range_end>15</exposure_range_end>
+            <mv_max>50.0</mv_max>
+            <gain_value1>2.0</gain_value1>
+            <gain_value2>1.5</gain_value2>
+        </exposure_range>
+        <exposure_range>
+            <exposure_range_start>15</exposure_range_start>
+            <exposure_range_end>10000</exposure_range_end>
+            <mv_max>50.0</mv_max>
+            <gain_value1>1.5</gain_value1>
+            <gain_value2>0</gain_value2>
+        </exposure_range>
+    </sensitivity>
+</panshot_gain_map>

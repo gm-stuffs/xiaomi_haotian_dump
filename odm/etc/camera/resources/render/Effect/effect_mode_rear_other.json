@@ -1,0 +1,18 @@
+{
+	"##":"后置其他模式",
+	"Type":"EffectCategory",
+	"TrueSight":
+	[
+		{
+			"ExtraOptionPath":"0_ExtraOption/mode_rear_other.json"
+		},
+        {
+            "ConfigurePath":"5_DLRetouch/mode_rear_other.json",
+            "Index":5
+        },
+		{
+			"ConfigurePath":"20_FaceRetouch/mode_rear_other.json",
+			"Index":20
+		}
+	]
+}

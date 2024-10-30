@@ -1,0 +1,17 @@
+{
+	"##":"型男模式",
+	"Type":"Effect",
+	"TrueSight":
+	[
+		{
+			"ConfigurePath":"Effects/6_ModeMetrosexual/effect_preview.json",
+			"Index":0,
+			"Mode":"Preview"
+		},
+		{
+			"ConfigurePath":"Effects/6_ModeMetrosexual/effect_capture.json",
+			"Index":0,
+			"Mode":"Capture"
+		}
+	]
+}

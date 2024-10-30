@@ -1,0 +1,84 @@
+{
+    "aideband": 
+    {
+		"phone_version":"O2",
+		"model_version":"v1.0",
+		"shape_patch":[3072, 4096],
+		"overlap": [32, 32],
+		"impl_types":
+		{
+            		"downresize_impl_type": "CPP",
+			"guidemap_impl_type": "CPP",
+			"applygain_impl_type": "CPP",
+			"quan_impl_type": "CPP",
+			"applyslice_impl_type": "CPP",
+			"resultcheck_impl_type": "CPP"
+		},
+		"snpe":
+		{
+			"runtime": "dsp",
+			"dlcs":[
+			{
+				"dlc_name":"AIdebandmodel1.dlc",
+				"bin_name":"AIdebandmodel1.bin",
+				"input": 
+				{
+					"name": "modelInputs",
+					"shape": [1,384,512,6],
+					"offset": 0,
+					"delta": 0.000015259022,
+					"encoding": "tf16"
+				},
+				"output":
+				{
+					"name": "modelOutputcoeffs_64",
+					"shape": [1, 192, 128,96],
+					"offset": -30202.0,
+					"delta": 0.000047630023,
+					"encoding": "tf16"
+				}
+			},
+			{
+				"dlc_name":"AIdebandmodel2.dlc",
+				"bin_name":"AIdebandmodel2.bin",
+				"input":
+				{
+					"name": "modelInputs",
+					"shape": [1,384,512,6],
+					"offset": 0,
+					"delta": 0.000015259022,
+					"encoding": "tf16"
+				},
+				"output":
+				{
+					"name": "modelOutputcoeffs_64",
+					"shape": [1, 192, 128,96],
+					"offset": -17885.0,
+					"delta": 0.000045831905,
+					"encoding": "tf16"
+				}
+			},
+			{
+				"dlc_name":"AIdebandmodel3.dlc",
+				"bin_name":"AIdebandmodel3.bin",
+				"input":
+				{
+					"name": "modelInputs",
+					"shape": [1,384,512,6],
+					"offset": 0,
+					"delta": 0.000015259022,
+					"encoding": "tf16"
+				},
+				"output":
+				{
+					"name": "modelOutputcoeffs_64",
+					"shape": [1, 192, 128,96],
+					"offset": -29516.0,
+					"delta": 0.000043855103,
+					"encoding": "tf16"
+				}
+			}]
+		}
+	}
+}
+

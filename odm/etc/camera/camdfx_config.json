@@ -1,0 +1,88 @@
+{
+    "SENSORNAME_ROLEID_MAP":[
+        {
+            "sensorName": "haotian_ofilm_ovx9100_wide_i",
+            "roleID": 0
+        },
+        {
+            "sensorName": "haotian_ofilm_ovx9100_p24u128b_wide_i_eeprom",
+            "roleID": 0
+        },
+        {
+            "sensorName": "haotian_ofilm_ovx9100_ak7316_wide_i_actuator",
+            "roleID": 0
+        },
+        {
+            "sensorName": "haotian_ofilm_ovx9100_ak7323_wide_i_ois",
+            "roleID": 0
+        },
+        {
+            "sensorName": "haotian_semco_ovx9100_wide_ii",
+            "roleID": 0
+        },
+        {
+            "sensorName": "haotian_semco_ovx9100_p24u128b_wide_ii_eeprom",
+            "roleID": 0
+        },
+        {
+            "sensorName": "haotian_semco_ovx9100_ak7316_wide_ii_actuator",
+            "roleID": 0
+        },
+        {
+            "sensorName": "haotian_semco_ovx9100_ak7323_wide_ii_ois",
+            "roleID": 0
+        },
+        {
+            "sensorName": "haotian_sunny_ov32b40_front_i",
+            "roleID":1
+        },
+        {
+            "sensorName": "haotian_sunny_ov32b40_gt24p64e_front_i_eeprom",
+            "roleID":1
+        },
+        {
+            "sensorName": "haotian_ofilm_s5kjn1_ultra_i",
+            "roleID": 21
+        },
+        {
+            "sensorName": "haotian_ofilm_s5kjn1_p24c128f_ultra_i_eeprom",
+            "roleID": 21
+        },
+        {
+            "sensorName": "haotian_ofilm_s5kjn1_pd9302a_ultra_i_actuator",
+            "roleID": 21
+        },
+        {
+            "sensorName": "haotian_semco_imx858_tele5x_i",
+            "roleID": 23
+        },
+        {
+            "sensorName": "haotian_semco_imx858_sem1217s_tele5x_i_eeprom",
+            "roleID": 23
+        },
+        {
+            "sensorName": "haotian_semco_imx858_sem1217s_tele5x_i_actuator",
+            "roleID": 23
+        },
+        {
+            "sensorName": "haotian_semco_imx858_sem1217s_tele5x_i_ois",
+            "roleID": 23
+        },
+        {
+            "sensorName": "haotian_sunny_imx858_tele5x_ii",
+            "roleID": 23
+        },
+        {
+            "sensorName": "haotian_sunny_imx858_p24u128b_tele5x_ii_eeprom",
+            "roleID": 23
+        },
+        {
+            "sensorName": "haotian_sunny_imx858_ak7316_tele5x_ii_actuator",
+            "roleID": 23
+        },
+        {
+            "sensorName": "haotian_sunny_imx858_bu24619_tele5x_ii_ois",
+            "roleID": 23
+        }
+    ]
+}

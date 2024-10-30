@@ -1,0 +1,66 @@
+{
+	"##":"水润模式",
+	"Type":"Effect",
+	"ExtraOption":
+	{
+		"RetouchFactorType": 0
+	},
+	"TrueSight":
+	[
+		{
+			"ConfigurePath":"Effects/0_Spotless/effect_default.json",
+			"Index":0,
+			"Mode":"Preview"
+		},
+		{
+			"ConfigurePath":"Effects/5_ModeMoistening/effect_preview.json",
+			"Index":1,
+			"Mode":"Preview"
+		},
+		{
+			"Index":2,
+			"Mode":"Capture",
+			"FaceRetouchEngine":
+			{
+				"Enable":true,
+				"PortraitureSwitch": false,
+				"BodySkinTunerSwitch":true
+			}
+		},
+		{
+			"Index":3,
+			"Mode":"Capture",
+			"ManualSpotless":
+			{
+				"BlackHead":
+				{
+					"Enable":true,
+					"DefaultDegree":1.0,
+		            "DegreeParam": {
+		                "FemaleFactor": 1.0,
+		                "MaleFactor": 1.0,
+		                "ChildFactor": 1.0,
+						"YouthFactor": 1.0,
+		                "ElderlyFactor": 1.0,
+						"OlderFactor": 1.0,
+		                "RuleType": 0,
+		                "DegreeFactor": 1.0,
+		                "NonlinearUIData": [
+		                    0.0,
+		                    1.0
+		                ],
+		                "NonlinearValueData": [
+		                    0.0,
+		                    1.0
+		                ]
+		            }
+				}
+			}
+		},
+		{
+			"ConfigurePath":"Effects/5_ModeMoistening/effect_capture.json",
+			"Index":4,
+			"Mode":"Capture"
+		}
+	]
+}

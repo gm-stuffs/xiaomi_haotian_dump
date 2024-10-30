@@ -1,0 +1,31 @@
+{
+	"##":"后置人像(莱卡生动)模式",
+	"Type":"Effect",
+	"ExtraOption":
+	{
+		"RetouchFactorType": 0
+	},
+	"TrueSight":
+	[
+		{
+			"ConfigurePath":"Effects/2_SkinSmoothRear/effect_preview.json",
+			"Index":0,
+			"Mode":"Preview"
+		},
+		{
+			"ConfigurePath":"Effects/2_SkinSmoothRear/effect_potraiture_vivid_capture.json",
+			"Index":1,
+			"Mode":"Capture"
+		},
+		{
+			"Index":2,
+			"Mode":"Capture",
+			"FaceRetouchEngine":
+			{
+				"Enable":false,
+				"PortraitureSwitch": false,
+				"BodySkinTunerSwitch":false
+			}
+		}
+	]
+}

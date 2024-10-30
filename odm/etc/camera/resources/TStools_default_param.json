@@ -1,0 +1,261 @@
+{
+    "##note": "配置规则: 从json读取程度值",
+    "TrueSight": "",
+    "CaptureFusionDefaultConfigPath": "truesight_config_native.json",
+    "PreviewFusionDefaultConfigPath": "truesight_config_native.json",
+    "CaptureDefaultEffectPath": "render/Effect/effect_mode_classical.json",
+    "PreviewDefaultEffectPath": "render/Effect/effect_mode_classical.json",
+    "TStoolsParam": [
+        {
+            "##kParameterFlag_ColorToneAlpha##": "基底色彩滤镜",
+            "ColorToneDegree": 1,
+            "##kParameterFlag_Spotless##": "祛斑祛痘程度",
+            "SpotlessDegree": 1,
+            "##kParameterFlag_FaceRetouch##": "磨皮程度",
+            "FaceRetouchDegree": 0.4,
+
+            "##kParameterFlag_BrightEye##": "亮眼程度",
+            "CatchLightDegree": 0.4,
+            "##kParameterFlag_LightenPouch##": "祛黑眼圈程度",
+            "TearTroughDegree": 1,
+            "##kParameterFlag_Rhytidectomy##": "祛法令纹程度",
+            "LaughLineDegree": 0.6,
+
+            "##kParameterFlag_FaceStereoShadow##": "五官立体程度",
+            "FaceStereoShadowDegree": 0.5,
+
+            "##kParameterFlag_SkinToneMapping##": "美白程度",
+            "SkinToneDegree": 0.3,
+
+            "##kParameterFlag_MakeupFilterAlpha##": "妆容程度",
+            "MakeupDegree": 0.5,
+
+            "##kParameterFlag_FaceLift##": "瘦脸程度",
+            "FaceLiftDegree": 0.4,
+            "##kParameterFlag_FacialRefine_EyeZoom##": "眼睛大小程度",
+            "EyeSizeDegree": 0.2,
+            "##kParameterFlag_FacialRefine_Nose##": "鼻子大小程度 [默认0.5]",
+            "NoseSizeDegree": 0.5,
+            "##kParameterFlag_FacialRefine_Chin##": "下巴程度 [默认0.5]",
+            "ChinDegree": 0.5,
+            "##kParameterFlag_FacialRefine_MouthSize##": "嘴巴大小程度[默认0.5]",
+            "MouthSizeDegree": 0.5,
+            "##kParameterFlag_FacialRefine_HairLine##": "发际线程度[默认0.5]",
+            "HairLineDegree": 0.5,
+            "##kParameterFlag_FacialRefine_SkullEnhance##": "蓬蓬发程度",
+            "SkullEnhanceDegree": 0,
+            "##kParameterFlag_HeadNarrow##": "缩头/小头程度",
+            "HeadNarrowDegree": 0.2,
+            "##kParameterFlag_FacialRefine_Temple##": "太阳穴程度[默认0.5]",
+            "TempleDegree": 0.5,
+            "##kParameterFlag_FacialRefine_CheekBone##": "颧骨程度[默认0.5]",
+            "CheekBoneDegree": 0.5,
+            "##kParameterFlag_FacialRefine_NoseTip##": "鼻尖程度[默认0.5]",
+            "NoseTipDegree": 0.5,
+            "##kParameterFlag_FacialRefine_Jaw##": "下颌程度[默认0.5]",
+            "JawDegree": 0.5,
+            "##E2EAcneDegree##": "E2E祛斑祛痘(同SpotlessDegree)",
+            "E2EAcneDegree": 1,
+            "##kParameterFlag_E2E_RemoveNevus##": "E2E祛痣开关(0=关,1=开)",
+            "E2ERemoveNevus": 0,
+            "##kParameterFlag_SkinUnify##": "E2E匀肤",
+            "E2ESkinUnifyDegree": 0.4,
+            "##kParameterFlag_E2Ewrinkle##": "ai祛纹程度",
+            "E2EwrinkleDegree": 1,
+            "##kParameterFlag_UniqueSlider##": "统一滑杆",
+            "UniqueSliderDegree": 1,
+
+            "##kParameterFlag_FacialRefine_NoseAlar##": "鼻翼调整[默认0.5]",
+            "NoseAlarDegree": 0.5,
+            "##kParameterFlag_TeethWhiten##": "牙齿美白",
+            "TeethWhitenDegree": 1,
+
+            "##kParameterFlag_E2Egrease##": "E2E祛油光",
+            "E2EgreaseDegree": 1,
+            "##kParameterFlag_E2Eneckline##": "E2E祛颈纹",
+            "E2EnecklineDegree": 1,
+            "##kParameterFlag_E2Eskintuner##": "E2E肤色统一",
+            "E2EskintunerDegree": 1
+        }
+    ],
+    "CaptureUVMapEffectPath": "render/Effect/effect_mode_portraitureRear.json",
+    "CaptureUVMap": [
+        {
+            "##enableDeflate##": "是否开启压缩算法Deflate",
+            "enableDeflate" : true,
+            "##enableOffset##": "是否开启只获取偏移值，false=offset+映射图坐标",
+            "enableOffset" : true
+        }
+    ],
+    "##CameraSimulate": "相机模拟跑图",
+    "CameraSimulate": [
+        {
+            "##note": "前置质感",
+            "Type": "Preview",
+            "RunCount": 1,
+            "EffectPath": "render/Effect/effect_mode_native.json",
+            "ConfigPath": "truesight_config_native.json",
+            "MapParameter": [[1,0.40],[10,0.20],[8,0.40],[301,0.40],[200,0.40],[222,0.00],[232,0.00],[201,0.20],[203,0.50],[212,0.50],[227,0.50],[204,0.50],[228,0.50],[205,0.50],[213,0.50],[202,0.50],[108,0.20],[10301,0.00],[10200,0.00]]
+        },
+        {
+            "##note": "前置质感",
+            "Type": "Capture",
+            "RunCount": 1,
+            "EffectPath": "render/Effect/effect_mode_native.json",
+            "ConfigPath": "truesight_config_native.json",
+            "MapParameter": [[1,0.40],[10,0.20],[8,0.40],[301,0.40],[200,0.40],[222,0.00],[232,0.00],[201,0.20],[203,0.50],[212,0.50],[227,0.50],[204,0.50],[228,0.50],[205,0.50],[213,0.50],[202,0.50],[108,0.20],[10301,0.00],[10200,0.00]]
+        },
+        {
+            "##note": "前置原生",
+            "Type": "Capture",
+            "RunCount": 1,
+            "EffectPath": "render/Effect/effect_mode_protogenic.json",
+            "ConfigPath": "truesight_config_protogenic.json",
+            "MapParameter": [[1,0.20],[10,0.20],[8,0.40],[301,0.40],[200,0.30],[222,0.00],[232,0.00],[201,0.10],[203,0.50],[212,0.50],[227,0.50],[204,0.50],[228,0.50],[205,0.50],[213,0.50],[202,0.50],[108,0.20],[10301,0.00],[10200,0.00]]
+        },
+        {
+            "##note": "前置水润",
+            "Type": "Capture",
+            "RunCount": 1,
+            "EffectPath": "render/Effect/effect_mode_moistening.json",
+            "ConfigPath": "truesight_config_moistening.json",
+            "MapParameter": [[1,0.40],[10,0.30],[8,0.40],[301,0.40],[200,0.40],[222,0.20],[232,0.00],[201,0.20],[203,0.50],[212,0.50],[227,0.50],[204,0.50],[228,0.50],[205,0.50],[213,0.50],[202,0.50],[108,0.20],[10301,0.00],[10200,0.00]]
+        },
+        {
+            "##note": "前置型男(立体)",
+            "Type": "Capture",
+            "RunCount": 1,
+            "EffectPath": "render/Effect/effect_mode_metrosexual.json",
+            "ConfigPath": "truesight_config_metrosexual.json",
+            "MapParameter": [[1,0.20],[10,0.10],[8,0.40],[301,0.40],[200,0.20],[222,0.00],[232,0.00],[201,0.10],[203,0.50],[212,0.50],[227,0.50],[204,0.50],[228,0.50],[205,0.50],[213,0.50],[202,0.50],[108,0.20],[10301,0.00],[10200,0.00]]
+        },
+        {
+            "##note": "前置少年(清爽)",
+            "Type": "Capture",
+            "RunCount": 1,
+            "EffectPath": "render/Effect/effect_mode_youth.json",
+            "ConfigPath": "truesight_config_youth.json",
+            "MapParameter": [[1,0.30],[10,0.10],[8,0.40],[301,0.40],[200,0.30],[222,0.20],[232,0.00],[201,0.10],[203,0.50],[212,0.50],[227,0.50],[204,0.50],[228,0.50],[205,0.50],[213,0.50],[202,0.50],[108,0.20],[10301,0.00],[10200,0.00]]
+        },
+        {
+            "##note": "前置其他",
+            "Type": "Capture",
+            "RunCount": 1,
+            "EffectPath": "render/Effect/effect_mode_front_other.json",
+            "ConfigPath": "truesight_config_front_other.json",
+            "MapParameter": [[1,0.40],[8,0.00],[301,0.00],[200,0.50],[222,0.00],[232,0.00],[201,0.20],[203,0.50],[10301,0.00]]
+        },
+        {
+            "##note": "后置人像-经典",
+            "Type": "Capture",
+            "RunCount": 1,
+            "EffectPath": "render/Effect/effect_mode_rear_classical.json",
+            "ConfigPath": "truesight_config_rear_classical_retouch.json",
+            "MapParameter": [[20000,0.40],[304,1.00],[10301,1.00],[10200,0.00]]
+        },
+        {
+            "##note": "后置人像-生动",
+            "Type": "Capture",
+            "RunCount": 1,
+            "EffectPath": "render/Effect/effect_mode_rear_vivid.json",
+            "ConfigPath": "truesight_config_rear_vivid_retouch.json",
+            "MapParameter": [[20000,0.40],[10301,0.00],[10200,0.00]]
+        },
+        {
+            "##note": "后置其他",
+            "Type": "Capture",
+            "RunCount": 1,
+            "EffectPath": "render/Effect/effect_mode_rear_other.json",
+            "ConfigPath": "truesight_config_rear_other.json",
+            "MapParameter": [[20000,0.40],[10301,0.00],[10200,0.00]]
+        },
+        {
+            "##note": "后置视频",
+            "Type": "Preview",
+            "RunCount": 1,
+            "EffectPath": "render/Effect/effect_mode_rear_video.json",
+            "MapParameter": [[1,0.40],[8,0.40],[301,0.40],[200,0.50],[232,0.00],[201,0.20],[203,0.50],[10301,0.00]]
+        }
+    ],
+
+    "##StressCase": "压力测试",
+    "StressCase" : [
+        {
+            "##note": "前置质感",
+            "Type": "All",
+            "RunCount": 1,
+            "EffectPath": "render/Effect/effect_mode_native.json",
+            "MapParameter": [[1,0.40],[10,0.20],[8,0.40],[301,0.40],[200,0.40],[222,1.00],[232,1.00],[201,0.20],[203,1.00],[212,1.00],[227,1.00],[204,1.00],[228,1.00],[205,1.00],[213,1.00],[202,1.00],[108,0.20],[10301,0.00],[10200,0.00]]
+        },
+        {
+            "##note": "前置原生",
+            "Type": "All",
+            "RunCount": 1,
+            "EffectPath": "render/Effect/effect_mode_protogenic.json",
+            "MapParameter": [[1,0.20],[10,0.20],[8,0.40],[301,0.40],[200,0.30],[222,1.00],[232,1.00],[201,0.10],[203,0.50],[212,1.00],[227,1.00],[204,1.00],[228,1.00],[205,1.00],[213,1.00],[202,1.00],[108,0.20],[10301,1.00],[10200,1.00]]
+        },
+        {
+            "##note": "前置水润",
+            "Type": "All",
+            "RunCount": 1,
+            "EffectPath": "render/Effect/effect_mode_moistening.json",
+            "MapParameter": [[1,0.40],[10,0.30],[8,0.40],[301,0.40],[200,0.40],[222,0.20],[232,1.00],[201,0.20],[203,1.00],[212,1.00],[227,1.00],[204,1.00],[228,1.00],[205,1.00],[213,1.00],[202,1.00],[108,0.20],[10301,0.00],[10200,0.00]]
+        },
+        {
+            "##note": "前置型男(立体)",
+            "Type": "All",
+            "RunCount": 1,
+            "EffectPath": "render/Effect/effect_mode_metrosexual.json",
+            "MapParameter": [[1,0.20],[10,0.10],[8,0.40],[301,0.40],[200,0.20],[222,1.00],[232,1.00],[201,0.10],[203,1.00],[212,1.00],[227,1.00],[204,1.00],[228,1.00],[205,1.00],[213,1.00],[202,1.00],[108,0.20],[10301,0.00],[10200,0.00]]
+        },
+        {
+            "##note": "前置少年(清爽)",
+            "Type": "All",
+            "RunCount": 1,
+            "EffectPath": "render/Effect/effect_mode_youth.json",
+            "MapParameter": [[1,0.30],[10,0.10],[8,0.40],[301,0.40],[200,0.30],[222,0.20],[232,1.00],[201,0.10],[203,1.00],[212,1.00],[227,1.00],[204,1.00],[228,1.00],[205,1.00],[213,1.00],[202,1.00],[108,0.20],[10301,0.00],[10200,0.00]]
+        },
+        {
+            "##note": "前置视频",
+            "Type": "Preview",
+            "RunCount": 1,
+            "EffectPath": "render/Effect/effect_mode_video.json",
+            "MapParameter": [[1,0.40],[8,0.40],[301,0.40],[200,0.50],[222,0.20],[232,1.00],[201,0.20],[203,1.00],[10301,0.00]]
+        },
+        {
+            "##note": "前置其他",
+            "Type": "All",
+            "RunCount": 1,
+            "EffectPath": "render/Effect/effect_mode_front_other.json",
+            "MapParameter": [[1,0.40],[8,1.00],[301,1.00],[200,0.50],[222,1.00],[232,1.00],[201,0.20],[203,1.00],[10301,0.00]]
+        },
+        {
+            "##note": "后置人像-经典",
+            "Type": "Capture",
+            "RunCount": 1,
+            "EffectPath": "render/Effect/effect_mode_rear_classical.json",
+            "MapParameter": [[20000,0.40],[304,1.00],[10301,0.00],[10200,0.00]]
+        },
+        {
+            "##note": "后置人像-生动",
+            "Type": "Capture",
+            "RunCount": 1,
+            "EffectPath": "render/Effect/effect_mode_rear_vivid.json",
+            "MapParameter": [[20000,0.40],[10301,1.00],[10200,1.00]]
+        },
+        {
+            "##note": "后置其他",
+            "Type": "Capture",
+            "RunCount": 1,
+            "EffectPath": "render/Effect/effect_mode_rear_other.json",
+            "MapParameter": [[20000,0.40],[10301,0.00],[10200,0.00]]
+        },
+        {
+            "##note": "后置视频",
+            "Type": "Preview",
+            "RunCount": 1,
+            "EffectPath": "render/Effect/effect_mode_rear_video.json",
+            "MapParameter": [[1,0.40],[8,0.40],[301,0.40],[200,0.50],[232,0.00],[201,0.20],[203,0.50],[10301,0.00]]
+        }
+    ]
+}

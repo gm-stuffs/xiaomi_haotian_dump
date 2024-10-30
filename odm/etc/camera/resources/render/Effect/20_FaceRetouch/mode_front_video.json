@@ -1,0 +1,21 @@
+{
+	"##":"前置视频模式",
+	"Type":"Effect",
+	"ExtraOption":
+	{
+		"RetouchFactorType": 1
+	},
+	"TrueSight":
+	[
+		{
+			"ConfigurePath":"Effects/0_Spotless/effect_default.json",
+			"Index":0,
+			"Mode":"Preview"
+		},
+		{
+			"ConfigurePath":"Effects/3_SkinSmoothFrontVideo/effect.json",
+			"Index":1,
+			"Mode":"Preview"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"##":"前置其他模式",
+	"Type":"Effect",
+	"TrueSight":
+	[
+		{
+			"ConfigurePath":"Effects/8_ModeOtherFront/effect_preview.json",
+			"Index":0,
+			"Mode":"Preview"
+		},
+		{
+			"ConfigurePath":"Effects/8_ModeOtherFront/effect_capture.json",
+			"Index":1,
+			"Mode":"Capture"
+		}
+	]
+}

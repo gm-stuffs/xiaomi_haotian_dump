@@ -1,0 +1,1156 @@
+{
+    "PipelineName": "SatSnapshot",
+    "NodesList": {
+      "Node": [
+      {
+        "NodeName": "com.xiaomi.plugin.offlineb2y",
+        "NodeInstance": "BayerRaw2YuvInstanceForRGB",
+        "NodeProperty":[
+          {
+               "NodePropertyName":"NodeMask",
+               "NodePropertyValue":4
+          },
+          {
+              "NodePropertyName": "pluginMode",
+              "NodePropertyValue": 1,
+              "comments": "AICam"
+          }
+        ]
+      },
+      {
+        "NodeName": "com.xiaomi.plugin.offlineyuvreprocess",
+        "NodeInstance": "YuvReprocessInstanceGainmap"
+      },
+      {
+        "NodeName": "com.xiaomi.plugin.offlinehdrraw2y",
+        "NodeInstance": "Raw2YUVHDRInstance0",
+        "NodeProperty":[
+        {
+            "NodePropertyName":"NodeMask",
+            "NodePropertyValue":30,
+            "NodeConcurrencyThreadLimit":"3,5",
+            "__comment1__":"CONCURRENCY_MODE|CUSTOMSIZE_MODE",
+            "__comment2__":"SIGFRAME_MODE|SIGGETOUTPUT_MODE"
+        }
+        ]
+      },
+      {
+        "NodeName": "com.xiaomi.plugin.offlineb2y",
+        "NodeInstance": "BayerRaw2YuvInstanceForSigFrame",
+        "NodeProperty":[
+          {
+               "NodePropertyName":"NodeMask",
+               "NodePropertyValue":126,
+               "NodeConcurrencyThreadLimit":"3,5"
+          },
+          {
+               "NodePropertyName": "InputFormatNegotiationNeeded",
+               "NodePropertyValue": true
+          },
+          {
+               "NodePropertyName": "NegotiationInputFormatInfo",
+               "NodePropertyValue": "CAM_COMBMODE_REAR_WIDE:RAW16"
+          },
+          {
+              "NodePropertyName": "pluginMode",
+              "NodePropertyValue": 1,
+              "comments": "AICam"
+          }
+        ]
+      },
+      {
+        "NodeName": "com.xiaomi.plugin.ecdsnapshotdet",
+        "NodeInstance": "EcdInstance0",
+        "NodeProperty":[
+          {
+            "NodePropertyName":"NodeMask",
+            "NodePropertyValue":49
+          }
+        ]
+      },
+      {
+        "NodeName": "com.xiaomi.plugin.ecdsnapshotdet",
+        "NodeInstance": "EcdInstance1",
+        "NodeProperty":[
+          {
+            "NodePropertyName":"NodeMask",
+            "NodePropertyValue":49
+          }
+        ]
+      },
+      {
+        "NodeName": "com.xiaomi.plugin.anchor",
+        "NodeInstance": "AnchorInstance0",
+        "NodeProperty":[
+          {
+               "NodePropertyName":"NodeMask",
+               "NodePropertyValue":113
+          }
+        ]
+      },
+        {
+            "NodeName": "com.xiaomi.plugin.mialgoanchor",
+            "NodeInstance": "AnchorInstance1",
+            "NodeProperty":[
+            {
+                "NodePropertyName":"NodeMask",
+                "NodePropertyValue":17
+            }
+            ]
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.edof",
+            "NodeInstance": "EDOFInstance0"
+        },
+      {
+        "NodeName": "com.xiaomi.plugin.anchor",
+        "NodeInstance": "AnchorInstance2",
+        "NodeProperty":[
+          {
+               "NodePropertyName":"NodeMask",
+               "NodePropertyValue":49
+          }
+        ]
+      },
+        {
+            "NodeName": "com.xiaomi.plugin.offlineformatconvertor",
+            "NodeInstance": "FormatConvertorInstance0",
+            "NodeProperty":[
+            {
+                //CUSTOMSIZE_MODE|SIGRELEASEOUTPUT_MODE
+                //SIGRELEASEINPUT_MODE|SIGFRAME_MODE|SIGGETOUTPUT_MODE
+                "NodePropertyName":"NodeMask",
+                "NodePropertyValue":248
+            }
+            ]
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.offlineformatconvertor",
+            "NodeInstance": "FormatConvertorInstance1",
+            "NodeProperty":[
+                {
+                    //CUSTOMSIZE_MODE|SIGRELEASEOUTPUT_MODE
+                    //SIGRELEASEINPUT_MODE|SIGFRAME_MODE|SIGGETOUTPUT_MODE
+                    "NodePropertyName":"NodeMask",
+                    "NodePropertyValue":248
+                }
+            ]
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.mialgoallinone",
+            "NodeInstance": "AllinOneInstance0",
+            "NodeProperty":[
+                {
+                    "NodePropertyName":"NodeMask",
+                    "NodePropertyValue":144
+                }
+            ]
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.offlineb2y",
+            "NodeInstance": "BayerRaw2YuvInstance0",
+            "NodeProperty": [
+                {
+                    "NodePropertyName": "NodeMask",
+                    "NodePropertyValue": 4
+                },
+                {
+                    "NodePropertyName": "pluginMode",
+                    "NodePropertyValue": 1,
+                    "comments": "AICam"
+                }
+            ]
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.sdsr",
+            "NodeInstance": "SdSrInstance0"
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.fusion",
+            "NodeInstance": "FusionInstance0"
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.offlinemlawb",
+            "NodeInstance": "MLAWBInstance0"
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.offlinejpeg",
+            "NodeInstance": "JpegInstanceFinal",
+            "NodeProperty":[
+            {
+                 "NodePropertyName":"NodeMask",
+                 "NodePropertyValue":132
+            }
+            ]
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.portraitrepair",
+            "NodeInstance": "PortraitRepairInstance0",
+            "NodeProperty":[
+            {
+                  "NodePropertyName":"NodeMask",
+                  "NodePropertyValue":1
+            }
+          ]
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.tsskinbeautifier",
+            "NodeInstance": "SkinBeautifierInstance0"
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.jpegrAggr",
+            "NodeInstance": "jpegrAggrInstance"
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.supermoon",
+            "NodeInstance": "SuperMoonInstance0"
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.mialgooptics",
+            "NodeInstance": "MialgoOpticsInstance0"
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.offlinemfnr",
+            "NodeInstance": "MfnrInstance0",
+            "NodeProperty":[
+                {
+                    "NodePropertyName":"NodeMask",
+                    "NodePropertyValue":6,
+                    "NodeConcurrencyThreadLimit":"3,5"
+                },
+                {
+                    "NodePropertyName": "pluginMode",
+                    "NodePropertyValue": 1,
+                    "comments": "AICam"
+                }
+            ]
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.offlinemfnr",
+            "NodeInstance": "MfnrSigframeInstance0",
+            "NodeProperty":[
+                {
+                    "NodePropertyName":"NodeMask",
+                    "NodePropertyValue":30,
+                    "NodeConcurrencyThreadLimit":"3,5"
+                }
+            ]
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.offlinemfnr",
+            "NodeInstance": "MfnrInstance1",
+            "NodeProperty":[
+                {
+                    "NodePropertyName":"NodeMask",
+                    "NodePropertyValue":6
+                }
+            ]
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.miaiie",
+            "NodeInstance": "aiieInstance0"
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.depurple",
+            "NodeInstance": "DepurpleInstance0",
+            "NodeProperty":[
+              {
+                   "NodePropertyName":"NodeMask",
+                   "NodePropertyValue":1
+              }
+            ]
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.ldc",
+            "NodeInstance": "LDCInstance0"
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.ldc",
+            "NodeInstance": "WideLDCInstance0"
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.gainmap",
+            "NodeInstance": "GainMapInstance0",
+            "NodeProperty":[
+                {
+                    //CUSTOMSIZE_MODE
+                    "NodePropertyName":"NodeMask",
+                    "NodePropertyValue":128
+                }
+            ]
+        },
+        {
+          "NodeName": "com.xiaomi.plugin.gainmapPostProc",
+          "NodeInstance": "GainMapPostProcInstance",
+          "NodeProperty":[
+              {
+                  //CUSTOMSIZE_MODE
+                  "NodePropertyName":"NodeMask",
+                  "NodePropertyValue":128
+              }
+            ]
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.virtual",
+            "NodeInstance": "virtualInstanceAIORGBSplit",
+            "NodeProperty":[
+                {
+                    "NodePropertyName":"NodeMask",
+                    "NodePropertyValue":512
+                }
+            ]
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.virtual",
+            "NodeInstance": "virtualInstanceAnchorToGainmap",
+            "NodeProperty":[
+                {
+                    "NodePropertyName":"NodeMask",
+                    "NodePropertyValue":512
+                }
+            ]
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.virtual",
+            "NodeInstance": "virtualInstanceYuvToGainmap",
+            "NodeProperty":[
+                {
+                    "NodePropertyName":"NodeMask",
+                    "NodePropertyValue":512
+                }
+            ]
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.offlineb2y",
+            "NodeInstance": "BayerRaw2YuvInstanceGainmapForRGB",
+            "NodeProperty":[
+                {
+                    //SCALE_MODE|CONCURRENCY_MODE|CUSTOMSIZE_MODE
+                    "NodePropertyName":"NodeMask",
+                    "NodePropertyValue":134,
+                    "NodeConcurrencyThreadLimit":"3,5"
+                }
+            ]
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.offlineb2y",
+            "NodeInstance": "BayerRaw2YuvInstanceGainmapAnchor",
+            "NodeProperty":[
+                {
+                    //SCALE_MODE|CONCURRENCY_MODE|CUSTOMSIZE_MODE
+                    "NodePropertyName":"NodeMask",
+                    "NodePropertyValue":134,
+                    "NodeConcurrencyThreadLimit":"3,5"
+                }
+            ]
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.offlineb2y",
+            "NodeInstance": "BayerRaw2YuvInstanceGainmap",
+            "NodeProperty":[
+                {
+                    //SCALE_MODE|CONCURRENCY_MODE|CUSTOMSIZE_MODE
+                    "NodePropertyName":"NodeMask",
+                    "NodePropertyValue":134,
+                    "NodeConcurrencyThreadLimit":"3,5"
+                }
+            ]
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.offlineheic",
+            "NodeInstance": "HeicInstance0",
+            "NodeProperty":[
+            {
+                //CUSTOMSIZE_MODE
+                "NodePropertyName":"NodeMask",
+                "NodePropertyValue":128
+            }
+            ]
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.movieeffect",
+            "NodeInstance": "MovieEffectInstance0",
+            "NodeProperty":[
+              {
+                  "NodePropertyName":"NodeMask",
+                  "NodePropertyValue":1
+              }
+            ]
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.filter",
+            "NodeInstance": "FilterInstance0"
+        },
+        {
+          "NodeName": "com.xiaomi.plugin.watermark",
+          "NodeInstance": "WatermarkInstance0",
+          "NodeProperty":[
+            {
+              "NodePropertyName":"NodeMask",
+              "NodePropertyValue":128
+            }
+          ]
+        },
+        {
+          "NodeName": "com.xiaomi.plugin.swjpegencode",
+          "NodeInstance": "swjpegInstance1",
+          "NodeProperty":[
+          {
+               "NodePropertyName":"NodeMask",
+               "NodePropertyValue":2048
+          }
+          ]
+        },
+        {
+          "NodeName": "com.xiaomi.plugin.jpegrAggr",
+          "NodeInstance": "jpegrAggrInstanceForHeic"
+        }
+      ]
+    },
+    "PortLinkages": {
+        "Link": [
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "SourceBuffer0"
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "EcdInstance1",
+                "PortFormat": "RAW10"
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "EcdInstance1"
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "AnchorInstance0",
+                "PortFormat": "RAW10"
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 1,
+                "NodeInstance": "SourceBuffer1"
+            },
+            "DstPort": {
+                "PortId": 1,
+                "NodeInstance": "Raw2YUVHDRInstance0",
+                "PortFormat": "RAW10"
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 1,
+                "NodeInstance": "SourceBuffer1"
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "FormatConvertorInstance1",
+                "PortFormat": "RAW10"
+            }
+        },
+        {
+            "SrcPort": {
+                 "PortId": 2,
+                 "NodeInstance": "SourceBuffer2"
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "AnchorInstance2",
+                "PortFormat": "RAW10"
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "AnchorInstance2"
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "MfnrInstance1",
+                "PortFollowType":3,
+                "FollowPortId":0
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "MfnrInstance1",
+                "PortFormat": "YUV420_NV12"
+            },
+            "DstPort": {
+                "PortId": 1,
+                "NodeInstance": "FusionInstance0",
+                "PortFollowType":2,
+                "FollowPortId":0
+            }
+        },
+
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "AnchorInstance0"
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "virtualInstanceAnchorToGainmap",
+                "PortFormat": "RAW10"
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "virtualInstanceAnchorToGainmap",
+                "PortFormat": "RAW10"
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "Raw2YUVHDRInstance0",
+                "PortFormat": "RAW10"
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "Raw2YUVHDRInstance0",
+                "PortFormat": "YUV420_NV12"
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "MfnrSigframeInstance0",
+                "PortFollowType":3,
+                "FollowPortId":0
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "MfnrSigframeInstance0",
+                "PortFormat": "YUV420_NV12"
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "MfnrInstance0",
+                "PortFollowType":3,
+                "FollowPortId":0
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "MfnrInstance0",
+                "PortFormat": "YUV420_NV12"
+            },
+            "DstPort": {
+            "PortId": 0,
+            "NodeInstance": "BayerRaw2YuvInstanceForSigFrame",
+            "PortFollowType":3,
+            "FollowPortId":0
+        }
+      },
+      {
+        "SrcPort": {
+            "PortId": 0,
+            "NodeInstance": "BayerRaw2YuvInstanceForSigFrame",
+            "PortFormat": "YUV420_NV12"
+          },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "FormatConvertorInstance0",
+                "PortFormat": "RAW10"
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "FormatConvertorInstance0",
+                "PortFormat": "RAW16",
+                "OutputBufferNumber": "FollowInPut",
+                "PortFollowType":1,
+                "FollowPortId":0
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "AnchorInstance1"
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "AnchorInstance1"
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "EcdInstance0",
+                    "PortFormat": "RAW16"
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "EcdInstance0"
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "AllinOneInstance0",
+                "PortFormat": "RAW16"
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "FormatConvertorInstance1",
+                "PortFormat": "RAW16",
+                "OutputBufferNumber": "FollowInPut",
+                "PortFollowType":1,
+                "FollowPortId":0
+            },
+            "DstPort": {
+                "PortId": 1,
+                "NodeInstance": "AllinOneInstance0",
+                "PortFormat": "RAW16"
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "AllinOneInstance0",
+		        "PortFormat": "RGB161616"
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "virtualInstanceAIORGBSplit",
+                "PortFormat": "RGB161616"
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "virtualInstanceAIORGBSplit",
+                "PortFormat": "RGB161616"
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "BayerRaw2YuvInstanceForRGB",
+                "PortFormat": "RGB161616"
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "BayerRaw2YuvInstanceForRGB",
+                "PortFormat": "YUV420_NV12"
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "EDOFInstance0"
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "AllinOneInstance0",
+                "PortFormat": "RAW16"
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "BayerRaw2YuvInstance0",
+                "PortFormat": "RAW16",
+                "PortFollowType":1,
+                "FollowPortId":0
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "BayerRaw2YuvInstance0",
+                "PortFormat": "YUV420_NV12"
+            },
+            "DstPort": {
+            "PortId": 0,
+            "NodeInstance": "EDOFInstance0"
+        }
+      },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "EDOFInstance0"
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "MialgoOpticsInstance0",
+                "PortFormat": "YUV420_NV12"
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "MialgoOpticsInstance0",
+                "PortFormat": "YUV420_NV12"
+            },
+            "DstPort": {
+            "PortId": 0,
+            "NodeInstance": "FusionInstance0",
+            "PortFormat": "YUV420_NV12"
+            }
+        },
+        {
+            "SrcPort": {
+            "PortId": 0,
+            "NodeInstance": "FusionInstance0",
+            "PortFormat": "YUV420_NV12"
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "virtualInstanceYuvToGainmap",
+                "PortFormat": "YUV420_NV12"
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "virtualInstanceYuvToGainmap"
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "SdSrInstance0",
+                "PortFormat": "YUV420_NV12",
+                "PortFollowType":2,
+                "FollowPortId":0
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "SdSrInstance0",
+                "PortFormat": "YUV420_NV12",
+                "PortFollowType":2,
+                "FollowPortId":0
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "MLAWBInstance0",
+                "PortFormat": "YUV420_NV12",
+                "PortFollowType":2,
+                "FollowPortId":0
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "MLAWBInstance0",
+                "PortFormat": "YUV420_NV12",
+                "PortFollowType":2,
+                "FollowPortId":0
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "PortraitRepairInstance0",
+                "PortFormat": "YUV420_NV12",
+                "PortFollowType":2,
+                "FollowPortId":0
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "PortraitRepairInstance0",
+                "PortFormat": "YUV420_NV12",
+                "PortFollowType":2,
+                "FollowPortId":0
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "SuperMoonInstance0",
+                "PortFormat": "YUV420_NV12",
+                "PortFollowType":2,
+                "FollowPortId":0
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "SuperMoonInstance0",
+                "PortFormat": "YUV420_NV12",
+                "PortFollowType":2,
+                "FollowPortId":0
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "DepurpleInstance0",
+                "PortFormat": "YUV420_NV12"
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "DepurpleInstance0",
+                "PortFormat": "YUV420_NV12"
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "WideLDCInstance0",
+                "PortFormat": "YUV420_NV12"
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "WideLDCInstance0",
+                "PortFormat": "YUV420_NV12"
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "LDCInstance0",
+                "PortFormat": "YUV420_NV12"
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "LDCInstance0",
+                "PortFormat": "YUV420_NV12"
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "aiieInstance0",
+                "PortFormat": "YUV420_NV12",
+                "PortFollowType":2,
+                "FollowPortId":0
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "aiieInstance0",
+                "PortFormat": "YUV420_NV12",
+                "PortFollowType":2,
+                "FollowPortId":0
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "SkinBeautifierInstance0",
+                "PortFormat": "YUV420_NV12",
+                "PortFollowType":2,
+                "FollowPortId":0,
+                "BufferType": "Gralloc"
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "SkinBeautifierInstance0",
+                "PortFormat": "YUV420_NV12",
+                "PortFollowType":2,
+                "FollowPortId":0,
+                "BufferType": "Gralloc"
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "FilterInstance0",
+                "BufferType": "Gralloc"
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "FilterInstance0",
+                "BufferType": "Gralloc"
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "MovieEffectInstance0"
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "MovieEffectInstance0"
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "WatermarkInstance0"
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 2,
+                "NodeInstance": "WatermarkInstance0"
+            },
+            "DstPort": {
+            "PortId": 3,
+            "NodeInstance": "jpegrAggrInstance"
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 3,
+                "NodeInstance": "WatermarkInstance0"
+            },
+            "DstPort": {
+            "PortId": 4,
+            "NodeInstance": "jpegrAggrInstance"
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 1,
+                "NodeInstance": "WatermarkInstance0"
+            },
+            "DstPort": {
+            "PortId": 0,
+            "NodeInstance": "swjpegInstance1"
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "swjpegInstance1",
+                "PortFormat": "BLOB"
+            },
+            "DstPort": {
+            "PortId": 1,
+            "NodeInstance": "jpegrAggrInstance",
+            "PortFormat": "BLOB"
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "WatermarkInstance0"
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "JpegInstanceFinal",
+                "PortFormat": "YUV420_NV12",
+                "PortFollowType":2,
+                "FollowPortId":0
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "JpegInstanceFinal",
+                "PortFormat": "BLOB",
+                "PortFollowType":2,
+                "FollowPortId":0
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "HeicInstance0",
+                "PortFollowType":2,
+                "FollowPortId":0
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "HeicInstance0",
+                "PortFormat": "IMPLEMENTATION_DEFINED"
+            },
+              "DstPort": {
+                  "PortId": 0,
+                  "NodeInstance": "jpegrAggrInstance"
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "jpegrAggrInstance",
+                "PortFormat": "BLOB"
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "SinkBuffer0",
+                "PortFormat": "BLOB",
+                "ChildPipeline": "SdkSnapshot",
+                "ChildJsonName": "sdksnapshot.json",
+                "ChildSrcNodePortId":0,
+                "ChildSrcNode":"virtualInstanceSdk"
+          }
+        },
+        {
+            "SrcPort": {
+                "PortId": 1,
+                "NodeInstance": "HeicInstance0",
+                "PortFormat": "BLOB"
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "jpegrAggrInstanceForHeic",
+                "PortFormat": "BLOB"
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "jpegrAggrInstanceForHeic",
+                "PortFormat": "BLOB"
+            },
+            "DstPort": {
+                "PortId": 1,
+                "NodeInstance": "SinkBuffer1"
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 1,
+                "NodeInstance": "virtualInstanceYuvToGainmap"
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "YuvReprocessInstanceGainmap",
+                "PortFormat": "YUV420_NV12"
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "YuvReprocessInstanceGainmap",
+                "PortFormat": "YUV420_NV12"
+            },
+            "DstPort": {
+              "PortId": 2,
+              "NodeInstance": "GainMapInstance0",
+              "PortFormat": "YUV420_NV12"
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 1,
+                "NodeInstance": "virtualInstanceAIORGBSplit",
+                "PortFormat": "RGB161616"
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "BayerRaw2YuvInstanceGainmapForRGB",
+                "PortFormat": "RGB161616"
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "BayerRaw2YuvInstanceGainmapForRGB",
+                "PortFormat": "YUV420_NV12"
+            },
+            "DstPort": {
+                "PortId": 2,
+                "NodeInstance": "GainMapInstance0",
+                "PortFormat": "YUV420_NV12"
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 3,
+                "NodeInstance": "AllinOneInstance0",
+                "PortFormat": "RAW16"
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "BayerRaw2YuvInstanceGainmap",
+                "PortFormat": "RAW16"
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "BayerRaw2YuvInstanceGainmap",
+                "PortFormat": "YUV420_NV12"
+            },
+            "DstPort": {
+                "PortId":2,
+                "NodeInstance": "GainMapInstance0",
+                "PortFormat": "YUV420_NV12"
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 1,
+                "NodeInstance": "virtualInstanceAnchorToGainmap",
+                "PortFormat": "RAW16"
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "BayerRaw2YuvInstanceGainmapAnchor",
+                "PortFormat": "RAW16",
+                "PortFollowType":3,
+                "FollowPortId":0
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "BayerRaw2YuvInstanceGainmapAnchor",
+                "PortFormat": "YUV420_NV12"
+            },
+            "DstPort": {
+                "PortId": 2,
+                "NodeInstance": "GainMapInstance0",
+                "PortFormat": "YUV420_NV12"
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "GainMapInstance0",
+                "PortFormat": "Y8"
+            },
+            "DstPort": {
+                "PortId": 1,
+                "NodeInstance": "WideLDCInstance0",
+                "PortFormat": "Y8"
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 1,
+                "NodeInstance": "WideLDCInstance0",
+                "PortFormat": "Y8"
+            },
+            "DstPort": {
+                "PortId": 1,
+                "NodeInstance": "LDCInstance0",
+                "PortFormat": "Y8"
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 1,
+                "NodeInstance": "LDCInstance0",
+                "PortFormat": "Y8"
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "GainMapPostProcInstance",
+                "PortFormat": "Y8"
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "GainMapPostProcInstance",
+                "PortFormat": "BLOB"
+            },
+            "DstPort": {
+                "PortId": 2,
+                "NodeInstance": "jpegrAggrInstance",
+                "PortFormat": "BLOB"
+            }
+        }
+        ]
+    },
+    "FeaturePipelineList": {
+        "FileName": [
+            {
+                "FeaturePipelineFile": "preanchormfnrsatsnapshot.json"
+            },
+            {
+                "FeaturePipelineFile": "preanchorallinonesatsnapshot.json"
+            }
+        ]
+    }
+}

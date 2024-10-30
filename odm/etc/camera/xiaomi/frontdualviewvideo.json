@@ -1,0 +1,63 @@
+{
+    "PipelineName": "FrontDualViewVideo",
+    "NodesList": {
+        "Node": [
+            {
+                "NodeName": "com.xiaomi.plugin.facealignpreview",
+                "NodeInstance": "FaceAlignInstance0",
+                "NodeProperty": [
+                    {
+                        "NodePropertyName": "NodeMask",
+                        "NodePropertyValue": 1,
+                        "__comment__":"INPLACE_MODE"
+                    }
+                ]
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.skinbeautifierpreview",
+                "NodeInstance": "SkinBeautifierInstance0"
+            }
+        ]
+    },
+      "PortLinkages": {
+          "Link": [
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "SourceBuffer0"
+                },
+                "DstPort": {
+                  "PortId": 0,
+                  "NodeInstance": "FaceAlignInstance0",
+                      "PortFormat": "YUV420_NV12"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "FaceAlignInstance0",
+                    "PortFormat": "YUV420_NV12"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "SkinBeautifierInstance0",
+                    "PortFormat": "YUV420_NV12",
+                    "BufferType": "Gralloc"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "SkinBeautifierInstance0",
+                    "PortFormat": "YUV420_NV12",
+                    "BufferType": "Gralloc"
+                },
+                    "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "SinkBuffer0"
+                }
+            }
+          ]
+      }
+  }
+  

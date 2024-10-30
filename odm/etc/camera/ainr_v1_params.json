@@ -1,0 +1,120 @@
+{
+    "ellc": {
+		"phone_version":"O2",
+		"Threshold":{
+			"T_brightness":150,
+			"T_dark_scene":19000,
+			"T_motion_1": 15,
+			"T_motion_2": 50000000,
+			"T_over_expose_threshold": 3500,
+			"T_over_expose_ratio": 0.002,
+			"T_over_expose_ratio_max": 0.0,
+			"T_first_frame_luxindex": 0,
+			"T_merge_ratio": 0.94,
+			"T_pow_crop_ratio": 0.5,
+			"T_pow_merge_ratio": 2,
+			"T_critical_banding_lux": 450,
+			"T_hdr_lux_threshold": 290
+		},
+		"DenoiseArgs": {
+			"Wide": {
+				"noiseArgs": {
+					"desc": "OV50H_240718",
+					"noise_para_use_lut": "true",
+					"iso_list": [50, 80, 100, 160, 200, 400, 800, 1600, 2500, 3200],
+					"calib_k": [5.48943e-05, 7.11495e-05, 8.61819e-05, 1.26949e-04, 1.59990e-04, 3.00454e-04, 5.84968e-04, 1.16192e-03, 1.81014e-03, 2.30478e-03],
+					"calib_b": [5.19751e-07, 6.09264e-07, 6.01766e-07, 8.06612e-07, 2.03739e-07, 4.17297e-07, 9.06491e-07, 2.19987e-06, 4.11017e-06, 6.31030e-06],
+					"K_norm": 4
+				}
+			},
+			"UltraWide": {
+				"noiseArgs": {
+					"desc": "S5KJN1_240520",
+					"noise_para_use_lut": "true",
+					"iso_list": [50, 200, 400, 800, 1600, 2500, 3200],
+					"calib_k": [7.31910e-05, 1.88237e-04, 3.37678e-04, 6.43997e-04, 1.25598e-03, 1.95045e-03, 2.49527e-03],
+					"calib_b": [2.87642e-07, 3.46023e-07, 6.71972e-07, 1.51083e-06, 4.35246e-06, 9.43369e-06, 1.48954e-05],
+					"K_norm": 4
+				}
+			},
+			"Tele2": {
+				"noiseArgs": {
+					"desc": "O2tele_imx858_240822",
+					"noise_para_use_lut": "true",
+					"iso_list": [50, 200, 400, 500, 640, 800, 1000, 1100, 1250],
+					"calib_k": [1.28377e-04, 5.05833e-04, 9.92597e-04, 1.21535e-03, 1.51545e-03, 1.88231e-03, 2.25151e-03, 2.50312e-03, 2.53903e-03],
+					"calib_b": [5.32751e-07, 1.52753e-06, 3.59833e-06, 4.89189e-06, 6.90224e-06, 1.08710e-05, 1.53904e-05, 1.90686e-05, 1.90896e-05],
+					"K_norm": 4.0
+				}
+			}
+		},
+		"PostProcessArgs": {
+			"__comment__": "默认 default 节点下的数据, 根据 Sensor 选择优先使用 common 参数,具体模式下参数会覆盖默认参数",
+			"default": {
+				"sharpen_enabled": "false",
+				"sharpen_scales":[
+					[0.0, 3.0],
+					[64.0, 2.0],
+					[128.0, 0.5],
+					[256.0, 0.1]
+				  ],
+				"fillnoise_enabled": "false",
+				"fill_gaussian_noise_scales": [
+					[0.0, 0.15],
+					[64.0, 0.13],
+					[128.0, 0.11],
+					[256.0, 0.07]
+				]
+			},
+			"Wide": {
+				"sharpen_enabled": "true",
+				"sharpen_scales":[
+					[0.0, 3.0],
+					[64.0, 2.0],
+					[128.0, 0.5],
+					[256.0, 0.1]
+				  ],
+				"fillnoise_enabled": "true",
+				"fill_gaussian_noise_scales": [
+					[0.0, 0.21],
+					[64.0, 0.15],
+					[128.0, 0.1],
+					[256.0, 0.05]
+				]
+			},
+			"UltraWide": {
+				"sharpen_enabled": "true",
+				"sharpen_scales":[
+					[0.0, 3.0],
+					[64.0, 2.0],
+					[128.0, 0.5],
+					[256.0, 0.1]
+				  ],
+				"fillnoise_enabled": "true",
+				"fill_gaussian_noise_scales": [
+					[0.0, 0.15],
+					[64.0, 0.13],
+					[128.0, 0.11],
+					[256.0, 0.07]
+				]
+			},
+			"Tele2": {
+				"sharpen_enabled": "true",
+				"sharpen_scales":[
+					[0.0, 2.5],
+					[64.0, 2.0],
+					[128.0, 0.5],
+					[256.0, 0.1]
+				  ],
+				"fillnoise_enabled": "true",
+				"fill_gaussian_noise_scales": [
+					[0.0, 0.15],
+					[64.0, 0.13],
+					[128.0, 0.11],
+					[256.0, 0.07]
+				]
+			}
+		}
+	}
+}
+

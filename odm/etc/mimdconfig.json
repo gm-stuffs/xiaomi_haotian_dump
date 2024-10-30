@@ -1,0 +1,267 @@
+{
+	"PolicyControlMaskLocal": "1111110",
+	"BootReclaimTarget": [
+		{
+			"MemorySize": 8000000,
+			"MemAvailable": 4600000,
+			"MemFree": 600000,
+			"MaxReclaimPages": 12500,
+			"MaxRefaultRatio": 0.2,
+			"ReservedAnon": 500000,
+			"ReservedCache": 4000000,
+			"MaxCompacted": 1500000,
+			"PollingCount": 30
+		},
+		{
+			"MemorySize": 12000000,
+			"MemAvailable": 8500000,
+			"MemFree": 800000,
+			"MaxReclaimPages": 12500,
+			"MaxRefaultRatio": 0.2,
+			"ReservedAnon": 500000,
+			"ReservedCache": 4000000,
+			"MaxCompacted": 1500000,
+			"PollingCount": 30
+		},
+		{
+			"MemorySize": 16000000,
+			"MemAvailable": 12400000,
+			"MemFree": 800000,
+			"MaxReclaimPages": 12500,
+			"MaxRefaultRatio": 0.2,
+			"ReservedAnon": 500000,
+			"ReservedCache": 4000000,
+			"MaxCompacted": 1500000,
+			"PollingCount": 30
+		}
+        ],
+	"memitem":[
+	],
+	"actionitem": [
+		{
+		"name": "global_reclaim",
+		"path": "/proc/global_reclaim"
+		},
+		{
+		"name": "lru_gen",
+		"path": "/sys/kernel/mm/lru_gen/enabled"
+		}
+	],
+	"policy": [
+		{
+		"name": "disable_mglru",
+		"memitem":    [ "memitem_init" ],
+		"algo":       [ "equal" ],
+		"threshold":  [ "1" ],
+		"actionitem": [ "lru_gen" ],
+		"target":     [ "0" ],
+		"mem_size": "",
+		"type": "0"
+		},
+		{
+		"name":       "app_die",
+		"memitem":    [ "appidx", "appidx", "memitem_x_cache" ],
+		"algo":       [ "low", "high", "high"],
+		"threshold":  [ "1", "43", "1000"],
+		"actionitem": [ "actionitem_x_cache" ],
+		"target":     [ "100000100" ],
+		"mem_size":   "",
+		"type":  "4"
+		},
+		{
+		"name":       "app_fg",
+		"memitem":    [ "appidx", "appidx" ],
+		"algo":       [ "low", "high" ],
+		"threshold":  [ "1", "43" ],
+		"actionitem": [ "" ],
+		"target":     [ "" ],
+		"mem_size":   "",
+		"type":  "2"
+		},
+		{
+		"name":       "screen_off_reclaim",
+		"memitem":    [ "memitem_misc" , "meminfo_MemFree"],
+		"algo":       [ "equal" , "low"],
+		"threshold":  [ "2" , "600000"],
+		"actionitem": [ "global_reclaim", "global_reclaim"],
+		"target":     [ "30012500", "20012500" ],
+		"mem_size":   "",
+		"type":  "1"
+		}
+	],
+	"app_map": [
+		{
+		"app": "com.ss.android.ugc.aweme",
+		"index": 1
+		},
+		{
+		"app": "com.smile.gifmaker",
+		"index": 2
+		},
+		{
+		"app": "com.tencent.mobileqq",
+		"index": 3
+		},
+		{
+		"app": "com.ss.android.article.news",
+		"index": 4
+		},
+		{
+		"app": "tv.danmaku.bili",
+		"index": 5
+		},
+		{
+		"app": "com.xunmeng.pinduoduo",
+		"index": 6
+		},
+		{
+		"app": "com.taobao.taobao",
+		"index": 7
+		},
+		{
+		"app": "com.sina.weibo",
+		"index": 8
+		},
+		{
+		"app": "com.alibaba.android.rimet",
+		"index": 9
+		},
+		{
+		"app": "com.jingdong.app.mall",
+		"index": 10
+		},
+		{
+		"app": "com.sankuai.meituan",
+		"index": 11
+		},
+		{
+		"app": "com.tencent.qqlive",
+		"index": 12
+		},
+		{
+		"app": "com.baidu.searchbox",
+		"index": 13
+		},
+		{
+		"app": "com.dragon.read",
+		"index": 14
+		},
+		{
+		"app": "com.ss.android.article.video",
+		"index": 15
+		},
+		{
+		"app": "com.duowan.reader",
+		"index": 16
+		},
+		{
+		"app": "com.xingin.xhs",
+		"index": 17
+		},
+		{
+		"app": "com.eg.android.AlipayGphone",
+		"index": 18
+		},
+		{
+		"app": "com.hunantv.imgo.activity",
+		"index": 19
+		},
+		{
+		"app": "com.zhihu.android",
+		"index": 20
+		},
+		{
+		"app": "com.baidu.BaiduMap",
+		"index": 21
+		},
+		{
+		"app": "com.ximalaya.ting.android",
+		"index": 22
+		},
+		{
+		"app": "com.achievo.vipshop",
+		"index": 23
+		},
+		{
+		"app": "com.youku.phone",
+		"index": 24
+		},
+		{
+		"app": "ctrip.android.view",
+		"index": 25
+		},
+		{
+		"app": "com.tencent.mm",
+		"index": 26
+		},
+		{
+		"app": "com.qiyi.video",
+		"index": 27
+		},
+		{
+		"app": "com.UCMobile",
+		"index": 28
+		},
+		{
+		"app": "com.kmxs.reader",
+		"index": 29
+		},
+		{
+		"app": "com.tencent.mtt",
+		"index": 30
+		},
+		{
+		"app": "com.le123.ysdq",
+		"index": 31
+		},
+		{
+		"app": "com.quark.browser",
+		"index": 32
+		},
+		{
+		"app": "com.autonavi.minimap",
+		"index": 33
+		},
+		{
+		"app": "com.duowan.kiwi",
+		"index": 34
+		},
+		{
+		"app": "air.tv.douyu.android",
+		"index": 35
+		},
+		{
+		"app": "com.qidian.QDReader",
+		"index": 36
+		},
+		{
+		"app": "com.tencent.news",
+		"index": 37
+		},
+		{
+		"app": "com.xs.fm",
+		"index": 38
+		},
+		{
+		"app": "com.ss.android.ugc.aweme.lite",
+		"index": 39
+		},
+		{
+		"app": "com.xiaomi.market",
+		"index": 40
+		},
+		{
+		"app": "com.android.fileexplorer",
+		"index": 41
+		},
+		{
+		"app": "com.miui.huanji",
+		"index": 42
+		},
+		{
+		"app": "com.android.camera",
+		"index": 43,
+		"path": "/dev/memcg/camera/provider"
+		}
+	]
+}

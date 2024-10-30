@@ -1,0 +1,8 @@
+on property:sys.boot_completed=1 && property:vendor.mitee_vm.boot_completed=1
+    start vendor.misecmedia
+
+service vendor.misecmedia /odm/bin/misecmedia
+    class hal
+    user system
+    group system
+    disabled

@@ -1,0 +1,17 @@
+{
+	"##":"水润模式",
+	"Type":"Effect",
+	"TrueSight":
+	[
+		{
+            "ConfigurePath": "Effects/4_ModeMoistening/effect_preview.json",
+            "Index": 0,
+            "Mode":"Preview"
+        },
+        {
+            "ConfigurePath": "Effects/4_ModeMoistening/effect_capture.json",
+            "Index": 1,
+            "Mode":"Capture"
+        }
+	]
+}

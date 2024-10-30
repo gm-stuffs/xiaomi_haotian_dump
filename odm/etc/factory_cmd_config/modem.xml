@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<TestCases>
+    <Description>Modem</Description>
+    <Item>
+        <Description>Card slot status</Description>
+        <Step index="1">
+            <type>exec</type>
+            <addr>mtb 5 1</addr>
+            <operation>exec</operation>
+            <value type="show">0</value>
+        </Step>
+    </Item>
+    <!--check esim eid-->
+    <Item>
+        <Description>eSIM Enable</Description>
+        <Step index="1">
+            <type>exec</type>
+            <addr>mtb 5 10 1 0</addr>
+            <operation>exec</operation>
+            <value type="show">ERROR</value>
+        </Step>
+    </Item>
+    <Item>
+        <Description>eSIM Disable</Description>
+        <Step index="1">
+            <type>exec</type>
+            <operation>exec</operation>
+            <addr>mtb 5 10 2 0</addr>
+            <value type="show">ERROR</value>
+        </Step>
+    </Item>
+    <!--reset esim-->
+    <Item>
+        <Description>eSIM Reset</Description>
+        <Step index="1">
+            <type>exec</type>
+            <addr>mtb 5 10 5 0</addr>
+            <operation>exec</operation>
+            <value type="show">ERROR</value>
+        </Step>
+    </Item>
+</TestCases>

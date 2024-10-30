@@ -1,0 +1,10 @@
+{
+	"##":"前置拍照/人像/夜景-少年(清爽)",
+	"Type": "ConfigCategory",
+	"TrueSight": [
+		{
+			"FusionConfigurePath": "render/Config/config_mode_native.json",
+			"EffectConfigurePath": "render/Effect/effect_mode_clear.json"
+		}
+	]
+}

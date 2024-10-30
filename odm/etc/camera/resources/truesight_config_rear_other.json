@@ -1,0 +1,10 @@
+{
+	"##":"后置其他模式",
+	"Type": "ConfigCategory",
+	"TrueSight": [
+		{
+			"FusionConfigurePath": "render/Config/config_mode_rear_other.json",
+			"EffectConfigurePath": "render/Effect/effect_mode_clear.json"
+		}
+	]
+}

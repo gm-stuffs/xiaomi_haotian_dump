@@ -1,0 +1,10 @@
+{
+	"##":"后置人像-莱卡-生动模式-美颜部分(非美型部分)",
+	"Type": "ConfigCategory",
+	"TrueSight": [
+		{
+			"FusionConfigurePath": "render/Config/config_mode_rear_classical.json",
+			"EffectConfigurePath": "render/Effect/effect_mode_rear_vivid_retouch.json"
+		}
+	]
+}

@@ -1,0 +1,26 @@
+{
+	"##":"前置其他模式",
+	"Type":"Effect",
+	"ExtraOption":
+	{
+		"RetouchFactorType": 0
+	},
+	"TrueSight":
+	[
+		{
+			"ConfigurePath":"Effects/0_Spotless/effect_default.json",
+			"Index":0,
+			"Mode":"Preview"
+		},
+		{
+			"ConfigurePath":"Effects/9_ModeOtherFront/effect_preview.json",
+			"Index":1,
+			"Mode":"Preview"
+		},
+		{
+			"ConfigurePath":"Effects/9_ModeOtherFront/effect_capture.json",
+			"Index":2,
+			"Mode":"Capture"
+		}
+	]
+}

@@ -1,0 +1,32 @@
+{
+	"##":"少年模式",
+	"Type":"Effect",
+	"ExtraOption":
+    {
+        "EnvLightType": 1,
+        "EnableGenderMakeup":false
+    },
+	"TrueSight":
+	[
+		{
+			"ConfigurePath":"Effects/0_ModeYouthMale/effect_preview.json",
+			"Index":0,
+			"Mode":"Preview"
+		},
+		{
+			"ConfigurePath":"Effects/0_ModeYouthMale/effect_capture.json",
+			"Index":1,
+			"Mode":"Capture"
+		},
+		{
+			"ConfigurePath":"Effects/0_ModeYouthFemale/effect_preview.json",
+			"Index":2,
+			"Mode":"Preview"
+		},
+		{
+			"ConfigurePath":"Effects/0_ModeYouthFemale/effect_capture.json",
+			"Index":3,
+			"Mode":"Capture"
+		}
+	]
+}

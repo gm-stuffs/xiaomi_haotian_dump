@@ -1,0 +1,34 @@
+{
+	"##":"后置人像-莱卡-生动模式(整体)",
+	"Type":"EffectCategory",
+	"TrueSight":
+	[
+		{
+			"ExtraOptionPath":"0_ExtraOption/mode_rear_vivid.json"
+		},
+        {
+            "ConfigurePath":"5_DLRetouch/mode_rear_portraiture_vivid.json",
+            "Index":5
+        },
+		{
+			"ConfigurePath":"20_FaceRetouch/mode_rear_portraiture_vivid.json",
+			"Index":20
+		},
+		{
+			"ConfigurePath":"30_BasicRetouch/mode_rear_portraiture.json",
+			"Index":30
+		},
+		{
+			"ConfigurePath":"40_FaceStereo/mode_rear_portraiture.json",
+			"Index":40
+		},
+		{
+			"ConfigurePath":"60_Makeup/mode_RearPortraiture.json",
+			"Index":60
+		},
+        {
+			"ConfigurePath":"70_FacialRefine/mode_rear_portraiture_vivid.json",
+			"Index":70
+		}
+	]
+}

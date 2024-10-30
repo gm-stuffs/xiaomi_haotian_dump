@@ -1,0 +1,9 @@
+{
+  "/": "Bokeh PreLaunch",
+  "StructPreLaunch": {
+    "isModelLaunch": 1,
+    "modelName": "refine_head_seg_1024",
+    "useTrimap": 1,
+    "downsamplingRatio": 1
+  }
+}

@@ -1,0 +1,17 @@
+{
+	"##":"后置人像模式(莱卡生动/经典)妆容",
+	"Type":"Effect",
+	"ExtraOption":
+	{
+		"EnvLightType": 2,
+		"EnableGenderMakeup":false
+	},
+	"TrueSight":
+	[
+		{
+			"ConfigurePath":"Effects/0_ModeRearPortraiture/effect.json",
+			"Index":0,
+			"Mode":"Capture"
+		}
+	]
+}

@@ -1,0 +1,144 @@
+{
+/*
+注意事项1：
+    enum CamOptThermalLevel {
+        //这个名字具体怎么叫，需要讨论一下
+        ThermalLevelLow = 0x0,                   ///< 38度以下都是 Low
+        ThermalLevelThermalBreak,                ///< 41度进入Break, 38度退出Break，进入Low
+        ThermalLevelThermalHot,                  ///< 44度进入Hot, 42度退出Hot，进入Break
+        ThermalLevelThermalHurt,                 ///< 46度进入Hurt, 45度退出Hurt，进入Hot
+        ThermalLevelMid,                         ///< 47.5度进入Mid, 46度退出Mid，进入Hurt
+        ThermalLevelHigh,                        ///< 50度进入High, 48度退出High，进入Mid
+    };
+    ThermalLevel在选的时候填数字，因为直接填字符串还得解析，比较麻烦
+注意事项2：
+    threshold的区间是左闭右开的
+注意事项3：
+    enum  AnalyCondit { //降帧条件
+        BoardTemp = 0,//壳温
+        ThermalLevel, //ThermalLevel
+        BatteryLevel, //电池电量
+        CallBack, //根据传入的callback，比如折叠状态
+        MaxCount,
+    };
+    CallBack还没有想好怎么通过JSON传，暂时不支持
+注意事项3：
+    如果设置壳温，放大1000倍设置。
+    如46000是46度，46500是46.5度
+
+
+降帧条件举例：
+    "reduceFrameConfig":[
+        {
+            "analyCondit":"BoardTemp",
+            "threshold":"45000,44000,15;47000,46000,10"
+        },
+        {
+            "analyCondit":"BatteryLevel",
+            "threshold":"80,82,24;70,72,10"
+        },
+        {
+            "analyCondit":"ThermalLevel",
+            "threshold":"4,4,28"
+        }
+    ]
+*/
+    "version": "1.0",
+    "product": "haotian",
+    "configs": [
+        {
+            //录像模式，4K30降帧，不分前后置
+            "operationMode":32772,
+            "isVideoMode":1,
+            "videoWidth":3840,
+            "videoHeight":2160,
+            "maxFps":30,
+            "enableDynamicFPS":1,
+            "minFps":24,
+            "reduceFrameConfig":[
+                {
+                    "analyCondit":"BoardTemp",
+                    "threshold":"47500,42000,25"
+                }
+            ]
+        },
+        {
+            //录像模式，4K60降帧，不分前后置
+            "operationMode":32772,
+            "isVideoMode":1,
+            "videoWidth":3840,
+            "videoHeight":2160,
+            "enableDynamicFPS":1,
+            "maxFps":60,
+            "minFps":30,
+            "reduceFrameConfig":[
+                {
+                    "analyCondit":"BoardTemp",
+                    "threshold":"47500,42000,55"
+                },
+                {
+                    "analyCondit":"BatteryLevel",
+                    "threshold":"2,5,30"
+                }
+            ]
+        },
+        {
+            //录像模式，1080P60降帧，不分前后置
+            "operationMode":32772,
+            "isVideoMode":1,
+            "videoWidth":1920,
+            "videoHeight":1080,
+            "enableDynamicFPS":1,
+            "maxFps":60,
+            "minFps":30,
+            "reduceFrameConfig":[
+                {
+                    "analyCondit":"BoardTemp",
+                    "threshold":"47500,42000,55"
+                },
+                {
+                    "analyCondit":"BatteryLevel",
+                    "threshold":"2,5,30"
+                }
+            ]
+        },
+        {
+            //预览30fps降帧
+            "apkFunctionMask":2,
+            "maxFps":30,
+            "minFps":14,
+            "isVideoMode":0,
+            "reduceFrameConfig":[
+                {
+                    "analyCondit":"BoardTemp",
+                    "threshold":"44000,42000,25"
+                }
+            ]
+        },
+        {
+            //直播降帧，具体有谁可以搜索：ForVideoLiveReduceFPS
+            "operationMode":0,
+            "apkFunctionMask":15,
+            "reduceFrameConfig":[
+                {
+                    "analyCondit":"BoardTemp",
+                    "threshold":"41000,39000,24;44000,42000,20;46000,44000,15"
+                }
+            ]
+        },
+        {
+            "operationMode":0,
+            "apkFunctionMask":8,
+            "logicalCameraId":1,
+            "maxFps":15,
+            "minFps":15,
+            "reduceFrameConfig":[
+                {
+                    "analyCondit":"BoardTemp",
+                    "threshold":"41000,39000,12",
+                    "afterSecond":300
+                }
+            ]
+        }
+    ]
+}

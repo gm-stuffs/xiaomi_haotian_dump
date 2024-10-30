@@ -1,0 +1,12 @@
+{
+	"##":"前置默认(质感)模式",
+	"Type":"Effect",
+	"TrueSight":
+	[
+		{
+			"ConfigurePath":"Effects/0_ModeNative/effect.json",
+			"Index":0,
+			"Mode":"All"
+		}
+	]
+}

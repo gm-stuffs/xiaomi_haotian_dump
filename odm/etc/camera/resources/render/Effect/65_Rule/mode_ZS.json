@@ -1,0 +1,12 @@
+{
+	"##":"氛围滤镜-紫色",
+	"Type":"Effect",
+	"TrueSight":
+	[
+		{
+			"ConfigurePath":"Effects/0_ModeZS/effect.json",
+			"Index":0,
+			"Mode":"All"
+		}
+	]
+}

@@ -1,0 +1,58 @@
+{
+	"Type":"EffectModeGroup",
+	"TrueSight":
+	[
+		{
+			"Name": "前置质感(默认)",
+			"Path": "effect_mode_native.json"
+		},
+		{
+			"Name": "原生",
+			"Path": "effect_mode_protogenic.json"
+		},
+		{
+			"Name": "水润",
+			"Path": "effect_mode_moistening.json"
+		},
+		{
+			"Name": "型男(立体)",
+			"Path": "effect_mode_metrosexual.json"
+		},
+		{
+			"Name": "少年(清爽)",
+			"Path": "effect_mode_youth.json"
+		},
+		{
+			"Name": "前置视频/短视频",
+			"Path": "effect_mode_front_video.json"
+		},
+		{
+			"Name": "前置其他",
+			"Path": "effect_mode_front_other.json"
+		},
+		{
+			"Name": "后置其他模式",
+			"Path": "effect_mode_rear_other.json"
+		},
+		{
+			"Name": "后置视频",
+			"Path": "effect_mode_rear_video.json"
+		},
+		{
+			"Name": "后置人像-莱卡-经典模式-美颜部分",
+			"Path": "effect_mode_rear_classical_retouch.json"
+		},
+		{
+			"Name": "后置人像-莱卡-经典模式-美型部分",
+			"Path": "effect_mode_rear_classical_reshape.json"
+		},
+		{
+			"Name": "后置人像-莱卡-生动模式-美颜部分",
+			"Path": "effect_mode_rear_vivid_retouch.json"
+		},
+		{
+			"Name": "后置人像-莱卡-生动模式-美型部分",
+			"Path": "effect_mode_rear_vivid_reshape.json"
+		}
+	]
+}

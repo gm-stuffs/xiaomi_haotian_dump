@@ -1,0 +1,17 @@
+{
+	"##":"原生模式",
+	"Type":"Effect",
+	"TrueSight":
+	[
+		{
+			"ConfigurePath":"Effects/4_ModeProtogenic/effect_preview.json",
+			"Index":0,
+			"Mode":"Preview"
+		},
+		{
+			"ConfigurePath":"Effects/4_ModeProtogenic/effect_capture.json",
+			"Index":0,
+			"Mode":"Capture"
+		}
+	]
+}

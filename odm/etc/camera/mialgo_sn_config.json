@@ -1,0 +1,2699 @@
+{
+	"__comment__": "Xiaomi MialgoSuperNightCapture config file",
+	"phone_code": "O2",
+	"jsonVersion": "V470.0",
+	"offline_config": {
+	  "__comment__": "离线测试相关内容,离线测试使用",
+	  "offline_input_dir": "/sdcard/raw-nightcases",
+	  "offline_output_dir": "/sdcard/raw-nightcases-Output",
+	  "dump_suffix": "-base"
+	},
+
+	"DenoiseArgs": {
+		"__comment__": "默认 default 节点下的数据, 根据 Sensor 选择优先使用 common 参数,具体模式下参数会覆盖默认参数",
+		"default": {
+			"noiseArgs": {
+				"desc": "OV50H_240718",
+				"noise_para_use_lut": true,
+				"iso_list": [50, 80, 100, 160, 200, 400, 800, 1600, 2500, 3200],
+				"calib_k": [5.48943e-05, 7.11495e-05, 8.61819e-05, 1.26949e-04, 1.59990e-04, 3.00454e-04, 5.84968e-04, 1.16192e-03, 1.81014e-03, 2.30478e-03],
+				"calib_b": [5.19751e-07, 6.09264e-07, 6.01766e-07, 8.06612e-07, 2.03739e-07, 4.17297e-07, 9.06491e-07, 2.19987e-06, 4.11017e-06, 6.31030e-06],
+				"K_norm": 4
+			}
+		},
+		"Wide": {
+			"common": {
+				"noiseArgs": {
+					"desc": "OV50H_240718",
+					"noise_para_use_lut": true,
+					"iso_list": [50, 80, 100, 160, 200, 400, 800, 1600, 2500, 3200],
+					"calib_k": [5.48943e-05, 7.11495e-05, 8.61819e-05, 1.26949e-04, 1.59990e-04, 3.00454e-04, 5.84968e-04, 1.16192e-03, 1.81014e-03, 2.30478e-03],
+					"calib_b": [5.19751e-07, 6.09264e-07, 6.01766e-07, 8.06612e-07, 2.03739e-07, 4.17297e-07, 9.06491e-07, 2.19987e-06, 4.11017e-06, 6.31030e-06],
+					"K_norm": 4
+				}
+			},
+			"SE": {
+				"vibrant": {},
+				"leica": {}
+			},
+			"SN": {
+				"vibrant": {},
+				"leica": {}
+			},
+			"QuadBayer": {
+				"vibrant": {
+					"noiseArgs": {
+					"desc": "OV50H_O2wide_quad-hard code calib_k when iso800",
+					"noise_para_use_lut": true,
+					"iso_list": [100, 200, 400, 640, 800],
+					"calib_k": [2.781e-04, 5.129e-04, 9.556e-04, 1.184e-03, 2.986e-03],
+					"calib_b": [2.235e-07, 2.971e-07, 6.789e-07, 1.269e-06, 1.899e-06],
+					"K_norm": 4.0}
+				},
+				"leica": {
+					"noiseArgs": {
+						"desc": "OV50H_O2wide_quad-hard code calib_k when iso800",
+						"noise_para_use_lut": true,
+						"iso_list": [100, 200, 400, 640, 800],
+						"calib_k": [2.781e-04, 5.129e-04, 9.556e-04, 1.184e-03, 2.986e-03],
+						"calib_b": [2.235e-07, 2.971e-07, 6.789e-07, 1.269e-06, 1.899e-06],
+						"K_norm": 4.0}
+				}
+			}
+		},
+		"UW": {
+			"common": {
+				"noiseArgs": {
+					"desc": "S5KJN1_240520",
+					"noise_para_use_lut": true,
+					"iso_list": [50, 200, 400, 800, 1600, 2500, 3200],
+					"calib_k": [7.31910e-05, 1.88237e-04, 3.37678e-04, 6.43997e-04, 1.25598e-03, 1.95045e-03, 2.49527e-03],
+					"calib_b": [2.87642e-07, 3.46023e-07, 6.71972e-07, 1.51083e-06, 4.35246e-06, 9.43369e-06, 1.48954e-05],
+					"K_norm": 4
+				}
+			},
+			"SE": {
+				"vibrant": {},
+				"leica": {}
+			},
+			"SN": {
+				"vibrant": {},
+				"leica": {}
+			},
+			"QuadBayer": {
+				"vibrant": {
+					"noiseArgs": {
+					"desc": "OV50H_O2wide_quad",
+					"noise_para_use_lut": true,
+					"iso_list": [100, 200, 400, 640, 800],
+					"calib_k": [2.781e-04, 5.129e-04, 9.556e-04, 1.184e-03, 1.286e-03],
+					"calib_b": [2.235e-07, 2.971e-07, 6.789e-07, 1.269e-06, 1.899e-06],
+					"K_norm": 16.0}
+				},
+				"leica": {
+					"noiseArgs": {
+						"desc": "OV50H_O2wide_quad",
+						"noise_para_use_lut": true,
+						"iso_list": [100, 200, 400, 640, 800],
+						"calib_k": [2.781e-04, 5.129e-04, 9.556e-04, 1.184e-03, 1.286e-03],
+						"calib_b": [2.235e-07, 2.971e-07, 6.789e-07, 1.269e-06, 1.899e-06],
+						"K_norm": 16.0}
+				}
+			}
+		},
+		"Tele": {
+			"common": {
+				"model_ll_thre": 300,
+				"noiseArgs": {
+					"desc": "N1tele_imx858_240822",
+					"noise_para_use_lut": true,
+					"iso_list": [50, 200, 400, 500, 640, 800, 1000,1100, 1250],
+					"calib_k": [1.28377e-04, 5.05833e-04, 9.92597e-04, 1.21535e-03, 1.51545e-03, 1.88231e-03, 2.25151e-03, 2.50312e-03, 2.53903e-03],
+					"calib_b": [5.32751e-07, 1.52753e-06, 3.59833e-06, 4.89189e-06, 6.90224e-06, 1.08710e-05, 1.53904e-05, 1.90686e-05, 1.90896e-05],
+					"K_norm": 4.0
+				}
+			},
+			"SE": {
+				"vibrant": {},
+				"leica": {}
+			},
+			"SN": {
+				"vibrant": {},
+				"leica": {}
+			},
+			"QuadBayer": {
+				"vibrant": {
+					"noiseArgs": {
+					"desc": "OV50H_O2wide_quad",
+					"noise_para_use_lut": true,
+					"iso_list": [100, 200, 400, 640, 800],
+					"calib_k": [2.781e-04, 5.129e-04, 9.556e-04, 1.184e-03, 1.286e-03],
+					"calib_b": [2.235e-07, 2.971e-07, 6.789e-07, 1.269e-06, 1.899e-06],
+					"K_norm": 16.0}
+				},
+				"leica": {
+					"noiseArgs": {
+						"desc": "OV50H_O2wide_quad",
+						"noise_para_use_lut": true,
+						"iso_list": [100, 200, 400, 640, 800],
+						"calib_k": [2.781e-04, 5.129e-04, 9.556e-04, 1.184e-03, 1.286e-03],
+						"calib_b": [2.235e-07, 2.971e-07, 6.789e-07, 1.269e-06, 1.899e-06],
+						"K_norm": 16.0}
+				}
+			}
+		}
+	},
+	"BLArgs": {
+		"__comment__": "默认 default 节点下的数据, 根据 Sensor 选择优先使用 common 参数,具体模式下参数会覆盖默认参数",
+		"default": {
+			"use_blc_outside": true
+		}
+	},
+	"AlignArgs": {
+		"__comment__": "默认 default 节点下的数据, 根据 Sensor 选择优先使用 common 参数,具体模式下参数会覆盖默认参数",
+		"default": {
+			"if_ev0_use_global_align": false,
+			"if_evn_use_global_align": true,
+			"EV0_REMAP_MODE": 0,
+			"EVN_REMAP_MODE": 0,
+			"GlobalAlianArgs": {
+				"patch_nums": 8,
+				"bad_patch_thre": 1.2
+			},
+			"LocalAlignArgs": {
+				"patch_size": 8,
+				"patch_step": 8,
+				"ev0_finest_scale": 2,
+				"ev0_finest_scale_ref_is_evn": 2,
+				"evn_finest_scale": 1,
+				"border_size": 16,
+				"if_ev0_mean_norm": true,
+				"if_evn_mean_norm": true,
+				"if_ev0_refinement": true,
+				"if_evn_refinement": true,
+				"FixFlowArgs": {
+					"medianBlur_1_size": 3,
+					"medianBlur_1_times": 1,
+					"medianBlur_2_size": 5,
+					"medianBlur_2_times": 8,
+					"overExposure_thres": 0.9
+				}
+			}
+		},
+		"Wide": {
+			"common": {
+				"LocalAlignArgs": {
+					"ev0_finest_scale": 2,
+					"ev0_finest_scale_ref_is_evn": 1,
+					"evn_finest_scale": 1
+				}
+			},
+			"SE": {
+				"vibrant": {
+					"LocalAlignArgs": {
+						"ev0_finest_scale": 2,
+						"ev0_finest_scale_ref_is_evn": 1,
+						"evn_finest_scale": 1
+					}
+				},
+				"leica": {
+					"LocalAlignArgs": {
+						"ev0_finest_scale": 2,
+						"ev0_finest_scale_ref_is_evn": 1,
+						"evn_finest_scale": 1
+					}
+				}
+			},
+			"SN": {
+				"vibrant": {
+					"LocalAlignArgs": {
+						"ev0_finest_scale": 2,
+						"ev0_finest_scale_ref_is_evn": 1,
+						"evn_finest_scale": 1
+					}
+				},
+				"leica": {
+					"LocalAlignArgs": {
+						"ev0_finest_scale": 2,
+						"ev0_finest_scale_ref_is_evn": 1,
+						"evn_finest_scale": 1
+					}
+				}
+			},
+			"QuadBayer": {
+				"vibrant": {},
+				"leica": {}
+			}
+		},
+		"UW": {
+			"common": {
+				"vibrant": {},
+				"leica": {}
+			},
+			"SE": {
+				"vibrant": {},
+				"leica": {}
+			},
+			"SN": {
+				"vibrant": {},
+				"leica": {}
+			},
+			"QuadBayer": {
+				"vibrant": {},
+				"leica": {}
+			}
+		},
+		"Tele": {
+			"common": {
+				"LocalAlignArgs": {
+					"ev0_finest_scale": 2,
+					"ev0_finest_scale_ref_is_evn": 1,
+					"evn_finest_scale": 1
+				}
+			},
+			"SE": {
+				"vibrant": {
+					"LocalAlignArgs": {
+						"ev0_finest_scale": 2,
+						"ev0_finest_scale_ref_is_evn": 1,
+						"evn_finest_scale": 1
+					}
+				},
+				"leica": {
+					"LocalAlignArgs": {
+						"ev0_finest_scale": 2,
+						"ev0_finest_scale_ref_is_evn": 1,
+						"evn_finest_scale": 1
+					}
+				}
+			},
+			"SN": {
+				"vibrant": {
+					"LocalAlignArgs": {
+						"ev0_finest_scale": 2,
+						"ev0_finest_scale_ref_is_evn": 1,
+						"evn_finest_scale": 1
+					}
+				},
+				"leica": {
+					"LocalAlignArgs": {
+						"ev0_finest_scale": 2,
+						"ev0_finest_scale_ref_is_evn": 1,
+						"evn_finest_scale": 1
+					}
+				}
+			},
+			"QuadBayer": {
+				"vibrant": {},
+				"leica": {}
+			}
+		}
+	},
+	"DeghostArgs": {
+		"__comment__": "默认 default 节点下的数据, 根据 Sensor 选择优先使用 common 参数,具体模式下参数会覆盖默认参数",
+		"default": {
+			"good_exp_ratio": 0.99,
+			"mid_exp_ratio": 0.7,
+			"ev0_frame_weight_coeff": 6,
+			"enable_clampRB": true,
+			"deghost_noise_enable": true,
+			"deghost_noise_ak1": 5.51423036e-07,
+			"deghost_noise_ak2": 8.31198095e-05,
+			"deghost_noise_bk1": 4.41866008e-13,
+			"deghost_noise_bk2": 7.93232804e-10,
+			"deghost_noise_bk3": 4.25700922e-07,
+			"weight_correction_factor": [],
+			"deghost_ev0_val_bias": [],
+			"deghost_ev0_wit_bias": [],
+			"evn_deghost_thre": 0.4
+		},
+		"Wide": {
+			"common": {
+				"weight_correction_factor": [
+					[200, 8],
+					[360, 8],
+					[370, 12]
+				],
+				"deghost_ev0_val_bias": [
+					[200, 12],
+					[370, 10]
+				],
+				"deghost_ev0_wit_bias": [
+					[200, 0.1],
+					[360, 0.1],
+					[370, 0.05],
+					[430, 0.01]
+				]
+			},
+			"SE": {
+				"vibrant": {
+					"weight_correction_factor": [
+						[200, 8],
+						[360, 8],
+						[370, 12]
+					],
+					"deghost_ev0_val_bias": [
+						[200, 12],
+						[370, 10]
+					],
+					"deghost_ev0_wit_bias": [
+						[200, 0.1],
+						[360, 0.1],
+						[370, 0.05],
+						[430, 0.01]
+					]
+				},
+				"leica": {
+					"weight_correction_factor": [
+						[200, 8],
+						[360, 8],
+						[370, 12]
+					],
+					"deghost_ev0_val_bias": [
+						[200, 12],
+						[370, 10]
+					],
+					"deghost_ev0_wit_bias": [
+						[200, 0.1],
+						[360, 0.1],
+						[370, 0.05],
+						[430, 0.01]
+					]
+				}
+			},
+			"SN": {
+				"vibrant": {
+					"weight_correction_factor": [
+						[200, 8],
+						[360, 8],
+						[370, 12]
+					],
+					"deghost_ev0_val_bias": [
+						[200, 12],
+						[370, 10]
+					],
+					"deghost_ev0_wit_bias": [
+						[200, 0.1],
+						[360, 0.1],
+						[370, 0.05],
+						[430, 0.01]
+					]
+				},
+				"leica": {
+					"weight_correction_factor": [
+						[200, 8],
+						[360, 8],
+						[370, 12]
+					],
+					"deghost_ev0_val_bias": [
+						[200, 12],
+						[370, 10]
+					],
+					"deghost_ev0_wit_bias": [
+						[200, 0.1],
+						[360, 0.1],
+						[370, 0.05],
+						[430, 0.01]
+					]
+				}
+			},
+			"QuadBayer": {
+				"vibrant": {},
+				"leica": {}
+			}
+		},
+		"UW": {
+			"common": {
+				"vibrant": {},
+				"leica": {}
+			},
+			"SE": {
+				"vibrant": {},
+				"leica": {}
+			},
+			"SN": {
+				"vibrant": {},
+				"leica": {}
+			},
+			"QuadBayer": {
+				"vibrant": {},
+				"leica": {}
+			}
+		},
+		"Tele": {
+			"common": {
+				"weight_correction_factor": [
+					[200, 8],
+					[360, 8],
+					[370, 12]
+				],
+				"deghost_ev0_val_bias": [
+					[200, 12],
+					[370, 10]
+				],
+				"deghost_ev0_wit_bias": [
+					[200, 0.1],
+					[360, 0.1],
+					[370, 0.05],
+					[430, 0.01]
+				]
+			},
+			"SE": {
+				"vibrant": {
+					"weight_correction_factor": [
+						[200, 8],
+						[360, 8],
+						[370, 12]
+					],
+					"deghost_ev0_val_bias": [
+						[200, 12],
+						[370, 10]
+					],
+					"deghost_ev0_wit_bias": [
+						[200, 0.1],
+						[360, 0.1],
+						[370, 0.05],
+						[430, 0.01]
+					]
+				},
+				"leica": {
+					"weight_correction_factor": [
+						[200, 8],
+						[360, 8],
+						[370, 12]
+					],
+					"deghost_ev0_val_bias": [
+						[200, 12],
+						[370, 10]
+					],
+					"deghost_ev0_wit_bias": [
+						[200, 0.1],
+						[360, 0.1],
+						[370, 0.05],
+						[430, 0.01]
+					]
+				}
+			},
+			"SN": {
+				"vibrant": {
+					"weight_correction_factor": [
+						[200, 8],
+						[360, 8],
+						[370, 12]
+					],
+					"deghost_ev0_val_bias": [
+						[200, 12],
+						[370, 10]
+					],
+					"deghost_ev0_wit_bias": [
+						[200, 0.1],
+						[360, 0.1],
+						[370, 0.05],
+						[430, 0.01]
+					]
+				},
+				"leica": {
+					"weight_correction_factor": [
+						[200, 8],
+						[360, 8],
+						[370, 12]
+					],
+					"deghost_ev0_val_bias": [
+						[200, 12],
+						[370, 10]
+					],
+					"deghost_ev0_wit_bias": [
+						[200, 0.1],
+						[360, 0.1],
+						[370, 0.05],
+						[430, 0.01]
+					]
+				}
+			},
+			"QuadBayer": {
+				"vibrant": {},
+				"leica": {}
+			}
+		}
+	},
+	"MfnrMergeArgs": {
+		"__comment__": "默认 default 节点下的数据, 根据 Sensor 选择优先使用 common 参数,具体模式下参数会覆盖默认参数",
+		"default": {
+			"merge_fft": false,
+			"evn_base_abandon_frames": 0,
+			"mfnr_tgain_thres": 40.0,
+			"noise_level_ratio": 0.5,
+			"adjust_noise_level_enable": true
+		},
+		"Wide": {
+			"common": {
+				"evn_base_abandon_frames": 0
+			},
+			"SE": {
+				"vibrant": {
+					"evn_base_abandon_frames": 1
+				},
+				"leica": {
+					"evn_base_abandon_frames": 1
+				}
+			},
+			"SN": {
+				"vibrant": {
+					"evn_base_abandon_frames": 0
+				},
+				"leica": {
+					"evn_base_abandon_frames": 0
+				}
+			},
+			"QuadBayer": {
+				"vibrant": {},
+				"leica": {}
+			}
+		},
+		"UW": {
+			"common": {
+				"vibrant": {},
+				"leica": {}
+			},
+			"SE": {
+				"vibrant": {},
+				"leica": {}
+			},
+			"SN": {
+				"vibrant": {},
+				"leica": {}
+			},
+			"QuadBayer": {
+				"vibrant": {},
+				"leica": {}
+			}
+		},
+		"Tele": {
+			"common": {
+				"evn_base_abandon_frames": 0
+			},
+			"SE": {
+				"vibrant": {
+					"evn_base_abandon_frames": 3
+				},
+				"leica": {
+					"evn_base_abandon_frames": 3
+				}
+			},
+			"SN": {
+				"vibrant": {
+					"evn_base_abandon_frames": 0
+				},
+				"leica": {
+					"evn_base_abandon_frames": 0
+				}
+			},
+			"QuadBayer": {
+				"vibrant": {},
+				"leica": {}
+			}
+		}
+	},
+	"BrightenArgs": {
+		"__comment__": "默认 default 节点下的数据, 根据 Sensor 选择优先使用 common 参数,具体模式下参数会覆盖默认参数",
+		"default": {
+			"bright_min_limit": 1.6,
+			"bright_max_limit": 4.0,
+			"dark_val_thres": [
+				[86.0, 48.0],
+				[280.0, 42.0],
+				[350.0, 38.0],
+				[400.0, 36.0],
+				[450.0, 35.0],
+				[520.0, 30.0]
+			],
+			"dark_proportion_thre": [
+				[25, 0.1],
+				[180, 0.11],
+				[280, 0.12],
+				[400, 0.14],
+				[420, 0.13]
+			],
+			"face_ev6_ratios": [
+				[25.0, 5.0],
+				[70.0, 4.0],
+				[85.0, 3.0],
+				[100.0, 2.4],
+				[110.0, 2.3],
+				[120.0, 2.1],
+				[150.0, 1.6],
+				[180.0, 1.4]
+			],
+			"face_ev6_limits": [
+				[200.0, 2.0, 5.5],
+				[300.0, 1.5, 4.3],
+				[350.0, 1.3, 3.8],
+				[380.0, 1.2, 3.8],
+				[400.0, 1.0, 3.0],
+				[470.0, 1.0, 2.0],
+				[500.0, 1.0, 1.6]
+			],
+			"noface_ev6_limits": [
+				[86.0, 3.0, 5.8],
+				[180.0, 2.5, 5.8],
+				[250.0, 2.3, 5.4],
+				[280.0, 1.8, 5.2],
+				[330.0, 1.5, 3.8],
+				[400.0, 1.0, 3.8],
+				[420.0, 1.0, 2.8],
+				[480.0, 1.0, 2.0],
+				[500.0, 1.0, 1.6]
+			]
+		},
+		"Wide": {
+			"common": {
+				"bright_min_limit": 2.0,
+				"bright_max_limit": 6.0,
+				"dark_val_thres": [
+					[86.0, 48.0],
+					[280.0, 42.0],
+					[350.0, 38.0],
+					[400.0, 36.0],
+					[450.0, 35.0],
+					[520.0, 30.0]
+				],
+				"dark_proportion_thre": [
+					[25, 0.1],
+					[180, 0.11],
+					[280, 0.12],
+					[400, 0.14],
+					[420, 0.13]
+				],
+				"face_ev6_ratios": [
+					[25.0, 5.0],
+					[70.0, 4.0],
+					[85.0, 3.0],
+					[100.0, 2.4],
+					[110.0, 2.3],
+					[120.0, 2.1],
+					[150.0, 1.6],
+					[180.0, 1.3]
+				],
+				"face_ev6_limits": [
+					[200.0, 2.0, 5.5],
+					[300.0, 1.5, 4.3],
+					[350.0, 1.3, 3.8],
+					[380.0, 1.2, 3.8],
+					[400.0, 1.0, 3.0],
+					[470.0, 1.0, 2.0],
+					[500.0, 1.0, 1.6]
+				],
+				"noface_ev6_limits": [
+					[86.0, 3.0, 5.8],
+					[180.0, 2.5, 5.8],
+					[250.0, 2.3, 5.4],
+					[280.0, 1.8, 5.2],
+					[330.0, 1.5, 3.8],
+					[400.0, 1.0, 3.8],
+					[420.0, 1.0, 2.8],
+					[480.0, 1.0, 2.0],
+					[500.0, 1.0, 1.6]
+				]
+			},
+			"SE": {
+				"vibrant": {
+					"bright_min_limit": 2.0,
+					"bright_max_limit": 6.0,
+					"dark_val_thres": [
+						[86.0, 48.0],
+						[280.0, 42.0],
+						[350.0, 38.0],
+						[400.0, 36.0],
+						[450.0, 35.0],
+						[520.0, 30.0]
+					],
+					"dark_proportion_thre": [
+						[25, 0.1],
+						[180, 0.11],
+						[280, 0.12],
+						[400, 0.14],
+						[420, 0.13]
+					],
+					"face_ev6_ratios": [
+						[25.0, 5.0],
+						[70.0, 4.0],
+						[85.0, 3.0],
+						[100.0, 2.4],
+						[110.0, 2.3],
+						[120.0, 2.1],
+						[150.0, 1.6],
+						[180.0, 1.4]
+					],
+					"face_ev6_limits": [
+						[200.0, 2.0, 5.5],
+						[300.0, 1.5, 4.3],
+						[350.0, 1.3, 3.8],
+						[380.0, 1.2, 3.8],
+						[400.0, 1.0, 3.0],
+						[470.0, 1.0, 2.0],
+						[500.0, 1.0, 1.6]
+					],
+					"noface_ev6_limits": [
+						[86.0, 3.0, 5.8],
+						[180.0, 2.5, 5.8],
+						[250.0, 2.3, 5.4],
+						[280.0, 1.8, 5.2],
+						[330.0, 1.5, 3.8],
+						[400.0, 1.0, 3.8],
+						[420.0, 1.0, 2.8],
+						[480.0, 1.0, 2.0],
+						[500.0, 1.0, 1.6]
+					]
+				},
+				"leica": {
+					"bright_min_limit": 2.0,
+					"bright_max_limit": 6.0,
+					"dark_val_thres": [
+						[86.0, 48.0],
+						[280.0, 42.0],
+						[350.0, 38.0],
+						[400.0, 36.0],
+						[450.0, 35.0],
+						[520.0, 30.0]
+					],
+					"dark_proportion_thre": [
+						[25, 0.1],
+						[180, 0.11],
+						[280, 0.12],
+						[400, 0.14],
+						[420, 0.13]
+					],
+					"face_ev6_ratios": [
+						[25.0, 5.0],
+						[70.0, 4.0],
+						[85.0, 3.0],
+						[100.0, 2.4],
+						[110.0, 2.3],
+						[120.0, 2.1],
+						[150.0, 1.6],
+						[180.0, 1.4]
+					],
+					"face_ev6_limits": [
+						[200.0, 2.0, 5.5],
+						[300.0, 1.5, 4.3],
+						[350.0, 1.3, 3.8],
+						[380.0, 1.2, 3.8],
+						[400.0, 1.0, 3.0],
+						[470.0, 1.0, 2.0],
+						[500.0, 1.0, 1.6]
+					],
+					"noface_ev6_limits": [
+						[86.0, 3.0, 5.8],
+						[180.0, 2.5, 5.8],
+						[250.0, 2.3, 5.4],
+						[280.0, 1.8, 5.2],
+						[330.0, 1.5, 3.8],
+						[400.0, 1.0, 3.8],
+						[420.0, 1.0, 2.8],
+						[480.0, 1.0, 2.0],
+						[500.0, 1.0, 1.6]
+					]
+				}
+			},
+			"SN": {
+				"vibrant": {
+					"bright_min_limit": 2.0,
+					"bright_max_limit": 6.0,
+					"dark_val_thres": [
+						[86.0, 48.0],
+						[280.0, 42.0],
+						[350.0, 38.0],
+						[400.0, 36.0],
+						[450.0, 35.0],
+						[520.0, 30.0]
+					],
+					"dark_proportion_thre": [
+						[25, 0.1],
+						[180, 0.11],
+						[280, 0.12],
+						[400, 0.14],
+						[420, 0.13]
+					],
+					"face_ev6_ratios": [
+						[25.0, 5.0],
+						[70.0, 4.0],
+						[85.0, 3.0],
+						[100.0, 2.4],
+						[110.0, 2.3],
+						[120.0, 2.1],
+						[150.0, 1.6],
+						[180.0, 1.3]
+					],
+					"face_ev6_limits": [
+						[200.0, 2.0, 5.5],
+						[300.0, 1.5, 4.3],
+						[350.0, 1.3, 3.8],
+						[380.0, 1.2, 3.8],
+						[400.0, 1.0, 3.0],
+						[470.0, 1.0, 2.0],
+						[500.0, 1.0, 1.6]
+					],
+					"noface_ev6_limits": [
+						[86.0, 3.0, 5.8],
+						[180.0, 2.5, 5.8],
+						[250.0, 2.3, 5.4],
+						[280.0, 1.8, 5.2],
+						[330.0, 1.5, 3.8],
+						[400.0, 1.0, 3.8],
+						[420.0, 1.0, 2.8],
+						[480.0, 1.0, 2.0],
+						[500.0, 1.0, 1.6]
+					]
+				},
+				"leica": {
+					"bright_min_limit": 2.0,
+					"bright_max_limit": 6.0,
+					"dark_val_thres": [
+						[86.0, 48.0],
+						[280.0, 42.0],
+						[350.0, 38.0],
+						[400.0, 36.0],
+						[450.0, 35.0],
+						[520.0, 30.0]
+					],
+					"dark_proportion_thre": [
+						[25, 0.1],
+						[180, 0.11],
+						[280, 0.12],
+						[400, 0.14],
+						[420, 0.13]
+					],
+					"face_ev6_ratios": [
+						[25.0, 5.0],
+						[70.0, 4.0],
+						[85.0, 3.0],
+						[100.0, 2.4],
+						[110.0, 2.3],
+						[120.0, 2.1],
+						[150.0, 1.6],
+						[180.0, 1.3]
+					],
+					"face_ev6_limits": [
+						[200.0, 2.0, 5.5],
+						[300.0, 1.5, 4.3],
+						[350.0, 1.3, 3.8],
+						[380.0, 1.2, 3.8],
+						[400.0, 1.0, 3.0],
+						[470.0, 1.0, 2.0],
+						[500.0, 1.0, 1.6]
+					],
+					"noface_ev6_limits": [
+						[86.0, 3.0, 5.8],
+						[180.0, 2.5, 5.8],
+						[250.0, 2.3, 5.4],
+						[280.0, 1.8, 5.2],
+						[330.0, 1.5, 3.8],
+						[400.0, 1.0, 3.8],
+						[420.0, 1.0, 2.8],
+						[480.0, 1.0, 2.0],
+						[500.0, 1.0, 1.6]
+					]
+				}
+			},
+			"QuadBayer": {
+				"vibrant": {},
+				"leica": {}
+			}
+		},
+		"UW": {
+			"common": {
+				"vibrant": {},
+				"leica": {}
+			},
+			"SE": {
+				"vibrant": {},
+				"leica": {}
+			},
+			"SN": {
+				"vibrant": {},
+				"leica": {}
+			},
+			"QuadBayer": {
+				"vibrant": {},
+				"leica": {}
+			}
+		},
+		"Tele": {
+			"common": {
+				"bright_min_limit": 2.0,
+				"bright_max_limit": 6.0,
+				"dark_val_thres": [
+					[86.0, 48.0],
+					[280.0, 42.0],
+					[350.0, 40.0],
+					[400.0, 38.0],
+					[450.0, 35.0],
+					[520.0, 30.0]
+				],
+				"dark_proportion_thre": [
+					[25.0, 0.1],
+					[180.0, 0.11],
+					[280.0, 0.11],
+					[330.0, 0.13]
+				],
+				"face_ev6_ratios": [
+					[25.0, 5.0],
+					[70.0, 4.0],
+					[85.0, 3.0],
+					[100.0, 1.3],
+					[110.0, 1.1],
+					[120.0, 1.1],
+					[150.0, 1.0],
+					[180.0, 1.0]
+				],
+				"face_ev6_limits": [
+					[200.0, 1.4, 5.5],
+					[250.0, 1.1, 5.5],
+					[300.0, 1.0, 4.3],
+					[350.0, 1.0, 3.8],
+					[380.0, 1.0, 3.8],
+					[400.0, 1.0, 3.0],
+					[470.0, 1.0, 2.0],
+					[500.0, 1.0, 1.6]
+				],
+				"noface_ev6_limits": [
+					[86.0, 3.0, 5.8],
+					[180.0, 2.5, 5.8],
+					[250.0, 2.3, 5.4],
+					[280.0, 2.1, 5.2],
+					[330.0, 1.9, 5.2],
+					[400.0, 1.5, 3.8],
+					[420.0, 1.0, 4.4],
+					[480.0, 1.0, 2.0],
+					[500.0, 1.0, 1.6]
+				]
+			},
+			"SE": {
+				"vibrant": {
+					"bright_min_limit": 2.0,
+					"bright_max_limit": 6.0,
+					"dark_val_thres": [
+						[86.0, 48.0],
+						[280.0, 42.0],
+						[350.0, 40.0],
+						[400.0, 38.0],
+						[450.0, 35.0],
+						[520.0, 30.0]
+					],
+					"dark_proportion_thre": [
+						[25.0, 0.1],
+						[180.0, 0.11],
+						[280.0, 0.11],
+						[330.0, 0.13]
+					],
+					"face_ev6_ratios": [
+						[25.0, 5.0],
+						[70.0, 4.0],
+						[85.0, 3.0],
+						[100.0, 1.3],
+						[110.0, 1.1],
+						[120.0, 1.1],
+						[150.0, 1.0],
+						[180.0, 1.0]
+					],
+					"face_ev6_limits": [
+						[200.0, 1.4, 5.5],
+						[250.0, 1.1, 5.5],
+						[300.0, 1.0, 4.3],
+						[350.0, 1.0, 3.8],
+						[380.0, 1.0, 3.8],
+						[400.0, 1.0, 3.0],
+						[470.0, 1.0, 2.0],
+						[500.0, 1.0, 1.6]
+					],
+					"noface_ev6_limits": [
+						[86.0, 3.0, 5.8],
+						[180.0, 2.5, 5.8],
+						[250.0, 2.3, 5.4],
+						[280.0, 2.1, 5.2],
+						[330.0, 1.9, 5.2],
+						[400.0, 1.5, 3.8],
+						[420.0, 1.0, 4.4],
+						[480.0, 1.0, 2.0],
+						[500.0, 1.0, 1.6]
+					]
+				},
+				"leica": {
+					"bright_min_limit": 2.0,
+					"bright_max_limit": 6.0,
+					"dark_val_thres": [
+						[86.0, 48.0],
+						[280.0, 42.0],
+						[350.0, 40.0],
+						[400.0, 38.0],
+						[450.0, 35.0],
+						[520.0, 30.0]
+					],
+					"dark_proportion_thre": [
+						[25.0, 0.1],
+						[180.0, 0.11],
+						[280.0, 0.11],
+						[330.0, 0.13]
+					],
+					"face_ev6_ratios": [
+						[25.0, 5.0],
+						[70.0, 4.0],
+						[85.0, 3.0],
+						[100.0, 1.3],
+						[110.0, 1.1],
+						[120.0, 1.1],
+						[150.0, 1.0],
+						[180.0, 1.0]
+					],
+					"face_ev6_limits": [
+						[200.0, 1.4, 5.5],
+						[250.0, 1.1, 5.5],
+						[300.0, 1.0, 4.3],
+						[350.0, 1.0, 3.8],
+						[380.0, 1.0, 3.8],
+						[400.0, 1.0, 3.0],
+						[470.0, 1.0, 2.0],
+						[500.0, 1.0, 1.6]
+					],
+					"noface_ev6_limits": [
+						[86.0, 3.0, 5.8],
+						[180.0, 2.5, 5.8],
+						[250.0, 2.3, 5.4],
+						[280.0, 2.1, 5.2],
+						[330.0, 1.9, 5.2],
+						[400.0, 1.5, 3.8],
+						[420.0, 1.0, 4.4],
+						[480.0, 1.0, 2.0],
+						[500.0, 1.0, 1.6]
+					]
+				}
+			},
+			"SN": {
+				"vibrant": {
+					"bright_min_limit": 2.0,
+					"bright_max_limit": 6.0,
+					"dark_val_thres": [
+						[86.0, 48.0],
+						[280.0, 42.0],
+						[350.0, 40.0],
+						[400.0, 38.0],
+						[450.0, 35.0],
+						[520.0, 30.0]
+					],
+					"dark_proportion_thre": [
+						[25.0, 0.1],
+						[180.0, 0.11],
+						[280.0, 0.11],
+						[330.0, 0.13]
+					],
+					"face_ev6_ratios": [
+						[25.0, 5.0],
+						[70.0, 4.0],
+						[85.0, 3.0],
+						[100.0, 1.3],
+						[110.0, 1.1],
+						[120.0, 1.1],
+						[150.0, 1.0],
+						[180.0, 1.0]
+					],
+					"face_ev6_limits": [
+						[200.0, 1.4, 5.5],
+						[250.0, 1.1, 5.5],
+						[300.0, 1.0, 4.3],
+						[350.0, 1.0, 3.8],
+						[380.0, 1.0, 3.8],
+						[400.0, 1.0, 3.0],
+						[470.0, 1.0, 2.0],
+						[500.0, 1.0, 1.6]
+					],
+					"noface_ev6_limits": [
+						[86.0, 3.0, 5.8],
+						[180.0, 2.5, 5.8],
+						[250.0, 2.3, 5.4],
+						[280.0, 2.1, 5.2],
+						[330.0, 1.9, 5.2],
+						[400.0, 1.5, 3.8],
+						[420.0, 1.0, 4.4],
+						[480.0, 1.0, 2.0],
+						[500.0, 1.0, 1.6]
+					]
+				},
+				"leica": {
+					"bright_min_limit": 2.0,
+					"bright_max_limit": 6.0,
+					"dark_val_thres": [
+						[86.0, 48.0],
+						[280.0, 42.0],
+						[350.0, 40.0],
+						[400.0, 38.0],
+						[450.0, 35.0],
+						[520.0, 30.0]
+					],
+					"dark_proportion_thre": [
+						[25.0, 0.1],
+						[180.0, 0.11],
+						[280.0, 0.11],
+						[330.0, 0.13]
+					],
+					"face_ev6_ratios": [
+						[25.0, 5.0],
+						[70.0, 4.0],
+						[85.0, 3.0],
+						[100.0, 1.3],
+						[110.0, 1.1],
+						[120.0, 1.1],
+						[150.0, 1.0],
+						[180.0, 1.0]
+					],
+					"face_ev6_limits": [
+						[200.0, 1.4, 5.5],
+						[250.0, 1.1, 5.5],
+						[300.0, 1.0, 4.3],
+						[350.0, 1.0, 3.8],
+						[380.0, 1.0, 3.8],
+						[400.0, 1.0, 3.0],
+						[470.0, 1.0, 2.0],
+						[500.0, 1.0, 1.6]
+					],
+					"noface_ev6_limits": [
+						[86.0, 3.0, 5.8],
+						[180.0, 2.5, 5.8],
+						[250.0, 2.3, 5.4],
+						[280.0, 2.1, 5.2],
+						[330.0, 1.9, 5.2],
+						[400.0, 1.5, 3.8],
+						[420.0, 1.0, 4.4],
+						[480.0, 1.0, 2.0],
+						[500.0, 1.0, 1.6]
+					]
+				}
+			},
+			"QuadBayer": {
+				"vibrant": {},
+				"leica": {}
+			}
+		}
+	},
+	"SkyDarkenArgs": {
+		"__comment__": "默认 default 节点下的数据, 根据 Sensor 选择优先使用 common 参数,具体模式下参数会覆盖默认参数",
+		"default": {
+			"face_sky_use_ev": 2,
+			"noface_sky_use_ev": 2,
+			"face_sky_ratio": [
+				[25.0, 1],
+				[180.0, 0.5],
+				[250.0, 0.5],
+				[280.0, 0.3],
+				[350.0, 0.3],
+				[450.0, 0.2]
+			],
+			"noface_sky_ratio": [
+				[25.0, 1],
+				[150.0, 0.3],
+				[180.0, 0.5],
+				[280.0, 0.3],
+				[400.0, 0.2],
+				[420.0, 0.1],
+				[450.0, 0.1]
+			]
+		},
+		"Wide": {
+			"common": {
+				"face_sky_use_ev": 2,
+				"noface_sky_use_ev": 2,
+				"face_sky_ratio": [
+					[25.0, 1],
+					[180.0, 0.5],
+					[250.0, 0.5],
+					[280.0, 0.3],
+					[350.0, 0.3],
+					[450.0, 0.2]
+				],
+				"noface_sky_ratio": [
+					[25.0, 1],
+					[150.0, 0.3],
+					[180.0, 0.5],
+					[280.0, 0.3],
+					[400.0, 0.2],
+					[420.0, 0.1],
+					[450.0, 0.1]
+				]
+			},
+			"SE": {
+				"vibrant": {
+					"face_sky_use_ev": 2,
+					"noface_sky_use_ev": 2,
+					"face_sky_ratio": [
+						[25.0, 1],
+						[180.0, 0.5],
+						[250.0, 0.5],
+						[280.0, 0.3],
+						[350.0, 0.3],
+						[450.0, 0.2]
+					],
+					"noface_sky_ratio": [
+						[25.0, 1],
+						[150.0, 0.3],
+						[180.0, 0.5],
+						[280.0, 0.3],
+						[400.0, 0.2],
+						[420.0, 0.1],
+						[450.0, 0.1]
+					]
+				},
+				"leica": {
+					"face_sky_use_ev": 2,
+					"noface_sky_use_ev": 2,
+					"face_sky_ratio": [
+						[25.0, 1],
+						[180.0, 0.5],
+						[250.0, 0.5],
+						[280.0, 0.3],
+						[350.0, 0.3],
+						[450.0, 0.2]
+					],
+					"noface_sky_ratio": [
+						[25.0, 1],
+						[150.0, 0.3],
+						[180.0, 0.5],
+						[280.0, 0.3],
+						[400.0, 0.2],
+						[420.0, 0.1],
+						[450.0, 0.1]
+					]
+				}
+			},
+			"SN": {
+				"vibrant": {
+					"face_sky_use_ev": 2,
+					"noface_sky_use_ev": 2,
+					"face_sky_ratio": [
+						[25.0, 1],
+						[180.0, 0.5],
+						[250.0, 0.5],
+						[280.0, 0.3],
+						[350.0, 0.3],
+						[450.0, 0.2]
+					],
+					"noface_sky_ratio": [
+						[25.0, 1],
+						[150.0, 0.3],
+						[180.0, 0.5],
+						[280.0, 0.3],
+						[400.0, 0.2],
+						[420.0, 0.1],
+						[450.0, 0.1]
+					]
+				},
+				"leica": {
+					"face_sky_use_ev": 2,
+					"noface_sky_use_ev": 2,
+					"face_sky_ratio": [
+						[25.0, 1],
+						[180.0, 0.5],
+						[250.0, 0.5],
+						[280.0, 0.3],
+						[350.0, 0.3],
+						[450.0, 0.2]
+					],
+					"noface_sky_ratio": [
+						[25.0, 1],
+						[150.0, 0.3],
+						[180.0, 0.5],
+						[280.0, 0.3],
+						[400.0, 0.2],
+						[420.0, 0.1],
+						[450.0, 0.1]
+					]
+				}
+			},
+			"QuadBayer": {
+				"vibrant": {},
+				"leica": {}
+			}
+		},
+		"UW": {
+			"common": {
+				"vibrant": {},
+				"leica": {}
+			},
+			"SE": {
+				"vibrant": {},
+				"leica": {}
+			},
+			"SN": {
+				"vibrant": {},
+				"leica": {}
+			},
+			"QuadBayer": {
+				"vibrant": {},
+				"leica": {}
+			}
+		},
+		"Tele": {
+			"common": {
+				"face_sky_use_ev": 2,
+				"noface_sky_use_ev": 2,
+				"face_sky_ratio": [
+					[25.0, 1],
+					[180.0, 0.5],
+					[250.0, 0.5],
+					[280.0, 0.3],
+					[350.0, 0.3],
+					[450.0, 0.2]
+				],
+				"noface_sky_ratio": [
+					[25.0, 1.0],
+					[150.0, 0.3],
+					[180.0, 0.5],
+					[280.0, 0.4],
+					[400.0, 0.2],
+					[420.0, 0.05],
+					[450.0, 0.05]
+				]
+			},
+			"SE": {
+				"vibrant": {
+					"face_sky_use_ev": 2,
+					"noface_sky_use_ev": 2,
+					"face_sky_ratio": [
+						[25.0, 1],
+						[180.0, 0.5],
+						[250.0, 0.5],
+						[280.0, 0.3],
+						[350.0, 0.3],
+						[450.0, 0.2]
+					],
+					"noface_sky_ratio": [
+						[25.0, 1.0],
+						[150.0, 0.3],
+						[180.0, 0.5],
+						[280.0, 0.4],
+						[400.0, 0.2],
+						[420.0, 0.05],
+						[450.0, 0.05]
+					]
+				},
+				"leica": {
+					"face_sky_use_ev": 2,
+					"noface_sky_use_ev": 2,
+					"face_sky_ratio": [
+						[25.0, 1],
+						[180.0, 0.5],
+						[250.0, 0.5],
+						[280.0, 0.3],
+						[350.0, 0.3],
+						[450.0, 0.2]
+					],
+					"noface_sky_ratio": [
+						[25.0, 1.0],
+						[150.0, 0.3],
+						[180.0, 0.5],
+						[280.0, 0.4],
+						[400.0, 0.2],
+						[420.0, 0.05],
+						[450.0, 0.05]
+					]
+				}
+			},
+			"SN": {
+				"vibrant": {
+					"face_sky_use_ev": 2,
+					"noface_sky_use_ev": 2,
+					"face_sky_ratio": [
+						[25.0, 1],
+						[180.0, 0.5],
+						[250.0, 0.5],
+						[280.0, 0.3],
+						[350.0, 0.3],
+						[450.0, 0.2]
+					],
+					"noface_sky_ratio": [
+						[25.0, 1.0],
+						[150.0, 0.3],
+						[180.0, 0.5],
+						[280.0, 0.4],
+						[400.0, 0.2],
+						[420.0, 0.05],
+						[450.0, 0.05]
+					]
+				},
+				"leica": {
+					"face_sky_use_ev": 2,
+					"noface_sky_use_ev": 2,
+					"face_sky_ratio": [
+						[25.0, 1],
+						[180.0, 0.5],
+						[250.0, 0.5],
+						[280.0, 0.3],
+						[350.0, 0.3],
+						[450.0, 0.2]
+					],
+					"noface_sky_ratio": [
+						[25.0, 1.0],
+						[150.0, 0.3],
+						[180.0, 0.5],
+						[280.0, 0.4],
+						[400.0, 0.2],
+						[420.0, 0.05],
+						[450.0, 0.05]
+					]
+				}
+			},
+			"QuadBayer": {
+				"vibrant": {},
+				"leica": {}
+			}
+		}
+	},
+	"MergeArgs": {
+		"__comment__": "默认 default 节点下的数据, 根据 Sensor 选择优先使用 common 参数,具体模式下参数会覆盖默认参数",
+		"default": {
+			"OES_enabled": true,
+			"boost_detail_enabled": false,
+			"fast_llf_enabled": true,
+			"contrast_enabled": true,
+			"highlight_ctr_enabled": true,
+			"face_detect_enabled": true,
+			"sky_detect_enable": true,
+			"skin_segment_enable": true,
+			"blur_skin_enabled": false,
+			"face_saturation_enabled": false,
+			"halo_control_enabled": true,
+			"darkhalo_enabled":true,
+			"sky_gamma_enabled": true,
+			"BoostDetailArgs": {
+				"boost_level_max": 10,
+				"boost_val": 4.0
+			},
+			"FastLLFArgs": {
+				"llf_sigma": 0.1,
+				"llf_N": 9.0,
+				"llf_fact": 0.5,
+				"llf_merge_ratio": 0.5
+			},
+			"ContrastArgs": {
+				"hist_param": 0.5,
+				"gcontrast_en": 1,
+				"gcontrast_param": 2.5
+			},
+			"BlurSkinArgs": {
+				"v": 3,
+				"alpha": 0.8
+			},
+			"FaceSaturationArgs": {
+				"scale_factor": 1.0
+			},
+			"tar_sensitivity": [
+				[275, 0.35],
+				[320, 0.35],
+				[330, 0.45],
+				[350, 0.7],
+				[370, 0.9],
+				[400, 3],
+				[450, 3]
+			],
+			"merge_mean": [
+				[200, 120],
+				[250, 110],
+				[280, 100],
+				[320, 95],
+				[350, 85],
+				[380, 80]
+			],
+			"merge_mean_max": 256,
+			"merge_sigma": 36.0,
+			"halfsize_flag": true
+		},
+		"Wide": {
+			"common": {
+				"halfsize_flag": true,
+				"boost_detail_enabled": false,
+				"BoostDetailArgs": {
+					"boost_val": 4.0
+				},
+				"fast_llf_enabled": true,
+				"FastLLFArgs": {
+					"llf_sigma": 0.1,
+					"llf_N": 9.0,
+					"llf_fact": 0.5,
+					"llf_merge_ratio": 0.5
+				},
+				"contrast_enabled": true,
+				"ContrastArgs": {
+					"hist_param": 0.5,
+					"gcontrast_en": 1,
+					"gcontrast_param": 2.5
+				},
+				"halo_control_enabled": true,
+				"sky_gamma_enabled": true,
+				"highlight_ctr_enabled": true,
+				"tar_sensitivity": [
+					[275, 0.35],
+					[320, 0.35],
+					[330, 0.45],
+					[350, 0.7],
+					[370, 0.9],
+					[400, 3],
+					[450, 3]
+				],
+				"merge_mean": [
+					[200, 120],
+					[250, 110],
+					[280, 100],
+					[320, 95],
+					[350, 85],
+					[380, 80]
+				]
+			},
+			"SE": {
+				"vibrant": {
+					"halfsize_flag": true,
+					"boost_detail_enabled": false,
+					"BoostDetailArgs": {
+						"boost_val": 4.0
+					},
+					"fast_llf_enabled": true,
+					"FastLLFArgs": {
+						"llf_sigma": 0.1,
+						"llf_N": 9.0,
+						"llf_fact": 0.5,
+						"llf_merge_ratio": 0.5
+					},
+					"contrast_enabled": true,
+					"ContrastArgs": {
+						"hist_param": 0.5,
+						"gcontrast_en": 1,
+						"gcontrast_param": 2.5
+					},
+					"halo_control_enabled": true,
+					"sky_gamma_enabled": true,
+					"highlight_ctr_enabled": true,
+					"tar_sensitivity": [
+						[275, 0.35],
+						[320, 0.35],
+						[330, 0.45],
+						[350, 0.7],
+						[370, 0.9],
+						[400, 3],
+						[450, 3]
+					],
+					"merge_mean": [
+						[200, 120],
+						[250, 110],
+						[280, 100],
+						[320, 95],
+						[350, 85],
+						[380, 80]
+					]
+				},
+				"leica": {
+					"halfsize_flag": true,
+					"boost_detail_enabled": false,
+					"BoostDetailArgs": {
+						"boost_val": 4.0
+					},
+					"fast_llf_enabled": true,
+					"FastLLFArgs": {
+						"llf_sigma": 0.1,
+						"llf_N": 9.0,
+						"llf_fact": 0.5,
+						"llf_merge_ratio": 0.5
+					},
+					"contrast_enabled": true,
+					"ContrastArgs": {
+						"hist_param": 0.5,
+						"gcontrast_en": 1,
+						"gcontrast_param": 2.5
+					},
+					"halo_control_enabled": true,
+					"sky_gamma_enabled": true,
+					"highlight_ctr_enabled": true,
+					"tar_sensitivity": [
+						[275, 0.35],
+						[320, 0.35],
+						[330, 0.45],
+						[350, 0.7],
+						[370, 0.9],
+						[400, 3],
+						[450, 3]
+					],
+					"merge_mean": [
+						[200, 120],
+						[250, 110],
+						[280, 100],
+						[320, 95],
+						[350, 85],
+						[380, 80]
+					]
+				}
+			},
+			"SN": {
+				"vibrant": {
+					"halfsize_flag": true,
+					"boost_detail_enabled": false,
+					"BoostDetailArgs": {
+						"boost_val": 4.0
+					},
+					"fast_llf_enabled": true,
+					"FastLLFArgs": {
+						"llf_sigma": 0.1,
+						"llf_N": 9.0,
+						"llf_fact": 0.5,
+						"llf_merge_ratio": 0.5
+					},
+					"contrast_enabled": true,
+					"ContrastArgs": {
+						"hist_param": 0.5,
+						"gcontrast_en": 1,
+						"gcontrast_param": 2.5
+					},
+					"halo_control_enabled": true,
+					"sky_gamma_enabled": true,
+					"highlight_ctr_enabled": true,
+					"tar_sensitivity": [
+						[275, 0.35],
+						[320, 0.35],
+						[330, 0.45],
+						[350, 0.7],
+						[370, 0.9],
+						[400, 3],
+						[450, 3]
+					],
+					"merge_mean": [
+						[200, 120],
+						[250, 110],
+						[280, 100],
+						[320, 95],
+						[350, 85],
+						[380, 80]
+					]
+				},
+				"leica": {
+					"halfsize_flag": true,
+					"boost_detail_enabled": false,
+					"BoostDetailArgs": {
+						"boost_val": 4.0
+					},
+					"fast_llf_enabled": true,
+					"FastLLFArgs": {
+						"llf_sigma": 0.1,
+						"llf_N": 9.0,
+						"llf_fact": 0.5,
+						"llf_merge_ratio": 0.5
+					},
+					"contrast_enabled": true,
+					"ContrastArgs": {
+						"hist_param": 0.5,
+						"gcontrast_en": 1,
+						"gcontrast_param": 2.5
+					},
+					"halo_control_enabled": true,
+					"sky_gamma_enabled": true,
+					"highlight_ctr_enabled": true,
+					"tar_sensitivity": [
+						[275, 0.35],
+						[320, 0.35],
+						[330, 0.45],
+						[350, 0.7],
+						[370, 0.9],
+						[400, 3],
+						[450, 3]
+					],
+					"merge_mean": [
+						[200, 120],
+						[250, 110],
+						[280, 100],
+						[320, 95],
+						[350, 85],
+						[380, 80]
+					]
+				}
+			},
+			"QuadBayer": {
+				"vibrant": {},
+				"leica": {}
+			}
+		},
+		"UW": {
+			"common": {
+				"vibrant": {},
+				"leica": {}
+			},
+			"SE": {
+				"vibrant": {},
+				"leica": {}
+			},
+			"SN": {
+				"vibrant": {},
+				"leica": {}
+			},
+			"QuadBayer": {
+				"vibrant": {},
+				"leica": {}
+			}
+		},
+		"Tele": {
+			"common": {
+				"halfsize_flag": true,
+				"boost_detail_enabled": false,
+				"BoostDetailArgs": {
+					"boost_val": 4.0
+				},
+				"fast_llf_enabled": true,
+				"FastLLFArgs": {
+					"llf_sigma": 0.1,
+					"llf_N": 9.0,
+					"llf_fact": 0.5,
+					"llf_merge_ratio": 0.5
+				},
+				"contrast_enabled": true,
+				"ContrastArgs": {
+					"hist_param": 0.5,
+					"gcontrast_en": 1,
+					"gcontrast_param": 2.5
+				},
+				"halo_control_enabled": true,
+				"sky_gamma_enabled": true,
+				"highlight_ctr_enabled": true,
+				"tar_sensitivity": [
+					[275, 0.35],
+					[320, 0.35],
+					[330, 0.45],
+					[350, 0.7],
+					[370, 0.9],
+					[400, 3],
+					[450, 3]
+				],
+				"merge_mean": [
+					[200.0, 120],
+					[250.0, 110],
+					[300.0, 105],
+					[320.0, 103],
+					[350.0, 90],
+					[450.0, 80]
+				]
+			},
+			"SE": {
+				"vibrant": {
+					"halfsize_flag": true,
+					"boost_detail_enabled": false,
+					"BoostDetailArgs": {
+						"boost_val": 4.0
+					},
+					"fast_llf_enabled": true,
+					"FastLLFArgs": {
+						"llf_sigma": 0.1,
+						"llf_N": 9.0,
+						"llf_fact": 0.5,
+						"llf_merge_ratio": 0.5
+					},
+					"contrast_enabled": true,
+					"ContrastArgs": {
+						"hist_param": 0.5,
+						"gcontrast_en": 1,
+						"gcontrast_param": 2.5
+					},
+					"halo_control_enabled": true,
+					"sky_gamma_enabled": true,
+					"highlight_ctr_enabled": true,
+					"tar_sensitivity": [
+						[275, 0.35],
+						[320, 0.35],
+						[330, 0.45],
+						[350, 0.7],
+						[370, 0.9],
+						[400, 3],
+						[450, 3]
+					],
+					"merge_mean": [
+						[200.0, 120],
+						[250.0, 110],
+						[300.0, 105],
+						[320.0, 103],
+						[350.0, 90],
+						[450.0, 80]
+					]
+				},
+				"leica": {
+					"halfsize_flag": true,
+					"boost_detail_enabled": false,
+					"BoostDetailArgs": {
+						"boost_val": 4.0
+					},
+					"fast_llf_enabled": true,
+					"FastLLFArgs": {
+						"llf_sigma": 0.1,
+						"llf_N": 9.0,
+						"llf_fact": 0.5,
+						"llf_merge_ratio": 0.5
+					},
+					"contrast_enabled": true,
+					"ContrastArgs": {
+						"hist_param": 0.5,
+						"gcontrast_en": 1,
+						"gcontrast_param": 2.5
+					},
+					"halo_control_enabled": true,
+					"sky_gamma_enabled": true,
+					"highlight_ctr_enabled": true,
+					"tar_sensitivity": [
+						[275, 0.35],
+						[320, 0.35],
+						[330, 0.45],
+						[350, 0.7],
+						[370, 0.9],
+						[400, 3],
+						[450, 3]
+					],
+					"merge_mean": [
+						[200.0, 120],
+						[250.0, 110],
+						[300.0, 105],
+						[320.0, 103],
+						[350.0, 90],
+						[450.0, 80]
+					]
+				}
+			},
+			"SN": {
+				"vibrant": {
+					"halfsize_flag": true,
+					"boost_detail_enabled": false,
+					"BoostDetailArgs": {
+						"boost_val": 4.0
+					},
+					"fast_llf_enabled": true,
+					"FastLLFArgs": {
+						"llf_sigma": 0.1,
+						"llf_N": 9.0,
+						"llf_fact": 0.5,
+						"llf_merge_ratio": 0.5
+					},
+					"contrast_enabled": true,
+					"ContrastArgs": {
+						"hist_param": 0.5,
+						"gcontrast_en": 1,
+						"gcontrast_param": 2.5
+					},
+					"halo_control_enabled": true,
+					"sky_gamma_enabled": true,
+					"highlight_ctr_enabled": true,
+					"tar_sensitivity": [
+						[275, 0.35],
+						[320, 0.35],
+						[330, 0.45],
+						[350, 0.7],
+						[370, 0.9],
+						[400, 3],
+						[450, 3]
+					],
+					"merge_mean": [
+						[200.0, 120],
+						[250.0, 110],
+						[300.0, 105],
+						[320.0, 103],
+						[350.0, 90],
+						[450.0, 80]
+					]
+				},
+				"leica": {
+					"halfsize_flag": true,
+					"boost_detail_enabled": false,
+					"BoostDetailArgs": {
+						"boost_val": 4.0
+					},
+					"fast_llf_enabled": true,
+					"FastLLFArgs": {
+						"llf_sigma": 0.1,
+						"llf_N": 9.0,
+						"llf_fact": 0.5,
+						"llf_merge_ratio": 0.5
+					},
+					"contrast_enabled": true,
+					"ContrastArgs": {
+						"hist_param": 0.5,
+						"gcontrast_en": 1,
+						"gcontrast_param": 2.5
+					},
+					"halo_control_enabled": true,
+					"sky_gamma_enabled": true,
+					"highlight_ctr_enabled": true,
+					"tar_sensitivity": [
+						[275, 0.35],
+						[320, 0.35],
+						[330, 0.45],
+						[350, 0.7],
+						[370, 0.9],
+						[400, 3],
+						[450, 3]
+					],
+					"merge_mean": [
+						[200.0, 120],
+						[250.0, 110],
+						[300.0, 105],
+						[320.0, 103],
+						[350.0, 90],
+						[450.0, 80]
+					]
+				}
+			},
+			"QuadBayer": {
+				"vibrant": {},
+				"leica": {}
+			}
+		}
+	},
+	"EdgeSharpArgs": {
+		"__comment__": "默认 default 节点下的数据, 根据 Sensor 选择优先使用 common 参数,具体模式下参数会覆盖默认参数",
+		"default": {
+			"enabled": false,
+			"face_amount": 0.2,
+			"sigma": 0.85,
+			"amount": 2,
+			"ct_thresh": 0.01,
+			"alpha_strength_low": 0.2,
+			"alpha_strength_high": 0.2
+		},
+		"Wide": {
+			"common": {
+				"enabled": false,
+				"amount": 2
+			},
+			"SE": {
+				"vibrant": {
+					"enabled": false,
+					"amount": 2
+				},
+				"leica": {
+					"enabled": false,
+					"amount": 2
+				}
+			},
+			"SN": {
+				"vibrant": {
+					"enabled": false,
+					"amount": 2
+				},
+				"leica": {
+					"enabled": false,
+					"amount": 2
+				}
+			},
+			"QuadBayer": {
+				"vibrant": {},
+				"leica": {}
+			}
+		},
+		"UW": {
+			"common": {
+				"vibrant": {},
+				"leica": {}
+			},
+			"SE": {
+				"vibrant": {},
+				"leica": {}
+			},
+			"SN": {
+				"vibrant": {},
+				"leica": {}
+			},
+			"QuadBayer": {
+				"vibrant": {},
+				"leica": {}
+			}
+		},
+		"Tele": {
+			"common": {
+				"enabled": false,
+				"amount": 2
+			},
+			"SE": {
+				"vibrant": {
+					"enabled": false,
+					"amount": 2
+				},
+				"leica": {
+					"enabled": false,
+					"amount": 2
+				}
+			},
+			"SN": {
+				"vibrant": {
+					"enabled": false,
+					"amount": 2
+				},
+				"leica": {
+					"enabled": false,
+					"amount": 2
+				}
+			},
+			"QuadBayer": {
+				"vibrant": {},
+				"leica": {}
+			}
+		}
+	},
+	"EV0SharpenArgs": {
+		"__comment__": "默认 default 节点下的数据, 根据 Sensor 选择优先使用 common 参数,具体模式下参数会覆盖默认参数",
+		"default": {
+			"sharpen_enabled": false,
+			"sharpen_amount":[
+				[0.0, 3.0],
+				[64.0, 2.0],
+				[128.0, 0.5],
+				[256.0, 0.1]
+			  ]
+		},
+		"Wide": {
+			"common": {},
+			"SE": {
+				"vibrant": {},
+				"leica": {}
+			},
+			"SN": {
+				"vibrant": {},
+				"leica": {}
+			},
+			"QuadBayer": {
+				"vibrant": {},
+				"leica": {}
+			}
+		},
+		"Tele": {
+			"common": {
+				"sharpen_enabled": false,
+				"sharpen_amount":[
+					[0.0, 3.0],
+					[64.0, 2.0],
+					[128.0, 0.5],
+					[256.0, 0.1]
+				  ]
+			},
+			"SE": {
+				"vibrant": {},
+				"leica": {}
+			},
+			"SN": {
+				"vibrant": {},
+				"leica": {}
+			},
+			"QuadBayer": {
+				"vibrant": {},
+				"leica": {}
+			}
+		}
+	},
+	"FinalSharpenArgs": {
+		"__comment__": "默认 default 节点下的数据, 根据 Sensor 选择优先使用 common 参数,具体模式下参数会覆盖默认参数",
+		"default": {
+			"sharpen_enabled": true,
+			"sharpen_amount":[
+				[0.0, 3.0],
+				[64.0, 2.0],
+				[128.0, 0.3],
+				[256.0, 0.1]
+			  ]
+		},
+		"Wide": {
+			"common": {
+				"sharpen_enabled": false
+			},
+			"SE": {
+				"vibrant": {},
+				"leica": {}
+			},
+			"SN": {
+				"vibrant": {},
+				"leica": {}
+			},
+			"QuadBayer": {
+				"vibrant": {},
+				"leica": {}
+			}
+		},
+		"UW": {
+			"common": {
+				"sharpen_enabled": true,
+				"sharpen_amount":[
+					[0.0, 3.0],
+					[64.0, 2.0],
+					[128.0, 1.8],
+					[256.0, 1.5]
+				  ]
+			},
+			"SE": {
+				"vibrant": {},
+				"leica": {}
+			},
+			"SN": {
+				"vibrant": {},
+				"leica": {}
+			},
+			"QuadBayer": {
+				"vibrant": {},
+				"leica": {}
+			}
+		},
+		"Tele": {
+			"common": {
+				"sharpen_enabled": true,
+				"sharpen_amount":[
+					[0.0, 4.0],
+					[64.0, 2.5],
+					[128.0, 0.5],
+					[256.0, 0.1]
+				  ]
+			},
+			"SE": {
+				"vibrant": {},
+				"leica": {}
+			},
+			"SN": {
+				"vibrant": {},
+				"leica": {}
+			},
+			"QuadBayer": {
+				"vibrant": {},
+				"leica": {}
+			}
+		}
+	},
+	"FusionArgs": {
+		"__comment__": "默认 default 节点下的数据, 根据 Sensor 选择优先使用 common 参数,具体模式下参数会覆盖默认参数",
+		"default": {
+			"dynamic_range_block": true,
+			"inpaint_enable": false,
+			"fusion_slim_enable": true,
+			"pink2gray_enable": true,
+			"fusion_1st_ev0_oe": 0.95,
+			"fusion_1st_evn_oe": 0.6,
+			"fusion_1st_ev0_soft_thres_low": 0.7,
+			"fusion_1st_ev0_soft_thres_high": 0.99,
+			"fusion_1st_evn_soft_thres_low": 0.6,
+			"fusion_1st_evn_soft_thres_high": 0.9,
+			"fusion_1st_inpaint_thres": 0.6,
+			"fusion_2nd_evn_oe": 0.98,
+			"fusion_2nd_evnn_oe": 0.98,
+			"oe_red_area_ratio_thres": 0.012,
+			"fusion_2nd_evnn_soft_thres_low_red": 0.2,
+			"fusion_2nd_evnn_soft_thres_high_red": 0.2,
+			"fusion_2nd_evn_soft_thres_low_red": 0.1,
+			"fusion_2nd_evn_soft_thres_high_red": 0.6,
+			"fusion_2nd_evnn_soft_thres_low": 0.5,
+			"fusion_2nd_evnn_soft_thres_high": 0.9,
+			"fusion_2nd_evn_soft_thres_low": 0.7,
+			"fusion_2nd_evn_soft_thres_high": 0.9,
+			"fusion_2nd_ref0_para": 0.6,
+			"fusion_2nd_refn_para": 1.0,
+			"fusion_2nd_para_red": 0.2,
+			"light_deghost": false,
+			"dark_fusion_ref_check": true,
+			"dark_fusion_deghost_var_highratio": 8.0,
+			"dark_fusion_deghost_var_lowratio": 8.0,
+			"dark_fusion_deghost_var_ratio": 1.0,
+			"dark_fusion_deghost_enable": false,
+			"dark_fusion_luxindex_thres1": 400,
+			"dark_fusion_luxindex_thres2": 360,
+			"dark_fusion_tgain_thres1": 64,
+			"dark_fusion_tgain_thres2": 16,
+			"fusion_pickref_thres": 120,
+			"dark_fusion_deghost_var_backratio": 2.0,
+			"skin_ratio_thres": 0.08,
+			"check_bright_enable": true,
+			"zoom_ghosting": false,
+			"TELE_zoom_enable": false
+		},
+		"Wide": {
+			"common": {
+				"fusion_slim_enable": false,
+				"inpaint_enable": true,
+				"pink2gray_enable": true,
+				"fusion_1st_ev0_oe": 0.95,
+				"fusion_1st_evn_oe": 0.6,
+				"fusion_1st_ev0_soft_thres_low": 0.7,
+				"fusion_1st_ev0_soft_thres_high": 0.99,
+				"fusion_1st_evn_soft_thres_low": 0.6,
+				"fusion_1st_evn_soft_thres_high": 0.9,
+				"fusion_1st_inpaint_thres": 0.6,
+				"fusion_2nd_evn_oe": 0.98,
+				"fusion_2nd_evnn_oe": 0.98,
+				"fusion_2nd_refn_para": 1.0,
+				"light_deghost": false,
+				"dark_fusion_ref_check": true,
+				"dark_fusion_deghost_var_highratio": 3.8,
+				"dark_fusion_deghost_var_lowratio": 2.0,
+				"dark_fusion_deghost_var_ratio": 1.0,
+				"dark_fusion_deghost_enable": false,
+				"dark_fusion_luxindex_thres1": 400,
+				"dark_fusion_luxindex_thres2": 360,
+				"dark_fusion_tgain_thres1": 160,
+				"dark_fusion_tgain_thres2": 16,
+				"fusion_pickref_thres": 120
+			},
+			"SE": {
+				"vibrant": {
+					"fusion_slim_enable": true,
+					"inpaint_enable": false,
+					"pink2gray_enable": true
+				},
+				"leica": {
+					"fusion_slim_enable": true,
+					"inpaint_enable": false,
+					"pink2gray_enable": true
+				}
+			},
+			"SN": {
+				"vibrant": {
+					"fusion_slim_enable": false,
+					"inpaint_enable": true,
+					"pink2gray_enable": true
+				},
+				"leica": {
+					"fusion_slim_enable": false,
+					"inpaint_enable": true,
+					"pink2gray_enable": true
+				}
+			},
+			"QuadBayer": {
+				"vibrant": {},
+				"leica": {}
+			}
+		},
+		"UW": {
+			"common": {
+				"fusion_slim_enable": false,
+				"inpaint_enable": true,
+				"pink2gray_enable": true,
+				"fusion_1st_ev0_oe": 0.95,
+				"fusion_1st_evn_oe": 0.6,
+				"fusion_1st_ev0_soft_thres_low": 0.7,
+				"fusion_1st_ev0_soft_thres_high": 0.99,
+				"fusion_1st_evn_soft_thres_low": 0.6,
+				"fusion_1st_evn_soft_thres_high": 0.9,
+				"fusion_1st_inpaint_thres": 0.6,
+				"fusion_2nd_evn_oe": 0.98,
+				"fusion_2nd_evnn_oe": 0.98,
+				"fusion_2nd_refn_para": 1.0,
+				"light_deghost": false,
+				"dark_fusion_ref_check": true,
+				"dark_fusion_deghost_var_highratio": 1.4,
+				"dark_fusion_deghost_var_lowratio": 2.0,
+				"dark_fusion_deghost_var_ratio": 1.0,
+				"dark_fusion_deghost_enable": true,
+				"dark_fusion_luxindex_thres1": 410,
+				"dark_fusion_luxindex_thres2": 360,
+				"dark_fusion_tgain_thres1": 150,
+				"dark_fusion_tgain_thres2": 16,
+				"fusion_pickref_thres": 120
+			},
+			"SE": {
+				"vibrant": {},
+				"leica": {}
+			},
+			"SN": {
+				"vibrant": {},
+				"leica": {}
+			},
+			"QuadBayer": {
+				"vibrant": {},
+				"leica": {}
+			}
+		},
+		"Tele": {
+			"common": {
+				"fusion_slim_enable": false,
+				"inpaint_enable": true,
+				"pink2gray_enable": true,
+				"fusion_1st_ev0_oe": 0.95,
+				"fusion_1st_evn_oe": 0.6,
+				"fusion_1st_ev0_soft_thres_low": 0.7,
+				"fusion_1st_ev0_soft_thres_high": 0.99,
+				"fusion_1st_evn_soft_thres_low": 0.6,
+				"fusion_1st_evn_soft_thres_high": 0.9,
+				"fusion_1st_inpaint_thres": 0.6,
+				"fusion_2nd_evn_oe": 0.98,
+				"fusion_2nd_evnn_oe": 0.98,
+				"fusion_2nd_refn_para": 1.0,
+				"light_deghost": false,
+				"dark_fusion_ref_check": true,
+				"dark_fusion_deghost_var_highratio": 6.0,
+				"dark_fusion_deghost_var_lowratio": 2.3,
+				"dark_fusion_deghost_var_ratio": 1.0,
+				"dark_fusion_deghost_enable": false,
+				"dark_fusion_luxindex_thres1": 280,
+				"dark_fusion_luxindex_thres2": 280,
+				"dark_fusion_tgain_thres1": 64,
+				"dark_fusion_tgain_thres2": 16,
+				"fusion_pickref_thres": 120,
+				"zoom_ghosting": true
+			},
+			"SE": {
+				"vibrant": {
+					"fusion_slim_enable": true,
+					"inpaint_enable": false,
+					"pink2gray_enable": true
+				},
+				"leica": {
+					"fusion_slim_enable": true,
+					"inpaint_enable": false,
+					"pink2gray_enable": true
+				}
+			},
+			"SN": {
+				"vibrant": {
+					"fusion_slim_enable": false,
+					"inpaint_enable": true,
+					"pink2gray_enable": true
+				},
+				"leica": {
+					"fusion_slim_enable": false,
+					"inpaint_enable": true,
+					"pink2gray_enable": true
+				}
+			},
+			"QuadBayer": {
+				"vibrant": {},
+				"leica": {}
+			}
+		}
+	},
+	"BackFillNoiseArgs": {
+		"__comment__": "默认 default 节点下的数据, 根据 Sensor 选择优先使用 common 参数,具体模式下参数会覆盖默认参数",
+		"default": {
+			"ev0_back_fill_noise_enabled": false,
+			"back_fill_noise_scales": [
+				[0, 0.15],
+				[20, 0.14],
+				[40, 0.12],
+				[50, 0.1],
+				[100, 0.08],
+				[180, 0.02],
+				[256, 0.01]
+			],
+			"evn_back_fill_noise_enabled": false,
+			"back_fill_noise_scales_evn": [],
+			"merge_back_fill_noise_enabled": false,
+			"merge_back_fill_noise_scales": [],
+			"fill_final_gaussian_noise_enabled": true,
+			"fill_final_gaussian_noise_scales": [
+				[0.0, 0.3],
+				[64.0, 0.2],
+				[128.0, 0.15],
+				[256.0, 0.3]
+			],
+			"base_gain": 1.0,
+			"sky_gain": 0.3,
+			"face_gain": 0.3,
+			"scale_max": 0.2,
+			"scale_min": 0.07,
+			"total_gain_threshold": 30.0,
+			"nonlinear_opt_weight": 1.0,
+			"lmt_weight": 1.0,
+			"pca": []
+		},
+		"Wide": {
+			"common": {
+				"fill_final_gaussian_noise_scales": [
+					[0.0, 0.01],
+					[48.0, 0.05],
+					[64.0, 0.25],
+					[128.0, 0.2],
+					[256.0, 0.25]
+				],
+				"face_gain": 1.0
+			},
+			"SE": {
+				"vibrant": {},
+				"leica": {}
+			},
+			"SN": {
+				"vibrant": {},
+				"leica": {}
+			},
+			"QuadBayer": {
+				"vibrant": {},
+				"leica": {}
+			}
+		},
+		"UW": {
+			"common": {
+				"fill_final_gaussian_noise_enabled": true,
+				"fill_final_gaussian_noise_scales": [
+					[0.0, 0.3],
+					[64.0, 0.2],
+					[128.0, 0.2],
+					[256.0, 0.25]
+				]
+			},
+			"SE": {
+				"vibrant": {},
+				"leica": {}
+			},
+			"SN": {
+				"vibrant": {},
+				"leica": {}
+			},
+			"QuadBayer": {
+				"vibrant": {},
+				"leica": {}
+			}
+		},
+		"Tele": {
+			"common": {
+				"base_gain": 0.9,
+				"face_gain": 0.1
+			},
+			"SE": {
+				"vibrant": {},
+				"leica": {}
+			},
+			"SN": {
+				"vibrant": {},
+				"leica": {}
+			},
+			"QuadBayer": {
+				"vibrant": {},
+				"leica": {}
+			}
+		}
+	},
+	"JDDArgs": {
+		"__comment__": "默认 default 节点下的数据, 根据 Sensor 选择优先使用 common 参数,具体模式下参数会覆盖默认参数",
+		"default": {
+			"JDD_enable": true,
+			"JDD_hsv_enable": true
+		},
+		"Wide": {
+			"common": {
+				"JDD_enable": true,
+				"JDD_hsv_enable": false
+			},
+			"SE": {
+				"vibrant": {
+					"JDD_enable": true,
+					"JDD_hsv_enable": false
+				},
+				"leica": {
+					"JDD_enable": true,
+					"JDD_hsv_enable": false
+				}
+			},
+			"SN": {
+				"vibrant": {
+					"JDD_enable": true,
+					"JDD_hsv_enable": false
+				},
+				"leica": {
+					"JDD_enable": true,
+					"JDD_hsv_enable": false
+				}
+			},
+			"QuadBayer": {
+				"vibrant": {},
+				"leica": {}
+			}
+		},
+		"UW": {
+			"common": {
+				"vibrant": {},
+				"leica": {}
+			},
+			"SE": {
+				"vibrant": {},
+				"leica": {}
+			},
+			"SN": {
+				"vibrant": {},
+				"leica": {}
+			},
+			"QuadBayer": {
+				"vibrant": {},
+				"leica": {}
+			}
+		},
+		"Tele": {
+			"common": {
+				"JDD_enable": true,
+				"JDD_hsv_enable": true
+			},
+			"SE": {
+				"vibrant": {
+					"JDD_enable": true,
+					"JDD_hsv_enable": true
+				},
+				"leica": {
+					"JDD_enable": true,
+					"JDD_hsv_enable": true
+				}
+			},
+			"SN": {
+				"vibrant": {
+					"JDD_enable": true,
+					"JDD_hsv_enable": true
+				},
+				"leica": {
+					"JDD_enable": true,
+					"JDD_hsv_enable": true
+				}
+			},
+			"QuadBayer": {
+				"vibrant": {},
+				"leica": {}
+			}
+		}
+	},
+	"ZoomInfoArgs": {
+		"__comment__": "默认 default 节点下的数据, 根据 Sensor 选择优先使用 common 参数,具体模式下参数会覆盖默认参数",
+		"default": {
+			"zoom_enabled": false,
+			"limit_width": 512,
+			"limit_height": 384,
+			"zoom_map": []
+		},
+		"Wide": {
+			"common": {},
+			"SE": {
+				"vibrant": {},
+				"leica": {}
+			},
+			"SN": {
+				"vibrant": {},
+				"leica": {}
+			},
+			"QuadBayer": {
+				"vibrant": {},
+				"leica": {}
+			}
+		},
+		"UW": {
+			"common": {
+				"vibrant": {},
+				"leica": {}
+			},
+			"SE": {
+				"vibrant": {},
+				"leica": {}
+			},
+			"SN": {
+				"vibrant": {},
+				"leica": {}
+			},
+			"QuadBayer": {
+				"vibrant": {},
+				"leica": {}
+			}
+		},
+		"Tele": {
+			"common": {},
+			"SE": {
+				"vibrant": {},
+				"leica": {}
+			},
+			"SN": {
+				"vibrant": {},
+				"leica": {}
+			},
+			"QuadBayer": {
+				"vibrant": {},
+				"leica": {}
+			}
+		}
+	},
+	"BHCArgs": {
+		"__comment__": "默认 default 节点下的数据, 根据 Sensor 选择优先使用 common 参数,具体模式下参数会覆盖默认参数",
+		"default": {
+			"neutral_calibration_slope": -1.10635,
+			"neutral_calibration_intercept": 1.56945,
+			"neutral_calibration_endx": 1.15,
+			"neutral_width": 0.15
+		},
+		"Wide": {
+			"common": {
+				"neutral_calibration_slope": -0.678,
+				"neutral_calibration_intercept": 1.0059,
+				"neutral_calibration_endx": 1.15,
+				"neutral_width": 0.13
+			}
+		},
+		"UW": {
+			"common": {
+				"neutral_calibration_slope": -0.6097,
+				"neutral_calibration_intercept": 0.7678,
+				"neutral_calibration_endx": 0.82,
+				"neutral_width": 0.15
+			}
+		},
+		"Tele": {
+			"common": {
+				"neutral_calibration_slope": -0.7702,
+				"neutral_calibration_intercept": 0.6701,
+				"neutral_calibration_endx": 0.75,
+				"neutral_width": 0.15
+			}
+		}
+	},
+	"FaceBoostArgs": {
+		"__comment__": "默认 default 节点下的数据, 根据 Sensor 选择优先使用 common 参数,具体模式下参数会覆盖默认参数",
+		"default": {
+			"face_boost_enable": false,
+			"face_boost_weight": 0.9
+		},
+		"Wide": {
+			"common": {},
+			"SE": {
+				"vibrant": {},
+				"leica": {}
+			},
+			"SN": {
+				"vibrant": {},
+				"leica": {}
+			},
+			"QuadBayer": {
+				"vibrant": {},
+				"leica": {}
+			}
+		},
+		"Tele": {
+			"common": {},
+			"SE": {
+				"vibrant": {},
+				"leica": {}
+			},
+			"SN": {
+				"vibrant": {},
+				"leica": {}
+			},
+			"QuadBayer": {
+				"vibrant": {},
+				"leica": {}
+			}
+		}
+	},
+	"GyroArgs": {
+		"__comment__": "默认 default 节点下的数据, 根据 Sensor 选择优先使用 common 参数,具体模式下参数会覆盖默认参数",
+		"default": {
+			"max_thre": 0.42,
+			"sum_thre":  1000,
+			"Gyro_enable": true
+		},
+		"Wide": {
+			"common": {
+				"__comment__": "此处暂时设置 500 ,规避 gyro 存在的问题",
+				"max_thre": 500
+			}
+		},
+		"UW": {
+			"common": {
+				"__comment__": "此处暂时设置 500 ,规避 gyro 存在的问题",
+				"max_thre": 500
+			}
+		},
+		"Tele": {
+			"common": {
+				"__comment__": "此处暂时设置 500 ,规避 gyro 存在的问题",
+				"max_thre": 500
+			}
+		}
+	}
+}

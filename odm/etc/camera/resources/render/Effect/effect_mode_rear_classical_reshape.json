@@ -1,0 +1,14 @@
+{
+	"##":"后置人像-莱卡-经典模式-美型部分",
+	"Type":"EffectCategory",
+	"TrueSight":
+	[
+		{
+			"ExtraOptionPath":"0_ExtraOption/mode_rear_classical.json"
+		},
+        {
+			"ConfigurePath":"70_FacialRefine/mode_rear_portraiture_classical.json",
+			"Index":70
+		}
+	]
+}

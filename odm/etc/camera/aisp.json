@@ -1,0 +1,145 @@
+{
+    "aisp": {
+        "dump_all": 0,
+        "dump": {
+            "txt": 1,
+            "input": 1,
+            "output": 1
+        },
+        "clone_input": 0,
+        "error_protect": 0,
+        "init_protect": 1,
+        "black_protect": 0,
+        "algo": {
+            "AISP_BYPASS": {
+                "enable": 1,
+                "enable_anchor": 1,
+                "bypass_func": 1,
+                "input_format": 0,
+                "output_format": 1,
+                "input_format_portrait": 0,
+                "output_format_portrait": 1,
+                "clone_input": 0,
+                "sync_mode": 1
+            },
+            "AISP_NR": {
+                "enable": 1,
+                "enable_anchor": 1,
+                "bypass": 0,
+                "bypass_portrait": 0,
+                "bypass_func": 1,
+                "input_format": 0,
+                "output_format": 1,
+                "clone_input": 0,
+                "sync_mode": 2
+            },
+            "AISP_NR_LL": {
+                "enable": 1,
+                "enable_anchor": 1,
+                "bypass": 0,
+                "bypass_portrait": 0,
+                "bypass_func": 1,
+                "input_format": 0,
+                "output_format": 1,
+                "clone_input": 0,
+                "sync_mode": 2
+            },
+            "AISP_HDR": {
+                "enable": 1,
+                "enable_anchor": 0,
+                "bypass": 0,
+                "bypass_portrait": 0,
+                "bypass_func": 1,
+                "input_format": 0,
+                "output_format": 1,
+                "input_format_portrait": 0,
+                "output_format_portrait": 1,
+                "clone_input": 0,
+                "sync_mode": 2
+            },
+            "AISP_HDR_LL": {
+                "enable": 1,
+                "enable_anchor": 0,
+                "bypass": 0
+            },
+            "AISP_SE": {
+                "enable": 1,
+                "enable_anchor": 0,
+                "bypass": 0,
+                "bypass_portrait": 0,
+                "bypass_func": 1,
+                "input_format": 0,
+                "output_format": 1,
+                "clone_input": 0,
+                "sync_mode": 1
+            },
+            "AISP_SN": {
+                "enable": 1,
+                "enable_anchor": 0,
+                "bypass": 0,
+                "bypass_portrait": 0,
+                "bypass_func": 1,
+                "input_format": 0,
+                "output_format": 1,
+                "clone_input": 0,
+                "sync_mode": 1
+            },
+            "AISP_SR": {
+                "enable": 1,
+                "enable_anchor": 1,
+                "bypass": 0,
+                "bypass_portrait": 0,
+                "bypass_func": 1,
+                "input_format": 0,
+                "output_format": 1,
+                "clone_input": 0,
+                "sync_mode": 2
+            },
+            "AISP_HDSR": {
+                "enable": 1,
+                "enable_anchor": 0,
+                "bypass": 0,
+                "bypass_portrait": 0,
+                "bypass_func": 1,
+                "input_format": 0,
+                "output_format": 1,
+                "clone_input": 0,
+                "sync_mode": 2
+            },
+            "AISP_ELL": {
+                "enable": 1,
+                "enable_anchor": 0,
+                "bypass": 0,
+                "bypass_portrait": 0,
+                "bypass_func": 1,
+                "input_format": 0,
+                "output_format": 0,
+                "clone_input": 0,
+                "sync_mode": 1
+            },
+            "AISP_SNSC": {
+                "enable": 1,
+                "enable_anchor": 1,
+                "bypass": 0,
+                "bypass_portrait": 0,
+                "bypass_func": 1,
+                "input_format": 0,
+                "output_format": 1,
+                "clone_input": 0,
+                "sync_mode": 1
+            },
+            "AISP_NR_50M": {
+                "enable": 1,
+                "bypass": 1
+            },
+            "AISP_NR_LL_50M": {
+                "enable": 1,
+                "bypass": 1
+            },
+            "AISP_DEPTH": {
+                "enable": 1,
+                "bypass": 0
+            }
+        }
+    }
+}

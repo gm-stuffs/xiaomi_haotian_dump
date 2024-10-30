@@ -1,0 +1,123 @@
+{
+	"##":"前置其他模式: E2E祛斑祛痘(预览&拍后)",
+	"Type":"Effect",
+	"TrueSight":
+	[
+		{
+			"Index":1,
+			"Mode":"Preview",
+			"E2ESpotless":
+			{
+				"Enable":true,
+				"DefaultDegree": 0.4,
+	            "DegreeParam": {
+	                "FemaleFactor": 1.0,
+	                "MaleFactor": 1.0,
+	                "ChildFactor": 1.0,
+					"YouthFactor": 1.0,
+					"ElderlyFactor": 1.0,
+	                "OlderFactor": 1.0,
+	                "RuleType": 0,
+	                "DegreeFactor": 1.0,
+	                "NonlinearUIData": [
+	                    0.0,
+	                    1.0
+	                ],
+	                "NonlinearValueData": [
+	                    0.0,
+	                    1.0
+	                ]
+	            }
+			}
+		},
+		{
+			"Index":2,
+			"Mode":"Capture",
+			"E2ESpotless":
+			{
+				"Enable":true,
+				"EnableLight": false,
+	            "KeepNevus": true,
+	            "ProtectNevus": true,
+	            "RemoveNevus": false,
+	            "ProtectBackgroud": false,
+	            "MinNevus": 3,
+	            "DilateNevus": 3,
+	            "NevusThrdOut": 64,
+	            "NevusThrdIn": 64,
+	            "DefaultDegree": 0.4,
+	            "DegreeParam": {
+	                "FemaleFactor": 1.0,
+	                "MaleFactor": 1.0,
+	                "ChildFactor": 1.0,
+					"YouthFactor": 1.0,
+					"ElderlyFactor": 1.0,
+	                "OlderFactor": 1.0,
+	                "RuleType": 0,
+	                "DegreeFactor": 1.0,
+	                "NonlinearUIData": [
+	                    0.0,
+	                    1.0
+	                ],
+	                "NonlinearValueData": [
+	                    0.0,
+	                    1.0
+	                ]
+	            }
+	        }
+		},
+		{
+			"Index":3,
+			"Mode":"Capture",
+			"E2EWrinkle":
+			{
+				"Enable":false
+			}
+		},
+		{
+			"Index":4,
+			"Mode":"Capture",
+			"E2ENeckLine":
+			{
+				"Enable":false
+			}
+		},
+		{
+			"Index":5,
+			"Mode":"Capture",
+			"SkinUnify":
+			{
+				"Enable":false
+			}
+		},
+		{
+			"Index":6,
+			"Mode":"Capture",
+			"Eyebrow":
+			{
+				"Enable":false
+			}
+		},
+		{
+			"Index":7,
+			"Mode":"Capture",
+			"E2ESkinTuner":
+			{
+				"Enable":false
+			}
+		},
+		{
+			"Index":8,
+			"Mode":"Capture",
+			"Dimple":
+			{
+				"Enable":true,
+				"Radius": 6,
+	            "Decay": 0.66,
+	            "AcneDegree": 0.0,
+	            "DnbDegree": 1.0,
+	            "SkintunerDegree": 1.0
+			}
+		}
+	]
+}

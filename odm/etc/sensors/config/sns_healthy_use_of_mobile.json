@@ -1,0 +1,38 @@
+{
+   "config": {
+      "hw_platform": [
+         "MTP", "Dragon", "Surf","QRD"
+      ],
+      "soc_id": ["536", "557", "577", "618"]
+   },
+   "sns_healthy_use_of_mobile_platform": {
+      "owner": "sns_healthy_use_of_mobile",
+      ".config":{
+         "owner": "sns_healthy_use_of_mobile",
+            "fldst": {
+               "type": "flt", "ver": "1", "data": "20"
+            },
+            "darklux": {
+               "type": "flt", "ver": "2", "data": "15"
+            },
+            "param2": {
+               "type": "flt", "ver": "0", "data": "0"
+            },
+            "param3": {
+               "type": "flt", "ver": "0", "data": "0"
+            },
+            "param4": {
+               "type": "flt", "ver": "0", "data": "0"
+            },
+            "param5": {
+               "type": "flt", "ver": "0", "data": "0"
+            },
+            "param6": {
+               "type": "flt", "ver": "0", "data": "0"
+            },
+            "param7": {
+               "type": "flt", "ver": "0", "data": "0"
+            }
+      }
+   }
+}

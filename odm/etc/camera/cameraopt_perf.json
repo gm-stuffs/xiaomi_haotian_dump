@@ -1,0 +1,137 @@
+{
+    "CLUSTER_NUMS" : ["2"],
+    "THERMAL_LEVELS" : ["4"],
+    "CLUSTER_OPCODE_INFO" : [
+        "0, 0x40800000, 0x40804000",
+        "1, 0x40800200, 0x40804200"
+    ],
+    "GPU_OPCODE_INFO" : ["0x42808000"],
+    "thermal_level": {
+        "cluster0": [
+            [1785, 3072],
+            [1785, 2918],
+            [1785, 2745],
+            [1152, 2400],
+            [1152, 2400]
+        ],
+        "cluster1": [
+            [2841, 3513],
+            [2649, 3283],
+            [2649, 3072],
+            [2246, 2841],
+            [2246, 2841]
+        ],
+        "gpu": [
+            [2],
+            [3],
+            [4],
+            [5]
+        ]
+    },
+    "perf_params": {
+        "mivi_snapshot_capture": [
+            "0x40400000, 1,          //MPCTLV3_ALL_CPUS_PWR_CLPS_DIS, 1",
+            "0x40804000, 3072,       //MPCTLV3_MAX_FREQ_CLUSTER_BIG_CORE_0, 3072",
+            "0x40800000, 1747,       //MPCTLV3_MIN_FREQ_CLUSTER_BIG_CORE_0, 1747",
+            "0x40804200, 3513,       //MPCTLV3_MAX_FREQ_CLUSTER_PRIME_CORE_0, 3513",
+            "0x40800200, 2784,       //MPCTLV3_MIN_FREQ_CLUSTER_PRIME_CORE_0, 2784",
+            "0x42808000, 2,          //MPCTLV3_GPU_MAX_POWER_LEVEL, 0x2",
+            "0x40CE0200, 0x0046003C, //SCHED UPMIGRATE/DOWNMIGRATE 70_60",
+            "0x43498000, 4761000,    //MPCTLV3_BUS_DCVS_LLCC_DDR_BOOST_FREQ, 4761000",
+            "0x434A0000, 1211000,    //MPCTLV3_BUS_DCVS_LLCC_LLCC_BOOST_FREQ, 1211000"
+        ],
+        "mivi_battery_emency": [
+            "0x40400000, 1,          //MPCTLV3_ALL_CPUS_PWR_CLPS_DIS, 1",
+            "0x40804000, 3072,       //MPCTLV3_MAX_FREQ_CLUSTER_BIG_CORE_0, 3072",
+            "0x40800000, 1747,       //MPCTLV3_MIN_FREQ_CLUSTER_BIG_CORE_0, 1747",
+            "0x40804200, 3072,       //MPCTLV3_MAX_FREQ_CLUSTER_PRIME_CORE_0, 3072",
+            "0x40800200, 2784,       //MPCTLV3_MIN_FREQ_CLUSTER_PRIME_CORE_0, 2784",
+            "0x42808000, 3,          //MPCTLV3_GPU_MAX_POWER_LEVEL, 0x3",
+            "0x40CE0200, 0x0046003C, //SCHED UPMIGRATE/DOWNMIGRATE 70_60",
+            "0x43498000, 4761000,    //MPCTLV3_BUS_DCVS_LLCC_DDR_BOOST_FREQ, 4761000",
+            "0x434A0000, 1211000,    //MPCTLV3_BUS_DCVS_LLCC_LLCC_BOOST_FREQ, 1211000"
+        ],
+        "mivi_infinity_HQquickshot": [
+            "0x40400000, 1,          //MPCTLV3_ALL_CPUS_PWR_CLPS_DIS, 1",
+            "0x40804000, 3072,       //MPCTLV3_MAX_FREQ_CLUSTER_BIG_CORE_0, 3072",
+            "0x40800000, 1747,       //MPCTLV3_MIN_FREQ_CLUSTER_BIG_CORE_0, 1747",
+            "0x40804200, 3513,       //MPCTLV3_MAX_FREQ_CLUSTER_PRIME_CORE_0, 3513",
+            "0x40800200, 2784,       //MPCTLV3_MIN_FREQ_CLUSTER_PRIME_CORE_0, 2784",
+            "0x42808000, 3,          //MPCTLV3_GPU_MAX_POWER_LEVEL, 0x3",
+            "0x40CE0200, 0x0046003C, //SCHED UPMIGRATE/DOWNMIGRATE 70_60",
+            "0x43498000, 4761000,    //MPCTLV3_BUS_DCVS_LLCC_DDR_BOOST_FREQ, 4761000",
+            "0x434A0000, 1211000,    //MPCTLV3_BUS_DCVS_LLCC_LLCC_BOOST_FREQ, 1211000"
+        ],
+        "mivi_snapshot_capture_thermal": [
+            "0x40400000, 1,          //MPCTLV3_ALL_CPUS_PWR_CLPS_DIS, 1",
+            "0x40804000, 2649,       //MPCTLV3_MAX_FREQ_CLUSTER_BIG_CORE_0, 2649",
+            "0x40800000, 1747,       //MPCTLV3_MIN_FREQ_CLUSTER_BIG_CORE_0, 1747",
+            "0x40804200, 3072,       //MPCTLV3_MAX_FREQ_CLUSTER_PRIME_CORE_0, 3072",
+            "0x40800200, 2169,       //MPCTLV3_MIN_FREQ_CLUSTER_PRIME_CORE_0, 2169",
+            "0x42808000, 3,          //MPCTLV3_GPU_MAX_POWER_LEVEL, 0x3",
+            "0x40CE0200, 0x0046003C, //SCHED UPMIGRATE/DOWNMIGRATE 70_60",
+            "0x43498000, 4761000,    //MPCTLV3_BUS_DCVS_LLCC_DDR_BOOST_FREQ, 4761000",
+            "0x434A0000, 1066000,    //MPCTLV3_BUS_DCVS_LLCC_LLCC_BOOST_FREQ, 1066000"
+        ],
+        "mivi_snapshot_capture_bokeh": [
+            "0x40400000, 1,          //MPCTLV3_ALL_CPUS_PWR_CLPS_DIS, 1",
+            "0x40800000, 1747,       //MPCTLV3_MIN_FREQ_CLUSTER_BIG_CORE_0, 1747",
+            "0x40800200, 2169,       //MPCTLV3_MIN_FREQ_CLUSTER_PRIME_CORE_0, 2169",
+            "0x40CE0200, 0x00500046, //Sched upmigrate B80, downmigrate P70",
+            "0x41450000, 100,        //MPCTLV3_TARGET_LOAD_THRESH_CLUSTER_BIG, 100",
+            "0x41450200, 100,        //MPCTLV3_TARGET_LOAD_THRESH_CLUSTER_PRIME, 100"
+        ],
+        "mivi_snapshot_capture_hdr": [
+            "0x5FC00000, 127,        //MPCTLV3_XIAOMI_KSWAPD_AFFINITY, 0x7F",
+            "0x5FC04000, 127,        //MPCTLV3_XIAOMI_KCOMPACTD_AFFINITY, 0x7F"
+        ],
+        "mivi_reset_platforms": [
+            "0X42808000, 11,         //MPCTLV3_GPU_MAX_POWER_LEVEL, 0xB",
+            "0X42804000, 11,         //MPCTLV3_GPU_MIN_POWER_LEVEL, 0xB"
+        ],
+        "camera_open_sched": [
+            "0x40C40000, 0x7F,    //MPCTLV3_SCHED_CPUSET_FOREGROUND,        0-6",
+            "0x5FC8C000, 60,      //MPCTLV3_MEMCG_SWAPPINESS_CAMERA_PROVIDER 60"
+        ],
+        "camera_topapp_boost": [
+            "0x43C54000, 4096,   //MPCTLV3_CPUCTL_TOPAPP_CPUSHARE,          4096"
+        ],
+        "camera_background_limit": [
+            "0x43C58000, 512,    //MPCTLV3_CPUCTL_BACKGROUND_CPUSHARE,      512"
+        ],
+        "camera_provider_high_level_boost": [
+            "0x43C50000, 4096,   //MPCTLV3_CPUCTL_CAMERA_CPUSHARE,          4096"
+        ],
+        "camera_provider_middle_level_boost": [
+            "0x43C50000, 2048,   //MPCTLV3_CPUCTL_CAMERA_CPUSHARE,          2048"
+        ],
+        "camera_boost_max": [
+            "0x40C00000, 0x3,          //MPCTLV3_SCHED_BOOST, 0x3",
+            "0x40804000, 0xffff,       //MPCTLV3_MAX_FREQ_CLUSTER_BIG_CORE_0, 0xffff",
+            "0x40800000, 0xffff,       //MPCTLV3_MIN_FREQ_CLUSTER_BIG_CORE_0, 0xffff",
+            "0x40804200, 0xffff,       //MPCTLV3_MAX_FREQ_CLUSTER_PRIME_CORE_0, 0xffff",
+            "0x40800200, 0xffff,       //MPCTLV3_MIN_FREQ_CLUSTER_PRIME_CORE_0, 0xffff"
+        ],
+        "camera_boost_thermal_1": [
+            "0x40C00000, 0x3,        //MPCTLV3_SCHED_BOOST, 0x3",
+            "0x40804000, 3072,       //MPCTLV3_MAX_FREQ_CLUSTER_BIG_CORE_0, 3072",
+            "0x40800000, 2745,       //MPCTLV3_MIN_FREQ_CLUSTER_BIG_CORE_0, 2745",
+            "0x40804200, 3513,       //MPCTLV3_MAX_FREQ_CLUSTER_PRIME_CORE_0, 3513",
+            "0x40800200, 3283,       //MPCTLV3_MIN_FREQ_CLUSTER_PRIME_CORE_0, 3283"
+        ],
+        "camera_boost_thermal_2": [
+            "0x40C00000, 0x3,        //MPCTLV3_SCHED_BOOST, 0x3",
+            "0x40804000, 3072,       //MPCTLV3_MAX_FREQ_CLUSTER_BIG_CORE_0, 3072",
+            "0x40800000, 2400,       //MPCTLV3_MIN_FREQ_CLUSTER_BIG_CORE_0, 2400",
+            "0x40804200, 3283,       //MPCTLV3_MAX_FREQ_CLUSTER_PRIME_CORE_0, 3283",
+            "0x40800200, 3072,       //MPCTLV3_MIN_FREQ_CLUSTER_PRIME_CORE_0, 3072"
+        ],
+        "camera_boost_thermal_3": [
+            "0x40C00000, 0x3,        //MPCTLV3_SCHED_BOOST, 0x3",
+            "0x40804000, 2745,       //MPCTLV3_MAX_FREQ_CLUSTER_BIG_CORE_0, 2745",
+            "0x40800000, 2400,       //MPCTLV3_MIN_FREQ_CLUSTER_BIG_CORE_0, 2400",
+            "0x40804200, 3072,       //MPCTLV3_MAX_FREQ_CLUSTER_PRIME_CORE_0, 3072",
+            "0x40800200, 2841,       //MPCTLV3_MIN_FREQ_CLUSTER_PRIME_CORE_0, 2841"
+        ]
+    }
+}

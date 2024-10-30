@@ -1,0 +1,440 @@
+{
+    "ellc": {
+        "phone_version": "O2",
+        "model_version": "v1.0",
+        "hdr": "true",
+        "resize": "false",
+        "shape_patch": [
+            512,
+            512
+        ],
+        "overlap": [
+            16,
+            16
+        ],
+        "snpe": {
+            "runtime": "dsp",
+            "isDebug": 0,
+            "dlcs": [
+                {
+                    "Scene": "JDD_WIDE_EV0_MFNR",
+                    "bin_name": "aisn.bin",
+                    "dlc_name": "jdd_ev0_wide_224.dlc",
+                    "dlc_desc": "jdd_quant_240801_ov50h_distill",
+                    "input": {
+                        "name": "input_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            13
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            3
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 2
+                },
+                {
+                    "Scene": "JDD_WIDE_EV0_MFNR_QUAD",
+                    "bin_name": "aisn.bin",
+                    "dlc_name": "jdd_ev0_wide_224_quad.dlc",
+                    "dlc_desc": "jdd_quant_240329_n11wide",
+                    "input": {
+                        "name": "input_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            13
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259387510013767e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            3
+                        ],
+                        "offset": 0,
+                        "delta": 1.522932780062547e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 2
+                },
+                {
+                    "Scene": "JDD_WIDE_EVNN_SFNR",
+                    "bin_name": "aisn.bin",
+                    "dlc_name": "jdd_evnn_wide_224.dlc",
+                    "dlc_desc": "090601",
+                    "input": {
+                        "name": "input_1",
+                        "shape": [
+                            1,
+                            800,
+                            1056,
+                            5
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259022e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output_1",
+                        "shape": [
+                            1,
+                            1600,
+                            2112,
+                            3
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259022e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 5
+                },
+                {
+                    "Scene": "JDD_WIDE_EVNN_SFNR_QUAD",
+                    "bin_name": "aisn.bin",
+                    "dlc_name": "jdd_evnn_wide_224_quad.dlc",
+                    "dlc_desc": "train_qat_CapV11_npy_CR3crop1randomawb_nopurple_noisemap_preload1_sgain2_N8_quadbayer_4000_tfqat3",
+                    "input": {
+                        "name": "Placeholder:0",
+                        "shape": [
+                            1,
+                            576,
+                            1024,
+                            5
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259022e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "DepthToSpace:0",
+                        "shape": [
+                            1,
+                            1152,
+                            2048,
+                            3
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259022e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 5
+                },
+                {
+                    "Scene": "JDD_UW_EV0_MFNR",
+                    "bin_name": "aisn.bin",
+                    "dlc_name": "jdd_ev0_uw_224.dlc",
+                    "dlc_desc": "jdd_quant_240905_o2uw_distill",
+                    "input": {
+                        "name": "input_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            13
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            3
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 2
+                },
+                {
+                    "Scene": "JDD_UW_EV0_MFNR_QUAD",
+                    "bin_name": "aisn.bin",
+                    "dlc_name": "jdd_ev0_uw_224_quad.dlc",
+                    "dlc_desc": "jdd_quant_240329_n11wide",
+                    "input": {
+                        "name": "input_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            13
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259387510013767e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            3
+                        ],
+                        "offset": 0,
+                        "delta": 1.522932780062547e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 2
+                },
+                {
+                    "Scene": "JDD_UW_EVNN_SFNR",
+                    "bin_name": "aisn.bin",
+                    "dlc_name": "jdd_evnn_uw_224.dlc",
+                    "dlc_desc": "train_qat_CapV11_npy_CR3crop1randomawb_nopurple_noisemap_preload1_sgain2_O2_UW_100_tfqat3",
+                    "input": {
+                        "name": "input_1",
+                        "shape": [
+                            1,
+                            800,
+                            1056,
+                            5
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259022e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output_1",
+                        "shape": [
+                            1,
+                            1600,
+                            2112,
+                            3
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259022e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 5
+                },
+                {
+                    "Scene": "JDD_UW_EVNN_SFNR_QUAD",
+                    "bin_name": "aisn.bin",
+                    "dlc_name": "jdd_evnn_uw_224_quad.dlc",
+                    "dlc_desc": "train_qat_CapV11_npy_CR3crop1randomawb_nopurple_noisemap_preload1_sgain2_O2_UW_quadbayer_100_tfqat3",
+                    "input": {
+                        "name": "Placeholder:0",
+                        "shape": [
+                            1,
+                            576,
+                            1024,
+                            5
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259022e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "DepthToSpace:0",
+                        "shape": [
+                            1,
+                            1152,
+                            2048,
+                            3
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259022e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 5
+                },
+                {
+                    "Scene": "JDD_TELE_EV0_MFNR",
+                    "bin_name": "aisn.bin",
+                    "dlc_name": "jdd_ev0_tele_224.dlc",
+                    "dlc_desc": "jdd_quant_O2quad_240822newcalib",
+                    "input": {
+                        "name": "input_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            13
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            3
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 1
+                },
+                {
+                    "Scene": "JDD_TELE_EV0_MFNR_QUAD",
+                    "bin_name": "aisn.bin",
+                    "dlc_name": "jdd_ev0_tele_224_quad.dlc",
+                    "dlc_desc": "jdd_quant_240329_n11wide",
+                    "input": {
+                        "name": "input_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            13
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259387510013767e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            3
+                        ],
+                        "offset": 0,
+                        "delta": 1.522932780062547e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 2
+                },
+                {
+                    "Scene": "JDD_TELE_EVNN_SFNR",
+                    "bin_name": "aisn.bin",
+                    "dlc_name": "jdd_evnn_tele_224.dlc",
+                    "dlc_desc": "train_qat_CapV11_npy_CR3crop1randomawb_nopurple_noisemap_preload1_sgain2_O2_TELE_100_tfqat4",
+                    "input": {
+                        "name": "input_1",
+                        "shape": [
+                            1,
+                            800,
+                            1056,
+                            5
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259022e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output_1",
+                        "shape": [
+                            1,
+                            1600,
+                            2112,
+                            3
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259022e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 4
+                },
+                {
+                    "Scene": "JDD_TELE_EVNN_SFNR_QUAD",
+                    "bin_name": "aisn.bin",
+                    "dlc_name": "jdd_evnn_tele_224_quad.dlc",
+                    "dlc_desc": "train_qat_CapV11_npy_CR3crop1randomawb_nopurple_noisemap_preload1_sgain2_O2_TELE_quadbayer_100_tfqat4",
+                    "input": {
+                        "name": "Placeholder:0",
+                        "shape": [
+                            1,
+                            576,
+                            1024,
+                            5
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259022e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "DepthToSpace:0",
+                        "shape": [
+                            1,
+                            1152,
+                            2048,
+                            3
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259022e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 5
+                }
+                
+            ]
+        },
+        "relight_setting": {
+            "range1_luxindex_start": 495.0,
+            "range1_luxindex_end": 520.0,
+            "range1_luxindex_start_ratio": 1.0,
+            "range1_luxindex_end_ratio": 1.0,
+            "range2_luxindex_start": 520.0,
+            "range2_luxindex_end": 540.0,
+            "range2_luxindex_start_ratio": 1.0,
+            "range2_luxindex_end_ratio": 1.0,
+            "range3_luxindex_start": 540.0,
+            "range3_luxindex_end": 550.0,
+            "range3_luxindex_start_ratio": 1.0,
+            "range3_luxindex_end_ratio": 1.0,
+            "range4_luxindex_start": 550.0,
+            "range4_luxindex_end": 580.0,
+            "range4_luxindex_start_ratio": 1.0,
+            "range4_luxindex_end_ratio": 1.0
+        },
+        "Threshold": {
+            "T_brightness": 150,
+            "T_dark_scene": 25000,
+            "T_motion_1": 15,
+            "T_motion_2": 50000000,
+            "T_over_expose_threshold": 3500,
+            "T_clip_ratio": 0.36,
+            "T_first_frame_luxindex": 260,
+            "T_merge_ratio": 0.95,
+            "T_pow_merge_ratio": [
+                200,
+                200,
+                200,
+                200,
+                100,
+                200,
+                200,
+                200,
+                200,
+                100,
+                200,
+                200,
+                200,
+                200,
+                100
+            ]
+        }
+    }
+}

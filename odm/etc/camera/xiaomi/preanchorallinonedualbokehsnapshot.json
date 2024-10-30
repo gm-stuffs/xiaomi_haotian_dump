@@ -1,0 +1,69 @@
+{
+    "PipelineName": "PreAnchorAllinoneDualBokehSnapshot",
+    "NodesList": {
+        "Node": [
+        {
+            "NodeName": "com.xiaomi.plugin.mialgoanchor",
+            "NodeInstance": "PreAnchorInstance1",
+            "NodeProperty":[
+            {
+                "NodePropertyName":"NodeMask",
+                "NodePropertyValue":49
+            }
+            ]
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.offlineformatconvertor",
+            "NodeInstance": "PreAnchorFormatConvertorInstance0",
+            "NodeProperty":[
+            {
+                //CUSTOMSIZE_MODE|SIGRELEASEOUTPUT_MODE
+                //SIGRELEASEINPUT_MODE|SIGFRAME_MODE|SIGGETOUTPUT_MODE
+                "NodePropertyName":"NodeMask",
+                "NodePropertyValue":248
+            }
+            ]
+        }
+      ]
+    },
+    "PortLinkages": {
+        "Link": [
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "SourceBuffer0"
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "PreAnchorFormatConvertorInstance0",
+                "PortFormat": "RAW10"
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "PreAnchorFormatConvertorInstance0",
+                "PortFormat": "RAW16",
+                "OutputBufferNumber": "FollowInPut",
+                "PortFollowType":1,
+                "FollowPortId":0
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "PreAnchorInstance1",
+                "PortFormat": "RAW16"
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "PreAnchorInstance1"
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "SinkBuffer0"
+            }
+        }
+        ]
+    }
+}

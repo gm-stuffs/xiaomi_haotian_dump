@@ -1,0 +1,31 @@
+{
+	"##":"前置视频/短视频模式",
+	"Type":"EffectCategory",
+	"ForVideo": true,
+	"TrueSight":
+	[
+		{
+			"ExtraOptionPath":"0_ExtraOption/mode_front_video.json"
+		},
+		{
+			"ConfigurePath":"5_DLRetouch/mode_front_video.json",
+			"Index":5
+		},
+		{
+			"ConfigurePath":"20_FaceRetouch/mode_front_video.json",
+			"Index":20
+		},
+		{
+			"ConfigurePath":"40_FaceStereo/mode_front_video.json",
+			"Index":40
+		},
+		{
+			"ConfigurePath":"60_Makeup/mode_front_video.json",
+			"Index":60
+		},
+		{
+			"ConfigurePath":"70_FacialRefine/mode_front_video.json",
+			"Index":70
+		}
+	]
+}

@@ -1,0 +1,32 @@
+{
+	"##":"型男模式",
+	"Type":"Effect",
+	"ExtraOption":
+    {
+        "EnvLightType": 1,
+        "EnableGenderMakeup":false
+    },
+	"TrueSight":
+	[
+		{
+			"ConfigurePath":"Effects/0_ModeMetrosexualMale/effect_preview.json",
+			"Index":0,
+			"Mode":"Preview"
+		},
+		{
+			"ConfigurePath":"Effects/0_ModeMetrosexualMale/effect_capture.json",
+			"Index":1,
+			"Mode":"Capture"
+		},
+		{
+			"ConfigurePath":"Effects/0_ModeMetrosexualFemale/effect_preview.json",
+			"Index":2,
+			"Mode":"Preview"
+		},
+		{
+			"ConfigurePath":"Effects/0_ModeMetrosexualFemale/effect_capture.json",
+			"Index":3,
+			"Mode":"Capture"
+		}
+	]
+}
